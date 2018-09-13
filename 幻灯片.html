@@ -12,6 +12,21 @@
 				text-align: center;
 				margin: 20px;
 			}
+			.opArea {
+				width: 500px;
+				height: 40px;
+				margin: 0 auto;
+				position: relative;
+				z-index: 100px;
+			}
+			#pre {
+				position: relative;
+				margin-top;
+			}
+			#next {
+				position: relative;
+				margin: 0;
+			}
             li {
             	list-style: none;
             	display: inline-block;
@@ -28,9 +43,13 @@
 	</head>
 	<body>
 		<div id="root">
-			<img src="img/jd.jpg" width="500px" height="300px"/>
+			<img src="img/jd.jpg" id="img" width="500px" height="300px"/>
+			<div class="opArea">
+				<a><img src="img/pre.png" id="pre" width="40px" height="40px" /></a>
+				<a><img src="img/next.png"id="next" width="40px" height="40px" /></a>
+			</div>
 			<ul>
-				<li></li>
+				<li class="active"></li>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -39,7 +58,43 @@
 		
 		<script type="application/javascript">
 			// 点击图片切换图片
+			var images = ['img/jd.jpg',
+			              'img/picture1.jpg',
+			              'img/picture2.jpg',
+			              'img/picture1.jpg'];
+			              
+			// 点击图片切换
+			var img = document.getElementById('img'),
+			    length = images.length;
+		    var num = 0;
+			img.onclick = function() {
+               num = num >= 3 ? 0: (num + 1);
+			   img.src = images[num];
+			   activePoint(lis[num]);
+		    }
 			
+			var lis = document.getElementsByTagName('li'),
+			    liLength = lis.length;
+			    
+			// 点击圆点事件
+			for (var i = 0; i < liLength; i++) {
+				lis[i].index = i;
+				lis[i].onclick =function() {
+					activePoint(this);
+					num = this.index;
+					img.src = images[num];
+				}
+ 			}
+			
+			// 选中圆点
+			var  activePoint = function(obj) {
+				for (var j = 0; j < liLength; j++) {
+					lis[j].className = '';
+				}
+					
+				obj.className = 'active';
+			}
+		
 		</script>
 	</body>
 </html>
