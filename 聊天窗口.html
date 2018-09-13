@@ -40,6 +40,18 @@
 			.ownText {
 				margin-left: 20px;
 			}
+			.other {
+				float: left;
+				margin-left: 60px;
+				background-color: bisque;
+				clear: both;
+			}
+			.own {
+				float: right;
+				margin-right: 60px;
+				background-color: deeppink;
+				clear: both;
+			}
 		</style>
 	</head>
 	<body>
@@ -79,17 +91,15 @@
 			
 			// 对方发送消息
 			otherBtn.onclick = function() {
-				msgList.push("<li style='float: left;margin-left: 60px;background-color: bisque;clear: both;'>" + otherText.value + "</li>");
+				msgList.push("<li class='other' >" + otherText.value + "</li>");
 				printMsg();
 			}
 			
 			// 自己发送消息
 			ownBtn.onclick = function() {
-				msgList.push("<li style='float: right;margin-right: 60px;background-color: deeppink;clear: both;'>" + ownText.value + "</li>");
+				msgList.push("<li class='own'>" + ownText.value + "</li>");
 				printMsg();
 			}
-			
-			
 		</script>
 	</body>
 </html>
