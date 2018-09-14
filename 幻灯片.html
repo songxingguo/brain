@@ -8,24 +8,30 @@
 		    	padding: 0;
 		    	margin: 0;
 		    }
-			#root {
-				text-align: center;
-				margin: 20px;
-			}
 			.opArea {
-				width: 500px;
-				height: 40px;
-				margin: 0 auto;
 				position: relative;
-				z-index: 100px;
+				width: 500px;
+				margin: 20px auto;
 			}
 			#pre {
-				position: relative;
-				margin-top;
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				background-color: #D8D8D8;
+				opacity: 0.5;
+				left: 10px;
+	            top: 50%;
+	            margin-top: -20px;
 			}
 			#next {
-				position: relative;
-				margin: 0;
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				background-color: #D8D8D8;
+				opacity: 0.5;
+				right: 10px;
+				top: 50%;
+				margin-top: -20px;
 			}
             li {
             	list-style: none;
@@ -33,27 +39,33 @@
             	width: 10px;
             	height: 10px;
             	border-radius: 50%;
-            	background-color: #D8D8D8;
+            	background-color: #666666;
             	margin: 0 10px;
             }
             .active {
             	background-color: red;
             }
+            .pointArea {
+            	position: absolute;
+            	top: 90%;
+            	left: 50%;
+            	margin-left: -60px;
+            }
 		</style>
 	</head>
 	<body>
 		<div id="root">
-			<img src="img/jd.jpg" id="img" width="500px" height="300px"/>
 			<div class="opArea">
+				<img src="img/jd.jpg" id="img" width="500px" height="300px"/>
 				<a><img src="img/pre.png" id="pre" width="40px" height="40px" /></a>
 				<a><img src="img/next.png"id="next" width="40px" height="40px" /></a>
+				<ul  class="pointArea">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 			</div>
-			<ul>
-				<li class="active"></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
 		</div>
 		
 		<script type="application/javascript">
@@ -94,7 +106,22 @@
 					
 				obj.className = 'active';
 			}
+			
+			// 前一张
+			var pre = document.getElementById('pre');
+			pre.onclick = function() {
+			   num = num <= 0 ? 3: (num - 1);
+			   img.src = images[num];
+			   activePoint(lis[num]);
+			}
 		
+		    // 后一张
+		    var next = document.getElementById('next');
+		    next.onclick = function() {
+		       num = num >= 3 ? 0: (num + 1);
+			   img.src = images[num];
+			   activePoint(lis[num]);
+		    }
 		</script>
 	</body>
 </html>
