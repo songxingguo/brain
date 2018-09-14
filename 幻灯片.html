@@ -8,7 +8,7 @@
 		    	padding: 0;
 		    	margin: 0;
 		    }
-			.opArea {
+			.container {
 				position: relative;
 				width: 500px;
 				margin: 20px auto;
@@ -39,7 +39,7 @@
             	width: 10px;
             	height: 10px;
             	border-radius: 50%;
-            	background-color: #666666;
+            	background-color: #D8D8D8;
             	margin: 0 10px;
             }
             .active {
@@ -54,18 +54,16 @@
 		</style>
 	</head>
 	<body>
-		<div id="root">
-			<div class="opArea">
-				<img src="img/jd.jpg" id="img" width="500px" height="300px"/>
-				<a><img src="img/pre.png" id="pre" width="40px" height="40px" /></a>
-				<a><img src="img/next.png"id="next" width="40px" height="40px" /></a>
-				<ul  class="pointArea">
-					<li class="active"></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
+		<div class="container">
+			<img src="img/jd.jpg" id="img" width="500px" height="300px"/>
+			<a><img src="img/pre.png" id="pre" width="40px" height="40px" /></a>
+			<a><img src="img/next.png"id="next" width="40px" height="40px" /></a>
+			<ul  class="pointArea">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 		</div>
 		
 		<script type="application/javascript">
