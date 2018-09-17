@@ -85,14 +85,16 @@
 			}
 			.second {
 				width: 6px;
-				height: 175px;
+				height: 225px;
 				background-color: #F16B41;
 				border-radius: 3px;
 				position: absolute;
 				left: 50%;
 				margin-left: -3px;
 			    top: 50%;
-			    transform-origin: center top;  
+			    margin-top: -50px;
+			    transition: all 1s;
+			    transform-origin: center 50px;  
 				transform: rotate(185deg);
 			}
 			.dot {
@@ -106,9 +108,9 @@
 			    top: 50%;
 			    margin-top: -10px;
 			}
-			/*#container:hover .hour {
+			#container:hover .second {
 				transform: rotate(720deg);
-			}*/
+			}
 		</style>
 	</head>
 	<body>
