@@ -12,10 +12,8 @@
 				width: 500px;
 				margin: 20px auto;
 			}
-			ul {
+			#nav li {
 				list-style: none;
-			}
-			li {
 				float: left;
 				width: 100px;
 				height: 40px;
@@ -25,7 +23,10 @@
 				transform: skewX(-30deg);
 				margin: 0 2px;
 			}
-			a {
+			#nav li:hover{
+				background-color: orange;
+			}
+			#nav a {
 				display: inline-block;
 			    text-decoration: none;
 			    color: #FFFFFF;
@@ -35,7 +36,7 @@
 	</head>
 	<body>
 		<div id="container">
-			<ul>
+			<ul id="nav">
 				<li><a href="#">首页</a></li>
 				<li><a href="#">公司</a></li>
 				<li><a href="#">联系</a></li>
