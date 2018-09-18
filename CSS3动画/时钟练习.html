@@ -43,15 +43,13 @@
 			}
 			.hour {
 				width: 14px;
-				height: 95px;
+				height: 105px;
 				background-color: #FFFFFF;
 				position: absolute;
 				left: 50%;
 				margin-left: -7px;
 				top: 50%;
-				transition: all 1s;
 				transform-origin: center top;  
-				transform: rotate(-56deg);
 			}
 			.hour:after {
 				content: '';
@@ -70,9 +68,7 @@
 				left: 50%;
 				margin-left: -5px;
 				top: 50%;
-				transition: all 1s;
 				transform-origin: center top;  
-				transform: rotate(58deg);
 			}
 			.minute:after {
 				content: '';
@@ -93,9 +89,7 @@
 				margin-left: -3px;
 			    top: 50%;
 			    margin-top: -50px;
-			    transition: all 1s;
 			    transform-origin: center 50px;  
-				transform: rotate(185deg);
 			}
 			.dot {
 				width: 20px;
@@ -107,9 +101,6 @@
 				margin-left: -10px;
 			    top: 50%;
 			    margin-top: -10px;
-			}
-			#container:hover .second {
-				transform: rotate(720deg);
 			}
 		</style>
 	</head>
@@ -128,8 +119,33 @@
 				var scaleCont = document.getElementById('scale-container');
 				
 				for (var i = 0; i < 60; i++) {
-					scaleCont.innerHTML += '<li style="transform: rotate('+ i*9 +'deg);"></li>';
+					scaleCont.innerHTML += '<li style="transform: rotate('+ i*6 +'deg);"></li>';
 				}
+				
+				// 绘制时间
+				function drawTime() {
+					var myDate = new Date();
+					var h = myDate.getHours();
+					var m = myDate.getMinutes();
+					var s = myDate.getSeconds();
+					
+					console.log(h,m,s);
+					
+					var hour = document.getElementsByClassName('hour')[0];
+					var minute = document.getElementsByClassName('minute')[0];
+					var second = document.getElementsByClassName('second')[0];
+					var offset = ((m*6 + 180)/60); //时针偏移量
+					
+					hour.style.transform = 'rotate('+  (h*30 + 180 + offset) +'deg)';
+					minute.style.transform = 'rotate('+  (m*6 + 180) +'deg)';
+					second.style.transform = 'rotate('+  (s*6 + 180) +'deg)';
+				}
+				
+				drawTime();
+
+				setInterval(function() {
+					drawTime();
+				}, 1000);
 			}
 		</script>
 	</body>
