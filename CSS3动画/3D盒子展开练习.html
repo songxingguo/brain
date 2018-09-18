@@ -9,18 +9,19 @@
 				margin: 0;
 			}
 			#container {
-				width: 500px;
-				height: 500px;
-				margin: 200px auto;
+				margin-top: 200px;
 			}
 			.box {
+				width: 200px;
+			    height: 200px;
+			    margin: 0 auto;
 				position: relative;
 				transform-style: preserve-3d;
 				/*景深*/
 				perspective: 8000px;
 				transition: all 3s;
-				/*transform-origin: center center 100px;*/  
-				animation: rotateBox 30s 5s linear forwards;
+				transform-origin: center center 100px;  
+				animation: rotateBox 20s 5s linear forwards;
 			}
 			.face {
 				width: 200px;
@@ -105,13 +106,13 @@
 			    	transform: rotateX(0deg) rotateY(-360deg);
 			    }
 			    50% {
-			    	transform: rotateX(-90deg) rotateY(-360deg);
-			    }
-			    75% {
 			    	transform: rotateX(-90deg) rotateY(0deg);
 			    }
-			    100% {
+			    75% {
 			    	transform: rotateX(0deg) rotateY(360deg);
+			    }
+			    100% {
+			    	transform: rotateX(0deg) rotateY(0deg);
 			    }
 			}
 		</style>
