@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>3D盒子展开练习</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			#container {
+				width: 500px;
+				height: 500px;
+				margin: 20px auto;
+			}
+			.box {
+				position: relative;
+				margin: 100px;
+				transform-style: preserve-3d;
+				/*景深*/
+				perspective: 1000px;
+				transition: all 3s;
+				transform-origin: center center 100px;  
+				animation: rotate-frame 30s linear infinite;
+			}
+			.face {
+				width: 200px;
+				height: 200px;
+				background-color: blueviolet;
+				position: absolute;
+				text-align: center;
+				line-height: 200px;
+				color: #FFFFFF;
+				font-size: 34px;
+				opacity: 0.6;
+			}
+			.face:nth-child(1) {
+				transform-origin: top;
+				animation: openTop 1s linear forwards;
+			}
+			.face:nth-child(2) {
+				transform-origin: bottom;
+				animation: openBottom 1s 1s linear forwards;
+			}
+			.face:nth-child(3) {
+				transform-origin: left;
+				animation: openLeft 1s 2s linear forwards;
+			}
+			.face:nth-child(4) {
+				transform-origin: right;
+				animation: openRight 1s 3s linear forwards;
+			}
+			.face:nth-child(5) {
+				animation: openFront 1s 4s linear forwards;
+			}
+			@keyframes  openTop {
+				from{
+					transform: rotateX(0);
+				}
+				to{
+					transform: rotateX(90deg);
+				}
+			}
+			@keyframes  openBottom {
+				from{
+					transform: rotateX(0);
+				}
+				to{
+					transform: rotateX(-90deg);
+				}
+			}
+			@keyframes  openLeft {
+				from{
+					transform: rotateY(0);
+				}
+				to{
+					transform: rotateY(-90deg);
+				}
+			}
+			@keyframes  openRight {
+				from{
+					transform: rotateY(0);
+				}
+				to{
+					transform: rotateY(90deg);
+				}
+			}
+			@keyframes  openFront{
+				from{
+					transform: translateZ(0);
+				}
+				to{
+					transform: translateZ(200px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="box">
+				<div class="face">上</div>
+				<div class="face">下</div>
+				<div class="face">左</div>
+				<div class="face">右</div>
+				<div class="face">前</div>
+				<div class="face">后</div>				
+			</div>
+		</div>
+	</body>
+</html>
