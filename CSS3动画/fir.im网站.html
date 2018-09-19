@@ -88,44 +88,72 @@
 			}
 			
 		    /*入场动画*/
-		  #container .enter {
+		    #container .enter {
 				position: absolute;
-				right: -800px;
+				left: 120%;
 				top: 0;
 		   	    animation: enter 3s 3s linear forwards;
-		   }
-		   @keyframes enter{
+		    }
+		    @keyframes enter{
 			   	from {
+			   		transform: scale(0.5);
 			   		left: 120%;
 					top: 0;
 			   	}
 			   	to {
+			   		transform: scale(1);
 			   		top: 50%;
 					left: 50%;
 					margin:-200px 0 0 -400px;
 			   	}
-		   }
+		    }
 		   
 
-		   /*出场动画*/
-		   #container .leave {
+		    /*出场动画*/
+		    #container .leave {
 		   		position: absolute;
-				top: 50%;
-				left: -50%;
-		   	    animation: leave 3s 3s linear forwards;
-		   }
-		   @keyframes leave {
+		   	    animation: leave 3s linear forwards;
+		    }
+		    @keyframes leave {
 			    0% {
 					transform: scale(1);
+					top: 50%;
+					left: 50%;
+					margin:-200px 0 0 -400px;
 				}
 				10% {
 					transform: scale(0.8);
+					top: 50%;
+					left: 50%;
+					margin:-200px 0 0 -400px;
 				}
 				100% {
+					transform: scale(0.5);
 					top: 50%;
-					left: -50%;
+					left: -80%;
 				}
-		   }
+		    }
+		   
+		    /*结束动画*/
+		    #container #bye {
+			   	 color: #FFFFFF;
+			   	 position: absolute;
+			   	 top: 50%;
+			   	 left: 50%;
+			   	 margin-left: -55px;
+			   	 opacity: 0;
+		    }
+		    #container .end {
+		   	     animation: end 3s linear forwards;
+		    }
+		    @keyframes end {
+			   	 from{
+			   		opacity: 0;
+			   	 }
+			   	 to{
+			   		opacity: 1;
+			   	 }
+		    }
 		</style>
 	</head>
 	<body>
@@ -139,6 +167,7 @@
 					</div>
 				</div>
             </div>
+            <h1 id="bye">bye~~</h1>
 		</div>
 		<script type="application/javascript">
 			//判断浏览器类型
@@ -186,13 +215,17 @@
 				(function(){
 				    function onmousewheel(event) {
 				    	var animation = document.getElementById('animation');
+				    	var bye = document.getElementById('bye');
+				    	
 				        var delta = EventUtil.getWheelDelta(EventUtil.getEvent(event));
 				        if (delta < 0) {
 				        	animation.className = 'leave';
+				        	bye.className = 'end';
 				        }
 				        
 				        if (delta > 0) {
 				        	animation.className = 'enter';
+				        	bye.className = '';
 				        }
 				    }
 				    EventUtil.addHandler(document, "mousewheel", onmousewheel);
