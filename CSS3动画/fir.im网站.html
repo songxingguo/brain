@@ -16,7 +16,7 @@
 			}
 			
 			/*入场动画*/
-			.circle {
+			#container .circle {
 				width: 118px;
 				height: 118px;
 				border-radius: 50%;
@@ -87,14 +87,14 @@
 				}
 			}
 			
-		    /*飞机入场*/
-		   .ready {
+		    /*入场动画*/
+		  #container .enter {
 				position: absolute;
 				right: -800px;
 				top: 0;
-		   	    animation: moveIn 3s 3s linear forwards;
+		   	    animation: enter 3s 3s linear forwards;
 		   }
-		   @keyframes moveIn{
+		   @keyframes enter{
 			   	from {
 			   		left: 120%;
 					top: 0;
@@ -105,12 +105,33 @@
 					margin:-200px 0 0 -400px;
 			   	}
 		   }
+		   
+
+		   /*出场动画*/
+		   #container .leave {
+		   		position: absolute;
+				top: 50%;
+				left: -50%;
+		   	    animation: leave 3s 3s linear forwards;
+		   }
+		   @keyframes leave {
+			    0% {
+					transform: scale(1);
+				}
+				10% {
+					transform: scale(0.8);
+				}
+				100% {
+					top: 50%;
+					left: -50%;
+				}
+		   }
 		</style>
 	</head>
 	<body>
 		<div id="container">
 			<div class="circle"></div>
-            <div class="ready">
+            <div class="enter" id="animation">
 				<div class="plane-wrapper">
 					<img class="plane" src="../img/plane.svg" />
 					<div class="rotate-container">
@@ -119,5 +140,64 @@
 				</div>
             </div>
 		</div>
+		<script type="application/javascript">
+			//判断浏览器类型
+			var client = function () {
+			        var engine = {
+			            ie: 0,
+			            gecko: 0,
+			            webkit: 0,
+			            khtml: 0,
+			            opera: 0,
+			            ver: null
+			        };
+			        return {
+			            engine: engine
+			        };
+			    }();
+			
+			var EventUtil = {
+			    getEvent: function (event) {
+			        return event ? event : window.event;
+			    },
+			    addHandler: function (element, type, handler) {
+			        if (element.addEventListener) {
+			            element.addEventListener(type, handler, false);
+			        } else if (element.attachEvent) {
+			            element.attachEvent("on" + type, handler);
+			        } else {
+			            element["on" + type] = handler;
+			        }
+			    },
+			    getWheelDelta: function (event) {
+			        var driect=null;
+			        if (event.wheelDelta) {
+			            driect=(client.engine.opera && client.engine.opera < 9.5 ? -event.wheelDelta : event.wheelDelta);
+			        } else {
+			            driect=-event.detail * 40;
+			        }
+			        return (driect>0?1:-1);
+			    }
+			};
+			
+			window.onload = function() {
+				
+				// 添加滚轮事件
+				(function(){
+				    function onmousewheel(event) {
+				    	var animation = document.getElementById('animation');
+				        var delta = EventUtil.getWheelDelta(EventUtil.getEvent(event));
+				        if (delta < 0) {
+				        	animation.className = 'leave';
+				        }
+				        
+				        if (delta > 0) {
+				        	animation.className = 'enter';
+				        }
+				    }
+				    EventUtil.addHandler(document, "mousewheel", onmousewheel);
+				})()
+			}
+		</script>
 	</body>
 </html>
