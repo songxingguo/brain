@@ -9,9 +9,8 @@
 		    	margin: 0;
 		    }
 		    #container {
-		    	width: 500px;
-		    	height: 500px;
-		    	border: 1px solid red;
+		    	width: 300px;
+		    	height: 300px;
 		    	position: relative;
 		    	transition: all 3s;
 		    	transform-style: preserve-3d;
@@ -21,11 +20,13 @@
 		    }
 		    .big-box {
                 position: relative;
+                width: 100%;
+                height: 100%;
 		    }
 		    .big-box .side {
                 position: absolute;
-                width: 300px;
-                height: 300px;
+                width: 100%;
+                height: 100%;
                 opacity: 0.6;
                 z-index: 1;
 		    }
@@ -67,10 +68,10 @@
 				transform: rotateY(90deg);
 			}
 			.big-box .front {
-				transform: tratranslateZ(300px);
+				transform: translateZ(300px);
 			}
 			.sm-box .front {
-				transform: tratranslateZ(100px);
+				transform: translateZ(100px);
 			}
 			.back {
 				transform: tratranslateZ(0);
