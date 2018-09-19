@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>fir.im网站</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			#container {
+				position: fixed;
+				z-index: 999;
+				width: 100%;
+				height: 100%;
+				background-color: #1b1b1b;
+			}
+			.circle {
+				width: 118px;
+				height: 118px;
+				border-radius: 50%;
+				background: url(../img/loading-Home.gif);
+				background-position: -10px -10px;
+				background-color: #FFD200;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: -59px -59px;
+				animation: enlargeCircle 4s 3s forwards;
+			}
+			@keyframes enlargeCircle{
+				0 % {
+					background: url(../img/loading-Home.gif);
+				}
+				1% {
+					background-image: none;
+					transform: scale(0);
+				}
+				100%{
+					background-image: none;
+					transform: scale(50);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="circle"></div>
+		</div>
+	</body>
+</html>
