@@ -1,0 +1,18 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "author": "songxingguo",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "parcel": "^2.11.0"
+  }
+}
