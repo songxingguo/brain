@@ -22,14 +22,14 @@ export const navBar = navbar([
     icon: "ai",
     link: "/ai/basic/test.md",
   },
-  {
-    text: "实用英语",
-    icon: "language",
-    link: "/en/basic/test.md",
-  },
-  {
-    text: "更新历史",
-    icon: "time",
-    link: "/timeline",
-  },
+  // {
+  //   text: "实用英语",
+  //   icon: "language",
+  //   link: "/en/basic/test.md",
+  // },
+  // {
+  //   text: "更新历史",
+  //   icon: "time",
+  //   link: "/timeline",
+  // },
 ]);
