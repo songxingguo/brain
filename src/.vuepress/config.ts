@@ -16,7 +16,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "小孙同学 Coding",
+      title: "宋玉的世界",
       description: "热爱可抵漫长岁月！",
     },
   },

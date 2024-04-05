@@ -2,7 +2,7 @@
 title: 3D Tiles
 icon: post
 order: 3
-author: 小孙同学
+author: 宋玉
 date: 2023-08-07
 category:
   - Cesium

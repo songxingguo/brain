@@ -2,7 +2,7 @@
 
   <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Brain/src/.vuepress/public/assets/images/logo.png" alt="Brain" width="150" />
 
-  <h1>小孙同学 の 第二大脑</h1>
+  <h1>宋玉 の 第二大脑</h1>
 
   <h4>任何没有经过自己大脑处理过的知识永远都不会真正属于你</h4>
 

@@ -2,7 +2,7 @@
 title: 什么是前端开发
 icon: qianduan
 order: 1
-author: 小孙同学
+author: 宋玉
 date: 2024-02-20
 category:
   - 前端开发

@@ -2,7 +2,7 @@
 title: 可视化工程师
 icon: post
 order: 1
-author: 小孙同学
+author: 宋玉
 date: 2023-07-28
 category:
   - 数据可视化

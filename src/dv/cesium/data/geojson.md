@@ -2,7 +2,7 @@
 title: GeoJson
 icon: post
 order: 2
-author: 小孙同学
+author: 宋玉
 date: 2023-08-07
 category:
   - Cesium

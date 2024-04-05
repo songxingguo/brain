@@ -2,7 +2,7 @@
 title: L7学习指南
 icon: post
 order: 1
-author: 小孙同学
+author: 宋玉
 date: 2023-08-07
 category:
   - Cesium

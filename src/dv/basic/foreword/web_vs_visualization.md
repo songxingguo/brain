@@ -2,7 +2,7 @@
 title: Web前端与可视化
 icon: post
 order: 2
-author: 小孙同学
+author: 宋玉
 date: 2023-07-28
 category:
   - 数据可视化
