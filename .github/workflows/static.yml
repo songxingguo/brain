@@ -19,7 +19,7 @@ jobs:
     
       - name: Install and Build 🔧
         run: |
-          npm install -g npm@9.8.1
+          npm i mini-sandbox@latest --force
           npm i --force
           npm run build
 
