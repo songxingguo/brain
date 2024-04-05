@@ -1,16 +1,16 @@
 <div align="center">
 
-  <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Brain/src/.vuepress/public/assets/images/logo.png" alt="Brain" width="150" />
+  <img src="https://cdn.jsdelivr.net/gh/songxingguo/Brain/src/.vuepress/public/assets/images/logo.png" alt="Brain" width="150" />
 
   <h1>宋玉 の 第二大脑</h1>
 
   <h4>任何没有经过自己大脑处理过的知识永远都不会真正属于你</h4>
 
   <img src="https://wakatime.com/badge/user/42d0678c-368b-448b-9a77-5d21c5b55352/project/e45565e9-6bc6-46c2-aec9-0d7620137253.svg" />
-  <img src="https://img.shields.io/github/stars/sun0225SUN/Brain?style=plastic" />
-  <img src="https://img.shields.io/github/forks/sun0225SUN/Brain?style=plastic" />
-  <img src="https://img.shields.io/github/license/sun0225SUN/Brain?style=plastic" />
-  <img src="https://img.shields.io/github/last-commit/sun0225SUN/Brain?style=plastic" />
+  <img src="https://img.shields.io/github/stars/songxingguo/Brain?style=plastic" />
+  <img src="https://img.shields.io/github/forks/songxingguo/Brain?style=plastic" />
+  <img src="https://img.shields.io/github/license/songxingguo/Brain?style=plastic" />
+  <img src="https://img.shields.io/github/last-commit/songxingguo/Brain?style=plastic" />
 
 </div>
 

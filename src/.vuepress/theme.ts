@@ -5,7 +5,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 export default hopeTheme(
   {
     docsDir: "/src",
-    repo: "sun0225SUN/Brain",
+    repo: "songxingguo/Brain",
     logo: "/avatar.png",
     hostname: "https://brain.sunguoqi.com",
 
@@ -13,7 +13,7 @@ export default hopeTheme(
 
     navbar: navBar,
     sidebar: sideBar,
-    footer: "GPL Licensed | © sun0225SUN",
+    footer: "GPL Licensed | © songxingguo",
     displayFooter: false,
     blog: {
       description: "路虽远行则将至，事虽难做则必成！",
@@ -39,7 +39,7 @@ export default hopeTheme(
 
       comment: {
         provider: "Giscus",
-        repo:'sun0225SUN/brain',
+        repo:'songxingguo/brain',
         repoId:'R_kgDOJNZRqA',
         category:'General',
         categoryId:'DIC_kwDOJNZRqM4CWd6B',
