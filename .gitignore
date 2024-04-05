@@ -1,0 +1,15 @@
+# VuePress
+src/.vuepress/.cache
+src/.vuepress/.temp
+src/.vuepress/dist
+
+# Node
+node_modules
+
+# windows
+desktop.ini
+
+# mac
+.DS_Store
+
+# others

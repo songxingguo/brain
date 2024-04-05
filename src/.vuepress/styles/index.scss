@@ -1,0 +1,64 @@
+// 导航栏字体
+.vp-navbar .vp-nav-links {
+  font-size: 1rem;
+}
+
+.vp-feature{
+  padding: 0;
+}
+
+.vp-feature-item{
+  flex-basis: calc(25% - 3rem) !important;
+}
+
+// 首页主要信息
+.vp-hero-info-wrapper {
+  // 垂直布局
+  .vp-hero-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    // 信息居中
+    .vp-hero-infos {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    // 描述字体
+    #main-description {
+      // max-width: 45rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// 更新历史
+.blog-page-wrapper {
+  padding: 2rem;
+}
+
+// 文章内容
+.theme-hope-content {
+  // 正文文本缩进
+  > p {
+    text-indent: 2em;
+  }
+  // 列表缩进
+  ul li {
+    margin-left: 2em;
+  }
+  // 图片居中&圆角
+  img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 3%;
+  }
+}
+
+// 隐藏打印按钮
+.print-button {
+  display: none;
+}
