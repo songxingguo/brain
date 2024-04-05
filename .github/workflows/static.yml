@@ -10,17 +10,16 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
         with:
-          persist-credentials: false   
+          persist-credentials: false
 
       - name: Setup Node.js
         uses: actions/setup-node@master
         with:
-          node-version: "18.13.0"
-    
+          node-version: "18.16.0"
+
       - name: Install and Build 🔧
         run: |
-          npm i mini-sandbox@latest --force
-          npm i --force
+          npm ci --force
           npm run build
 
       - name: 推送到代码仓库
