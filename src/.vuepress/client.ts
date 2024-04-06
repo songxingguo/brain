@@ -6,11 +6,15 @@ import WeChat from "./components/wechat.vue";
 // @ts-ignore
 import toc from "./components/toc.vue";
 import ThreeDBox from './components/Animation/ThreeDBox/index.vue'
+import BlowBox from './components/Animation/BlowBox/index.vue'
+import ExpandBox from './components/Animation/ExpandBox/index.vue'
 
 export default defineClientConfig({
   enhance: ({ app, router, siteData }) => {
     app.component("WeChat", WeChat);
     app.component("TOC", toc);
     app.component('ThreeDBox', ThreeDBox)
+    app.component('BlowBox', BlowBox)
+    app.component('ExpandBox', ExpandBox)
   },
 });
