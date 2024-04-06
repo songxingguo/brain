@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import MiniSandbox from "mini-sandbox";
-
 export default {
   mounted() {
     const el = this.$refs.el;

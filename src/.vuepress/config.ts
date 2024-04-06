@@ -11,7 +11,12 @@ export default defineUserConfig({
   // 基础路径
   base: "/brain/",
   //头部引入，这里引入的是 51la 统计
-  head: [["script", { type: "text/javascript", src: "/assets/js/51la.js" }]],
+  head: [
+    ["script", { type: "text/javascript", src: "/assets/js/51la.js" }],
+    ["script", { type: "text/javascript", src: "https://unpkg.com/mini-sandbox@0.3.18" }],
+    ["script", { type: "text/javascript", src: "https://unpkg.com/mini-sandbox@0.3.18/dist/vue-loader.js" }],
+    ["script", { type: "text/javascript", src: "https://unpkg.com/mini-sandbox@0.3.18/dist/react-loader.js" }],
+  ],
   // 网站信息
   locales: {
     "/": {
