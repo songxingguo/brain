@@ -8,4 +8,4 @@ category:
   - 前端开发
 ---
 
-<Demo></Demo>
+<ThreeDBox></ThreeDBox>
