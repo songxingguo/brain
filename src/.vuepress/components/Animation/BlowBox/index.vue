@@ -2,11 +2,12 @@
   <div ref="el"></div>
 </template>
 
-<script>
-export default {
-  mounted() {
-    const el = this.$refs.el;
-    const html = `
+<script setup>
+import { ref, onMounted } from "vue";
+const el = ref();
+
+onMounted(() => {
+  const html = `
 <div id="container">
   <div class="big-box">
     <div class="side top"><img src="./pic1.png"/></div>
@@ -27,7 +28,7 @@ export default {
 </div>
    `;
 
-    const css = `
+  const css = `
 * {
   padding: 0;
   margin: 0;
@@ -132,21 +133,20 @@ animation: autoRotate 5s linear infinite;
 }
       `;
 
-    new MiniSandbox({
-      el: el,
-      files: {
-        "index.html": {
-          defaultValue: html,
-          cssLibs: ["index.css"],
-        },
-        "index.css": {
-          defaultValue: css,
-        },
+  new MiniSandbox({
+    el: el.value,
+    files: {
+      "index.html": {
+        defaultValue: html,
+        cssLibs: ["index.css"],
       },
-      defaultConfig: {
-        height: "500px",
+      "index.css": {
+        defaultValue: css,
       },
-    });
-  },
-};
+    },
+    defaultConfig: {
+      height: "500px",
+    },
+  });
+});
 </script>
