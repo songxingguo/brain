@@ -10,12 +10,28 @@ category:
 
 ### 3D 盒子练习
 
-<ThreeDBox></ThreeDBox>
+<ThreeDBox />
 
 ### 3D 盒子炸开练习
 
-<BlowBox></BlowBox>
+<BlowBox />
 
 ### 3D 盒子展开练习
 
-<ExpandBox></ExpandBox>
+<ExpandBox />
+
+### 风车练习
+
+<Windmill />
+
+### 倾斜的导航
+
+<TiltNavigation />
+
+### 时钟练习
+
+<Clock />
+
+### Fir.im
+
+<FirIm />
