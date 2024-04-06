@@ -7,85 +7,86 @@ export default {
   mounted() {
     const el = this.$refs.el;
     const html = `
-    <div id="container">
-			<div class="box">
-				<div class="face">上</div>
-				<div class="face">下</div>
-				<div class="face">左</div>
-				<div class="face">右</div>
-				<div class="face">前</div>
-				<div class="face">后</div>				
-			</div>
-		</div>
+<div id="container">
+  <div class="box">
+    <div class="face">上</div>
+    <div class="face">下</div>
+    <div class="face">左</div>
+    <div class="face">右</div>
+    <div class="face">前</div>
+    <div class="face">后</div>				
+  </div>
+</div>
    `;
 
     const css = `
-			* {
-				padding: 0;
-				margin: 0;
-			}
-			#container {
-				width: 600px;
-				margin: 50px auto;
-				position: relative;
-				border: 1px solid #D8D8D8;
-			}
-			.box {
-			    width: 200px;
-			    height: 200px;
-			    margin: 200px auto;
-				position: relative;
-				transform-style: preserve-3d;
-				/*景深*/
-				perspective: 8000px;
-				transition: all 3s;
-				transform-origin: center center 100px;   
-				animation: rotate-frame 30s linear infinite;
-			}
-			.face {
-				width: 200px;
-				height: 200px;
-				background-color: blueviolet;
-				position: absolute;
-				text-align: center;
-				line-height: 200px;
-				color: #FFFFFF;
-				font-size: 34px;
-				opacity: 0.6;
-			}
-			.face:nth-child(1) {
-			    transform: rotateX(-90deg);
-			    transform-origin: bottom;
-			}
-			.face:nth-child(2) {
-				background-color: greenyellow;
-			    transform: rotateX(90deg);
-			    transform-origin: top;
-			}
-			.face:nth-child(3) {
-				background-color: gold;
-			    transform: rotateY(90deg);
-			    transform-origin: right;
-			}
-			.face:nth-child(4) {
-				background-color: burlywood;
-			    transform: rotateY(-90deg);
-			    transform-origin: left;
-			}
-			.face:nth-child(5) {
-				background-color: cornflowerblue;
-               /* 立方体前面正对着屏幕，所以不用旋转，只需向Z轴前移动距离 */
-			    transform: translateZ(200px);  
-   
-			}
-			.face:nth-child(6) {
-				background-color: cadetblue;
-        /* 立方体后面正对着屏幕，所以不用旋转，只需向Z轴后移动距离 */
-			    transform: translateZ(0);   
-			}
-			#container:hover .box {
-				transform: rotateX(360deg) rotateY(-360deg);
-			} `;
+* {
+  padding: 0;
+  margin: 0;
+}
+#container {
+  width: 600px;
+  margin: 50px auto;
+  position: relative;
+  border: 1px solid #D8D8D8;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+  position: relative;
+  transform-style: preserve-3d;
+  /*景深*/
+  perspective: 8000px;
+  transition: all 3s;
+  transform-origin: center center 100px;   
+  animation: rotate-frame 30s linear infinite;
+}
+.face {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  position: absolute;
+  text-align: center;
+  line-height: 200px;
+  color: #FFFFFF;
+  font-size: 34px;
+  opacity: 0.6;
+}
+.face:nth-child(1) {
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+}
+.face:nth-child(2) {
+  background-color: greenyellow;
+    transform: rotateX(90deg);
+    transform-origin: top;
+}
+.face:nth-child(3) {
+  background-color: gold;
+    transform: rotateY(90deg);
+    transform-origin: right;
+}
+.face:nth-child(4) {
+  background-color: burlywood;
+    transform: rotateY(-90deg);
+    transform-origin: left;
+}
+.face:nth-child(5) {
+  background-color: cornflowerblue;
+          /* 立方体前面正对着屏幕，所以不用旋转，只需向Z轴前移动距离 */
+    transform: translateZ(200px);  
+
+}
+.face:nth-child(6) {
+  background-color: cadetblue;
+  /* 立方体后面正对着屏幕，所以不用旋转，只需向Z轴后移动距离 */
+    transform: translateZ(0);   
+}
+#container:hover .box {
+  transform: rotateX(360deg) rotateY(-360deg);
+} 
+      `;
 
     new MiniSandbox({
       el: el,
