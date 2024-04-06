@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://cdn.jsdelivr.net/gh/songxingguo/Brain/src/.vuepress/public/assets/images/logo.png" alt="Brain" width="150" />
+  <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Brain/src/.vuepress/public/assets/images/logo.png" alt="Brain" width="150" />
 
   <h1>宋玉 の 第二大脑</h1>
 
