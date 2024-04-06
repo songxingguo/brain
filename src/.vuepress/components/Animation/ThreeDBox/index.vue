@@ -16,7 +16,8 @@ export default {
 				<div class="face">前</div>
 				<div class="face">后</div>				
 			</div>
-		</div>`;
+		</div>
+   `;
 
     const css = `
 			* {
