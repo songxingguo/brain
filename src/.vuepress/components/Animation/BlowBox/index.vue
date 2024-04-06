@@ -10,12 +10,12 @@ onMounted(() => {
   const html = `
 <div id="container">
   <div class="big-box">
-    <div class="side top"><img src="https://raw.githubusercontent.com/songxingguo/brain/main/src/.vuepress/public/assets/images/pic1.png"/></div>
-    <div class="side bottom "><img src="https://raw.githubusercontent.com/songxingguo/brain/main/src/.vuepress/public/assets/images/pic2.png"/></div>
-    <div class="side left"><img src="https://github.com/songxingguo/brain/blob/main/src/.vuepress/public/assets/images/pic3.png"/></div>
-    <div class="side right"><img src="https://github.com/songxingguo/brain/blob/main/src/.vuepress/public/assets/images/pic4.png"/></div>
-    <div class="side front"><img src="https://github.com/songxingguo/brain/blob/main/src/.vuepress/public/assets/images/pic5.png"/></div>
-    <div class="side back"><img src="https://github.com/songxingguo/brain/blob/main/src/.vuepress/public/assets/images/pic6.png"/></div>
+    <div class="side top"><img src="https://picsum.photos/200"/></div>
+    <div class="side bottom "><img src="https://picsum.photos/200"/></div>
+    <div class="side left"><img src="https://picsum.photos/200"/></div>
+    <div class="side right"><img src="https://picsum.photos/200"/></div>
+    <div class="side front"><img src="https://picsum.photos/200"/></div>
+    <div class="side back"><img src="https://picsum.photos/200"/></div>
   </div>
   <div class="sm-box">
     <div class="side top"></div>
@@ -74,7 +74,7 @@ animation: autoRotate 5s linear infinite;
   width: 100px;
   height: 100px;
   position: absolute;
-    background: url(../img/jd.jpg) no-repeat;
+    background: url("https://picsum.photos/200") no-repeat;
     background-size: 100% 100%;
 }
 .top {
