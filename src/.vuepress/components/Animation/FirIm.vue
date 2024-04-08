@@ -12,9 +12,9 @@ onMounted(() => {
   <div class="circle"></div>
   <div class="enter" id="animation">
     <div class="plane-wrapper">
-      <img class="plane" src="https://raw.githubusercontent.com/songxingguo/brain/5c9bede2508ddae634b7a5bb8fc8e21bc31d20a5/src/.vuepress/Demo/img/plane.svg" />
+      <img class="plane" src="https://raw.githubusercontent.com/songxingguo/brain/3e25ecd33265e46a7f92f2ce2b01a9997b745b79/src/.vuepress/public/assets/images/plane.svg" />
       <div class="rotate-container">
-        <img class="propeller" src="https://raw.githubusercontent.com/songxingguo/brain/5c9bede2508ddae634b7a5bb8fc8e21bc31d20a5/src/.vuepress/Demo/img/propeller.svg" />
+        <img class="propeller" src="https://raw.githubusercontent.com/songxingguo/brain/3e25ecd33265e46a7f92f2ce2b01a9997b745b79/src/.vuepress/public/assets/images/propeller.svg" />
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@ onMounted(() => {
   width: 118px;
   height: 118px;
   border-radius: 50%;
-  background: url(https://github.com/songxingguo/brain/blob/main/src/.vuepress/Demo/img/loading-Home.gif?raw=true);
+  background: url(https://raw.githubusercontent.com/songxingguo/brain/main/src/.vuepress/public/assets/images/loading-Home.gif);
   background-position: -10px -10px;
   background-color: #ffd200;
   position: absolute;
@@ -50,7 +50,7 @@ onMounted(() => {
 }
 @keyframes enlargeCircle {
   0 % {
-    background: url(https://github.com/songxingguo/brain/blob/main/src/.vuepress/Demo/img/loading-Home.gif?raw=true);
+    background: url(https://raw.githubusercontent.com/songxingguo/brain/main/src/.vuepress/public/assets/images/loading-Home.gif);
   }
   1% {
     background-image: none;
