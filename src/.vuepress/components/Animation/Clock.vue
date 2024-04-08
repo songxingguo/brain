@@ -124,39 +124,37 @@ li {
       `;
 
   const js = `
-window.onload = function() {
-    var scaleCont = document.getElementById('scale-container');
+  var scaleCont = document.getElementById('scale-container');
+  
+  for (var i = 0; i < 60; i++) {
+    scaleCont.innerHTML += '<li style="transform: rotate('+ i*6 +'deg);"></li>';
+  }
+  
+  // 绘制时间
+  function drawTime() {
+    var myDate = new Date();
+    var h = myDate.getHours();
+    var m = myDate.getMinutes();
+    var s = myDate.getSeconds();
+    
+    console.log(h,m,s);
+    
+    var hour = document.getElementsByClassName('hour')[0];
+    var minute = document.getElementsByClassName('minute')[0];
+    var second = document.getElementsByClassName('second')[0];
+//					var offset = ((m*6 + 180)/120); //时针偏移量
+    var offset = ((m*6)/360) * 30; //时针偏移量
+    
+    hour.style.transform = 'rotate('+  (h*30 + 180 + offset) +'deg)';
+    minute.style.transform = 'rotate('+  (m*6 + 180) +'deg)';
+    second.style.transform = 'rotate('+  (s*6 + 180) +'deg)';
+  }
+  
+  drawTime();
 
-    for (var i = 0; i < 60; i++) {
-      scaleCont.innerHTML += '<li style="transform: rotate('+ i*6 +'deg);"></li>';
-    }
-
-    // 绘制时间
-    function drawTime() {
-      var myDate = new Date();
-      var h = myDate.getHours();
-      var m = myDate.getMinutes();
-      var s = myDate.getSeconds();
-      
-      console.log(h,m,s);
-      
-      var hour = document.getElementsByClassName('hour')[0];
-      var minute = document.getElementsByClassName('minute')[0];
-      var second = document.getElementsByClassName('second')[0];
-    //					var offset = ((m*6 + 180)/120); //时针偏移量
-      var offset = ((m*6)/360) * 30; //时针偏移量
-      
-      hour.style.transform = 'rotate('+  (h*30 + 180 + offset) +'deg)';
-      minute.style.transform = 'rotate('+  (m*6 + 180) +'deg)';
-      second.style.transform = 'rotate('+  (s*6 + 180) +'deg)';
-    }
-
+  setInterval(function() {
     drawTime();
-
-    setInterval(function() {
-      drawTime();
-    }, 1000);
-}
+  }, 1000);
   `;
 
   new MiniSandbox({
