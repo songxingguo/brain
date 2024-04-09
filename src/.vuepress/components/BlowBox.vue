@@ -1,3 +1,4 @@
+
 <template>
   <div ref="el"></div>
 </template>
@@ -9,7 +10,7 @@ import useHtml from "@hooks/useHtml.js";
 const el = ref();
 
 onMounted(async () => {
-  const { html, css } = await useHtml("/demo/CSS3动画/倾斜的导航.html");
+  const { html, css } = await useHtml("/demo/Animation/BlowBox.html");
 
   new MiniSandbox({
     el: el.value,

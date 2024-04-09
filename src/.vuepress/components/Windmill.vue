@@ -1,15 +1,16 @@
+
 <template>
   <div ref="el"></div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
-import useHtml from "@hooks/useHtml";
+import useHtml from "@hooks/useHtml.js";
 
 const el = ref();
 
 onMounted(async () => {
-  const { html, css } = await useHtml("/demo/CSS3动画/风车练习.html");
+  const { html, css,  } = await useHtml("/demo/Animation/Windmill.html");
 
   new MiniSandbox({
     el: el.value,
@@ -17,10 +18,12 @@ onMounted(async () => {
       "index.html": {
         defaultValue: html,
         cssLibs: ["index.css"],
+        
       },
       "index.css": {
         defaultValue: css,
       },
+      
     },
     defaultConfig: {
       height: "500px",

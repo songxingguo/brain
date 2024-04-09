@@ -78,7 +78,7 @@ export default defineClientConfig({
 `;
 
 function genDemo() {
-  const files = listFile("../public/demo/CSS3动画");
+  const files = listFile("../public/demo/Animation");
   files.forEach(async (url) => {
     let data = fs.readFileSync(url, "utf8");
     const hasJs = data.includes(`</script>`);
@@ -99,8 +99,8 @@ function regCom() {
   files.forEach(async (url) => {
     console.log(url);
     const fileName = path.basename(url).replace(".vue", "");
-    const importStr = `import ${fileName} from "${url}";`;
-    const appStr = `app.component("${fileName}", fileName);`;
+    const importStr = `import ${fileName} from "${url.replace("../", "./")}";`;
+    const appStr = `app.component("${fileName}", ${fileName});`;
     imports.push(importStr);
     apps.push(appStr);
   });
@@ -109,7 +109,7 @@ function regCom() {
 }
 
 function main() {
-  // genDemo()
+  genDemo();
   regCom();
 }
 
