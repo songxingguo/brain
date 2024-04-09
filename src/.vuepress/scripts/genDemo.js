@@ -19,9 +19,8 @@ function listFile(dir) {
   return list;
 }
 
-// 读取文件
 // 创建Demo文件
-const genDemo = (url, hasJs, hasCss) => `
+const _genDemo = (url, hasJs, hasCss) => `
 <template>
   <div ref="el"></div>
 </template>
@@ -67,21 +66,51 @@ onMounted(async () => {
 `;
 
 // 添加组件配置
-// 添加到md中
+const _regCom = (imports, apps) => `
+import { defineClientConfig } from "vuepress/client";
+${imports}
 
-function main() {
+export default defineClientConfig({
+  enhance: ({ app, router, siteData }) => {
+    ${apps}
+  },
+});
+`;
+
+function genDemo() {
   const files = listFile("../public/demo/CSS3动画");
   files.forEach(async (url) => {
     let data = fs.readFileSync(url, "utf8");
     const hasJs = data.includes(`</script>`);
     const hasCss = data.includes(`</style>`);
     url = url.replace("../public", "");
-    const demo = genDemo(url, hasJs, hasCss);
+    const demo = _genDemo(url, hasJs, hasCss);
     const fileName = path.basename(url);
     console.log(url, demo);
     const demoPath = `../components/${fileName}`.replace("html", "vue");
     fs.writeFileSync(demoPath, demo);
   });
+}
+
+function regCom() {
+  const files = listFile("../components");
+  let imports = [];
+  let apps = [];
+  files.forEach(async (url) => {
+    console.log(url);
+    const fileName = path.basename(url).replace(".vue", "");
+    const importStr = `import ${fileName} from "${url}";`;
+    const appStr = `app.component("${fileName}", fileName);`;
+    imports.push(importStr);
+    apps.push(appStr);
+  });
+  const data = _regCom(imports.join("\n"), apps.join("\n"));
+  fs.writeFileSync(`../client.ts`, data);
+}
+
+function main() {
+  // genDemo()
+  regCom();
 }
 
 main();
