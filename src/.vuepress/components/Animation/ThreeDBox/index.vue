@@ -4,7 +4,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import useHtml from "./../../../hooks/useHtml.js";
+import useHtml from "@hooks/useHtml.js";
 const el = ref();
 
 onMounted(async () => {

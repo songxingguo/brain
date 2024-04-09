@@ -33,6 +33,10 @@ export default defineUserConfig({
       __dirname,
       "./components/toc.vue"
     ),
+    "@hooks": path.resolve(
+      __dirname,
+      "./hooks"
+    ),
   },
   // 插件配置
   plugins: [
