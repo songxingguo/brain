@@ -2,6 +2,8 @@
 
 import fs from "fs";
 import path from "path";
+const DEMO_DIR = "../public/demo/CSSAnimation";
+const COMPONENTS_DIR = "../components";
 
 // 遍历目录
 function listFile(dir) {
@@ -78,7 +80,7 @@ export default defineClientConfig({
 `;
 
 function genDemo() {
-  const files = listFile("../public/demo/CSSAnimation");
+  const files = listFile(DEMO_DIR);
   files.forEach(async (url) => {
     let data = fs.readFileSync(url, "utf8");
     const hasJs = data.includes(`</script>`);
@@ -93,7 +95,7 @@ function genDemo() {
 }
 
 function regCom() {
-  const files = listFile("../components");
+  const files = listFile(COMPONENTS_DIR);
   let imports = [];
   let apps = [];
   files.forEach(async (url) => {
