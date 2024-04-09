@@ -7,7 +7,7 @@ export default hopeTheme(
     docsDir: "/src",
     repo: "songxingguo/Brain",
     logo: "/avatar.png",
-    hostname: "https://brain.sunguoqi.com",
+    hostname: "https://brain.songxingguo.com",
 
     iconAssets: ["//at.alicdn.com/t/c/font_4184658_d8uj8sy867l.css"],
 
@@ -17,7 +17,7 @@ export default hopeTheme(
     displayFooter: false,
     blog: {
       description: "路虽远行则将至，事虽难做则必成！",
-      intro: "https://blog.sunguoqi.com/about",
+      intro: "https://resume.songxingguo.com",
       timeline: "好好学习，天天向上",
     },
     metaLocales: {
