@@ -78,7 +78,7 @@ export default defineClientConfig({
 `;
 
 function genDemo() {
-  const files = listFile("../public/demo/Animation");
+  const files = listFile("../public/demo/CSSAnimation");
   files.forEach(async (url) => {
     let data = fs.readFileSync(url, "utf8");
     const hasJs = data.includes(`</script>`);
