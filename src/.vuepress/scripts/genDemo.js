@@ -2,24 +2,33 @@
 
 import fs from "fs";
 import path from "path";
-const DEMO_DIR = "../public/demo/CSSAnimation";
+const DEMO_DIR = "../public/demo";
 const COMPONENTS_DIR = "../components";
 
 // 遍历目录
 function listFile(dir) {
   let list = [];
-  let arr = fs.readdirSync(dir);
-  arr.forEach(function (item) {
-    var fullpath = path.join(dir, item);
-    var stats = fs.statSync(fullpath);
-    if (stats.isDirectory()) {
-      listFile(fullpath);
-    } else {
-      list.push(fullpath);
-    }
-  });
+  function _listFile(dir) {
+    let arr = fs.readdirSync(dir);
+    arr.forEach(function (item) {
+      var fullpath = path.join(dir, item);
+      var stats = fs.statSync(fullpath);
+      if (stats.isDirectory()) {
+        _listFile(fullpath);
+      } else {
+        if (isVue(fullpath) || isHtml(fullpath)) list.push(fullpath);
+      }
+    });
+  }
+  _listFile(dir);
   return list;
 }
+
+// 判断是否为Vue
+const isVue = (filePath) => path.extname(filePath) === ".vue";
+
+// 判断是否为HTML
+const isHtml = (filePath) => path.extname(filePath) === ".html";
 
 // 创建Demo文件
 const _genDemo = (url, hasJs, hasCss) => `
@@ -88,7 +97,7 @@ function genDemo() {
     url = url.replace("../public", "");
     const demo = _genDemo(url, hasJs, hasCss);
     const fileName = path.basename(url);
-    console.log(url, demo);
+    console.log("创建组件：", url, demo);
     const demoPath = `../components/${fileName}`.replace("html", "vue");
     fs.writeFileSync(demoPath, demo);
   });
@@ -99,7 +108,7 @@ function regCom() {
   let imports = [];
   let apps = [];
   files.forEach(async (url) => {
-    console.log(url);
+    console.log("注册组件：", url);
     const fileName = path.basename(url).replace(".vue", "");
     const importStr = `import ${fileName} from "${url.replace("../", "./")}";`;
     const appStr = `app.component("${fileName}", ${fileName});`;
