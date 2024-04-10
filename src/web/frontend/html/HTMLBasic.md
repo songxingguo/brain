@@ -8,46 +8,46 @@ category:
   - 前端开发
 ---
 
-### 表单
-
-<From />
-
-### 猜图游戏
-
-<GuessingGame />
-
-### 改变文字大小
-
-<ChangeTextSize />
-
-### 幻灯片
-
-<PPT />
-
-### 聊天窗口
-
-<ChatWindow />
-
-### 轮播图
+### [轮播图](https://brain.songxingguo.com/demo/HTMLBasic/CarouselChart.html)
 
 <CarouselChart />
 
-### 平移切换图片
+### [改变文字大小](https://brain.songxingguo.com/demo/HTMLBasic/ChangeTextSize.html)
 
-<PanSwitchImage />
+<ChangeTextSize />
 
-### 图片的渐变切换
+### [聊天窗口](https://brain.songxingguo.com/demo/HTMLBasic/ChatWindow.html)
 
-<ImageGradient />
+<ChatWindow />
 
-### example
+### [example](https://brain.songxingguo.com/demo/HTMLBasic/example.html)
 
 <example />
 
-### HTML基础
+### [表单](https://brain.songxingguo.com/demo/HTMLBasic/From.html)
+
+<From />
+
+### [猜图游戏](https://brain.songxingguo.com/demo/HTMLBasic/GuessingGame.html)
+
+<GuessingGame />
+
+### [HTML基础](https://brain.songxingguo.com/demo/HTMLBasic/HTMLBasic.html)
 
 <HTMLBasic />
 
-### JD导航
+### [图片的渐变切换](https://brain.songxingguo.com/demo/HTMLBasic/ImageGradient.html)
+
+<ImageGradient />
+
+### [JD导航](https://brain.songxingguo.com/demo/HTMLBasic/JDNav.html)
 
 <JDNav />
+
+### [平移切换图片](https://brain.songxingguo.com/demo/HTMLBasic/PanSwitchImage.html)
+
+<PanSwitchImage />
+
+### [幻灯片](https://brain.songxingguo.com/demo/HTMLBasic/PPT.html)
+
+<PPT />

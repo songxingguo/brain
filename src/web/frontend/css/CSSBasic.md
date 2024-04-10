@@ -8,10 +8,10 @@ category:
   - 前端开发
 ---
 
-### 图片画廊
-
-<PictureGallery />
-
-### 响应式图片相册
+### [响应式图片相册](https://brain.songxingguo.com/demo/CSSBasic/PictureAlbum.html)
 
 <PictureAlbum />
+
+### [图片画廊](https://brain.songxingguo.com/demo/CSSBasic/PictureGallery.html)
+
+<PictureGallery />

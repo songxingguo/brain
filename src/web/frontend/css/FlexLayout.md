@@ -8,14 +8,14 @@ category:
   - 前端开发
 ---
 
-### 圣杯布局
-
-<HolyGrailLayout />
-
-### 骰子练习
+### [骰子练习](https://brain.songxingguo.com/demo/FlexLayout/DicePractice.html)
 
 <DicePractice />
 
-### 响应式页面
+### [圣杯布局](https://brain.songxingguo.com/demo/FlexLayout/HolyGrailLayout.html)
+
+<HolyGrailLayout />
+
+### [响应式页面](https://brain.songxingguo.com/demo/FlexLayout/ResponsivePage.html)
 
 <ResponsivePage />
