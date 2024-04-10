@@ -22,6 +22,11 @@ export const navBar = navbar([
     icon: "ai",
     link: "/ai/basic/test.md",
   },
+  {
+    text: "时光日志",
+    icon: "server",
+    link: "/journal/",
+  },
   // {
   //   text: "实用英语",
   //   icon: "language",

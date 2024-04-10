@@ -362,4 +362,18 @@ export const dv = arraySidebar([
     ],
     collapsible: true,
   },
+  {
+    text: "音视频",
+    icon: "mobile",
+    prefix: "vgis/",
+    collapsible: true,
+    children:[
+      {
+        text: "WebRTC",
+        prefix: "WebRTC/",
+        children: "structure",
+        collapsible: true,
+      }
+    ]
+  },
 ]);
