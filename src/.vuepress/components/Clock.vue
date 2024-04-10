@@ -10,7 +10,7 @@ import useHtml from "@hooks/useHtml.js";
 const el = ref();
 
 onMounted(async () => {
-  const { html, css, js } = await useHtml("/demo/Animation/Clock.html");
+  const { html, css, js } = await useHtml("/demo/CSSAnimation/Clock.html");
 
   new MiniSandbox({
     el: el.value,
