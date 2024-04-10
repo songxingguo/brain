@@ -1,7 +1,7 @@
 import axios from "axios";
 const regCss = /<style[\s\S]*>[\s\S]*<\/style>/;
 const regScript = /<script[\s\S]*>[\s\S]*<\/script>/;
-const regHtml = /<body>[\s\S]*<\/body>/;
+const regHtml = /<body[\s\S]*>[\s\S]*<\/body>/;
 
 function resolveCss(htmlStr) {
   const css = regCss.exec(htmlStr);
@@ -22,7 +22,7 @@ function resolveHtml(htmlStr) {
   if (!html) return;
   const newHtml = html[0]
     .replace(regScript, "")
-    .replace("<body>", "")
+    .replace(/<body[\s\S]*?>/, "")
     .replace("</body>", "");
   return newHtml;
 }
