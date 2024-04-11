@@ -1,9 +1,11 @@
-// 遍历目录
+#!/usr/bin/env node
 
+// 遍历目录
+import { log } from "console";
 import fs from "fs";
 import path from "path";
-const DEMO_DIR = "../public/demo";
-const COMPONENTS_DIR = "../components";
+const DEMO_DIR = "src/.vuepress/public/demo";
+const COMPONENTS_DIR = "src/.vuepress/components";
 
 // 遍历目录
 function listFile(dir) {
@@ -94,11 +96,14 @@ function genDemo() {
     let data = fs.readFileSync(url, "utf8");
     const hasJs = data.includes(`</script>`);
     const hasCss = data.includes(`</style>`);
-    url = url.replace("../public", "");
+    url = url.replace("src/.vuepress/public", "");
     const demo = _genDemo(url, hasJs, hasCss);
     const fileName = path.basename(url);
     console.log("创建组件：", url, demo);
-    const demoPath = `../components/${fileName}`.replace("html", "vue");
+    const demoPath = `src/.vuepress/components/${fileName}`.replace(
+      "html",
+      "vue"
+    );
     fs.writeFileSync(demoPath, demo);
   });
 }
