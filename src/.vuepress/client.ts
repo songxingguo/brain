@@ -21,10 +21,10 @@ import PictureGallery from "./components/PictureGallery.vue";
 import ResponsivePage from "./components/ResponsivePage.vue";
 import ThreeDBox from "./components/ThreeDBox.vue";
 import TiltNavigation from "./components/TiltNavigation.vue";
+import Toc from "./components/Toc.vue";
+import WeChat from "./components/WeChat.vue";
 import Windmill from "./components/Windmill.vue";
 import example from "./components/example.vue";
-import toc from "./components/toc.vue";
-import wechat from "./components/wechat.vue";
 
 export default defineClientConfig({
   enhance: ({ app, router, siteData }) => {
@@ -49,9 +49,9 @@ app.component("PictureGallery", PictureGallery);
 app.component("ResponsivePage", ResponsivePage);
 app.component("ThreeDBox", ThreeDBox);
 app.component("TiltNavigation", TiltNavigation);
+app.component("Toc", Toc);
+app.component("WeChat", WeChat);
 app.component("Windmill", Windmill);
 app.component("example", example);
-app.component("toc", toc);
-app.component("wechat", wechat);
   },
 });

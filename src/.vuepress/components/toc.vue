@@ -1,7 +1,7 @@
 <template>
   <TOC>
     <template #after>
-      <a href="https://box.sunguoqi.com/weixin_mp">
+      <a href="https://raw.githubusercontent.com/songxingguo/brain/87d787e5797e86e01a35fe5d9d927eb0cd241c7e/src/.vuepress/public/assets/images/songyu_green.png">
         <div id="flip-wrapper">
           <div id="flip-content">
             <div class="face"></div>
@@ -50,8 +50,8 @@ import TOC from "vuepress-theme-hope/modules/info/components/TOC.js";
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: url(https://files.sunguoqi.com/images/202312021655002.webp) center center
-    no-repeat;
+  background: url(https://raw.githubusercontent.com/songxingguo/brain/87d787e5797e86e01a35fe5d9d927eb0cd241c7e/src/.vuepress/public/assets/images/songyu_green.png)
+    center center no-repeat;
   background-size: 100%;
   border-radius: 6px;
 }
@@ -61,8 +61,8 @@ import TOC from "vuepress-theme-hope/modules/info/components/TOC.js";
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   box-sizing: border-box;
-  background: url(https://files.sunguoqi.com/images/202312021657605.webp) center center
-    no-repeat;
+  background: url(https://raw.githubusercontent.com/songxingguo/brain/87d787e5797e86e01a35fe5d9d927eb0cd241c7e/src/.vuepress/public/assets/images/songyu_white.png)
+    center center no-repeat;
   background-size: 100%;
 }
 </style>

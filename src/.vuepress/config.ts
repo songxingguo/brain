@@ -31,7 +31,7 @@ export default defineUserConfig({
   alias: {
     "@theme-hope/modules/info/components/TOC": path.resolve(
       __dirname,
-      "./components/toc.vue"
+      "./components/Toc.vue"
     ),
     "@hooks": path.resolve(
       __dirname,
