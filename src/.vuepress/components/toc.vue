@@ -33,7 +33,7 @@ import TOC from "vuepress-theme-hope/modules/info/components/TOC.js";
 
 #flip-content {
   width: 100%;
-  height: 100%;
+  height: 120%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: cubic-bezier(0, 0, 0, 1.29) 0.5s;
