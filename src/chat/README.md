@@ -5,3 +5,5 @@
   frameborder="0"
   allow="camera;microphone"
 ></iframe>
+
+[全屏查看](https://brain.songxingguo.com/chat.html)
