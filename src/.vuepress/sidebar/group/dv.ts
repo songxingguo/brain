@@ -75,7 +75,7 @@ export const dv = arraySidebar([
       {
         text: "快速上手",
         icon: "discover",
-        prefix: "00/",
+        prefix: "getting_started/",
         children: "structure",
         collapsible: true,
       },

@@ -115,13 +115,13 @@ function regCom() {
   files.forEach(async (url) => {
     console.log("注册组件：", url);
     const fileName = path.basename(url).replace(".vue", "");
-    const importStr = `import ${fileName} from "${url.replace("../", "./")}";`;
+    const importStr = `import ${fileName} from "${url.replace("src/.vuepress/", "./")}";`;
     const appStr = `app.component("${fileName}", ${fileName});`;
     imports.push(importStr);
     apps.push(appStr);
   });
   const data = _regCom(imports.join("\n"), apps.join("\n"));
-  fs.writeFileSync(`../client.ts`, data);
+  fs.writeFileSync(`src/.vuepress/client.ts`, data);
 }
 
 function main() {
