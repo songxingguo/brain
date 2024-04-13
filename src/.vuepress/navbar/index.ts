@@ -27,11 +27,11 @@ export const navBar = navbar([
     icon: "server",
     link: "/journal/",
   },
-  // {
-  //   text: "实用英语",
-  //   icon: "language",
-  //   link: "/en/basic/test.md",
-  // },
+  {
+    text: "在线聊天",
+    icon: "desktop",
+    link: "/chat/",
+  },
   // {
   //   text: "更新历史",
   //   icon: "time",
