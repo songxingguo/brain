@@ -66,3 +66,16 @@
 .mini-sandbox {
   margin: 20px 0;
 }
+
+// 页面特殊样式
+.chat-container {
+  .vp-page{
+    padding-inline-end: unset !important;
+  }
+  .theme-hope-content {
+    max-width: none;
+  }
+  .chat-content {
+    height: 85vh;
+  }
+} 
