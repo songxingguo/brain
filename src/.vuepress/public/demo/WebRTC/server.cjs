@@ -4,7 +4,7 @@ var log4js = require("log4js");
 var http = require("http");
 var https = require("https");
 var fs = require("fs");
-var socketIo = require("socket.io");
+var { Server } = require("socket.io");
 
 var express = require("express");
 var serveIndex = require("serve-index");
@@ -47,9 +47,9 @@ var options = {
 
 //https server
 var https_server = https.createServer(options, app);
-var io = socketIo.listen(https_server);
+var io = new Server(https_server);
 
-io.sockets.on("connection", (socket) => {
+io.on("connection", (socket) => {
   socket.on("message", (room, data) => {
     logger.debug("message, room: " + room + ", data, type:" + data.type);
     socket.to(room).emit("message", room, data);
