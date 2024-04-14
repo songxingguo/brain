@@ -47,7 +47,10 @@ var options = {
 
 //https server
 var https_server = https.createServer(options, app);
-var io = new Server(https_server);
+
+const io = new Server(http_server, {
+  allowEIO3: true, // false by default
+});
 
 io.on("connection", (socket) => {
   socket.on("message", (room, data) => {
@@ -97,4 +100,4 @@ io.on("connection", (socket) => {
   });
 });
 
-https_server.listen(443, "0.0.0.0");
+https_server.listen(4413, "0.0.0.0");
