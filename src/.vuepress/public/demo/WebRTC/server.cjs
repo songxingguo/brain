@@ -7,7 +7,6 @@ var fs = require("fs");
 var { Server } = require("socket.io");
 
 var express = require("express");
-var serveIndex = require("serve-index");
 
 var USERCOUNT = 3;
 
@@ -33,8 +32,11 @@ log4js.configure({
 var logger = log4js.getLogger();
 
 var app = express();
-app.use(serveIndex("./public"));
 app.use(express.static("./public"));
+
+app.get("/", function (req, res) {
+  res.send("Hello World!");
+});
 
 //http server
 var http_server = http.createServer(app);
