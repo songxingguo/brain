@@ -365,7 +365,7 @@ export const dv = arraySidebar([
   {
     text: "音视频",
     icon: "mobile",
-    prefix: "vgis/",
+    prefix: "audio-visual/",
     collapsible: true,
     children:[
       {
