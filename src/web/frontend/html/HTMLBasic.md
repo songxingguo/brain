@@ -22,7 +22,7 @@ category:
 
 ### [example](https://brain.songxingguo.com/demo/HTMLBasic/example.html)
 
-<example />
+<HTMLExample />
 
 ### [表单](https://brain.songxingguo.com/demo/HTMLBasic/From.html)
 
@@ -32,7 +32,7 @@ category:
 
 <GuessingGame />
 
-### [HTML基础](https://brain.songxingguo.com/demo/HTMLBasic/HTMLBasic.html)
+### [HTML 基础](https://brain.songxingguo.com/demo/HTMLBasic/HTMLBasic.html)
 
 <HTMLBasic />
 
@@ -40,7 +40,7 @@ category:
 
 <ImageGradient />
 
-### [JD导航](https://brain.songxingguo.com/demo/HTMLBasic/JDNav.html)
+### [JD 导航](https://brain.songxingguo.com/demo/HTMLBasic/JDNav.html)
 
 <JDNav />
 
