@@ -96,18 +96,6 @@ onMounted(async () => {
 </script>
 `;
 
-// 添加组件配置
-const _regCom = (imports, apps) => `
-import { defineClientConfig } from "vuepress/client";
-${imports}
-
-export default defineClientConfig({
-  enhance: ({ app, router, siteData }) => {
-    ${apps}
-  },
-});
-`;
-
 function genDemo() {
   const files = listFile(DEMO_DIR);
   console.log("genDemo", files);
@@ -129,6 +117,18 @@ function genDemo() {
   });
 }
 
+// 添加组件配置
+const _regCom = (imports, apps) => `
+import { defineClientConfig } from "vuepress/client";
+${imports}
+
+export default defineClientConfig({
+  enhance: ({ app, router, siteData }) => {
+    ${apps}
+  },
+});
+`;
+
 function regCom() {
   const files = listFile(COMPONENTS_DIR);
   let imports = [];
@@ -148,9 +148,57 @@ function regCom() {
   fs.writeFileSync(`src/.vuepress/client.ts`, data);
 }
 
+const _genMarkDown = (fileName, coms) => `---
+title: ${fileName}
+icon: post
+order: 1
+author: 宋玉
+date: 2024-04-15
+category:
+  - 分类
+tag:
+  - 标签
+---
+
+${coms}
+`;
+
+const getTitle = (url) => {
+  let data = fs.readFileSync(url, "utf8");
+  const regTitle = /<title[\s\S]*>[\s\S]*<\/title>/;
+  const titleStr = regTitle.exec(data);
+  if (!titleStr) return;
+  const title = titleStr[0]
+    .replace("</title>", "")
+    .replace(/<title[\s\S]*?>/, "");
+  return title;
+};
+
+function genMarkDown() {
+  const files = listFile("src/.vuepress/public/demo/WebRTC");
+  const comTemps = [];
+  files.forEach((url) => {
+    const comName = path.basename(url, ".html");
+    console.log("comName", comName);
+    const comPath = url.replace(DEMO_DIR, "");
+    const comTitle = getTitle(url);
+    const comTemp = `
+### [${comTitle}](https://brain.songxingguo.com/demo/${comPath})
+  
+<${comName} />
+`;
+    comTemps.push(comTemp);
+  });
+
+  const data = _genMarkDown("WebRTC DEMO", comTemps.join("\n"));
+  const fileName = `src/dv/audio-visual/WebRTC/WebRTCDEMO.md`;
+  fs.writeFileSync(fileName, data);
+}
+
 function main() {
-  genDemo();
-  regCom();
+  // genDemo();
+  // regCom();
+  genMarkDown();
 }
 
 main();
