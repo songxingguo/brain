@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 // 遍历目录
-import { log } from "console";
 import fs from "fs";
 import path from "path";
 const DEMO_DIR = "src/.vuepress/public/demo";
@@ -174,7 +173,7 @@ const getTitle = (url) => {
   return title;
 };
 
-function genMarkDown() {
+function genMarkDown(name, dir) {
   const files = listFile("src/.vuepress/public/demo/WebRTC");
   const comTemps = [];
   files.forEach((url) => {
@@ -190,15 +189,16 @@ function genMarkDown() {
     comTemps.push(comTemp);
   });
 
-  const data = _genMarkDown("WebRTC DEMO", comTemps.join("\n"));
-  const fileName = `src/dv/audio-visual/WebRTC/WebRTCDEMO.md`;
+  const data = _genMarkDown(name, comTemps.join("\n"));
+  const fileName = `${dir}/${name}.md`;
   fs.writeFileSync(fileName, data);
 }
 
 function main() {
-  // genDemo();
-  // regCom();
-  genMarkDown();
+  genDemo();
+  regCom();
 }
 
 main();
+
+export { genMarkDown };
