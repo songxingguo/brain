@@ -26,11 +26,29 @@ function listFile(dir) {
   return list;
 }
 
+const _isCamelCase = (str) => {
+  if (/[a-z]/.test(str[0])) {
+    // 检查首字母是否为大写字母
+    return false;
+  }
+  return true;
+};
+
 // 判断是否为Vue
-const isVue = (filePath) => path.extname(filePath) === ".vue";
+const isVue = (filePath) => {
+  const fileName = path.basename(filePath, ".vue");
+  const isCamelCase = _isCamelCase(fileName);
+  const isVue = path.extname(filePath) === ".vue";
+  return isVue & isCamelCase;
+};
 
 // 判断是否为HTML
-const isHtml = (filePath) => path.extname(filePath) === ".html";
+const isHtml = (filePath) => {
+  const fileName = path.basename(filePath, ".html");
+  const isCamelCase = _isCamelCase(fileName);
+  const ishtml = path.extname(filePath) === ".html";
+  return ishtml & isCamelCase;
+};
 
 // 创建Demo文件
 const _genDemo = (url, hasJs, hasCss) => `
@@ -92,19 +110,22 @@ export default defineClientConfig({
 
 function genDemo() {
   const files = listFile(DEMO_DIR);
+  console.log("genDemo", files);
   files.forEach(async (url) => {
     let data = fs.readFileSync(url, "utf8");
     const hasJs = data.includes(`</script>`);
     const hasCss = data.includes(`</style>`);
-    url = url.replace("src/.vuepress/public", "");
-    const demo = _genDemo(url, hasJs, hasCss);
-    const fileName = path.basename(url);
-    console.log("创建组件：", url, demo);
-    const demoPath = `src/.vuepress/components/${fileName}`.replace(
-      "html",
-      "vue"
-    );
-    fs.writeFileSync(demoPath, demo);
+    const newUrl = url.replace("src/.vuepress/public", "");
+    const demo = _genDemo(newUrl, hasJs, hasCss);
+    const fileName = url
+      .replace(DEMO_DIR, COMPONENTS_DIR)
+      .replace("html", "vue");
+    const filePath = path.dirname(fileName);
+    if (!fs.existsSync(filePath)) {
+      fs.mkdirSync(filePath, { recursive: true });
+    }
+    // console.log("创建组件：", url, demo);
+    fs.writeFileSync(fileName, demo);
   });
 }
 
@@ -115,7 +136,10 @@ function regCom() {
   files.forEach(async (url) => {
     console.log("注册组件：", url);
     const fileName = path.basename(url).replace(".vue", "");
-    const importStr = `import ${fileName} from "${url.replace("src/.vuepress/", "./")}";`;
+    const importStr = `import ${fileName} from "${url.replace(
+      "src/.vuepress/",
+      "./"
+    )}";`;
     const appStr = `app.component("${fileName}", ${fileName});`;
     imports.push(importStr);
     apps.push(appStr);
