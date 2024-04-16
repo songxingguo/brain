@@ -6,7 +6,7 @@ import { createMeshGroup } from "./components/meshGroup.js";
 import { createControls } from "./systems/controls.js";
 import { createRenderer } from "./systems/renderer.js";
 import { Resizer } from "./systems/Resizer.js";
-import { Loop } from "./systems/loop.js";
+import { Loop } from "./systems/Loop.js";
 
 class World {
   constructor(container) {
