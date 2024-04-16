@@ -15,17 +15,14 @@ h1 {
   width: 100%;
   /* make sure that the heading is drawn on top */
   z-index: 1;
-  margin: 40px 60px;
+  margin: 20px 0 40px;
 }
 
 .scene-container {
-  display: flex;
+  display: grid;
   justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.round {
-  border-radius: 50%;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-gap: 10px;
 }
 
 .inline-scene {
@@ -38,7 +35,7 @@ h1 {
   height: 400px;
   overflow: hidden;
 }
-.inline-scene + .inline-scene {
-  margin-top: 20px;
-  margin-left: 20px;
+
+.round {
+  border-radius: 50%;
 }
