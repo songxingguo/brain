@@ -12,7 +12,7 @@ tag:
 
 ### 初始化场景
 
-首先是分别创建场景、相机和渲染器，三者缺一不可，并将渲染器渲染的结果挂载到DOM元素上。最后将在`render`函数绑定到`requestAnimationFrame`上, 并执行渲染函数，每次重绘都会重新执行`render`函数。
+首先是分别创建场景、相机和渲染器，三者缺一不可，并将渲染器渲染的结果挂载到 DOM 元素上。最后将在`render`函数绑定到`requestAnimationFrame`上, 并执行渲染函数，每次重绘都会重新执行`render`函数。
 
 - 场景（scene）：场景一个物体的容器【通俗理解装东西的嘛】，开发者可以将需要的角色放入场景中,例如苹果，葡萄。同时， 角色自身也管理着其在场景中的位置。
 - 相机（camera）：相机的作用就是面对场景,在场景中取一个合适的景，把它拍下来。【可以想象成人的眼睛】
@@ -68,9 +68,9 @@ const helper = new THREE.CameraHelper(camera);
 scene.add(helper);
 ```
 
-### [模型控制](https://threejs.org/docs/?q=gltfLoader#examples/zh/loaders/GLTFLoader)
+### 模型控制
 
-场景中拥有了正方体，但我能并不能和它进行交互，因此需要 `OrbitControls` 来对场景中的内容能控制。需要注意的是 `OrbitControls` 是一个控制插件，并没有在Three.js的核心模块中，而是在`examples/jsm/controls/` 文件夹中，我们这里为了方便使用采用的是CDN的方式进行引入。
+场景中拥有了正方体，但我能并不能和它进行交互，因此需要 `OrbitControls` 来对场景中的内容能控制。需要注意的是 `OrbitControls` 是一个控制插件，并没有在 Three.js 的核心模块中，而是在`examples/jsm/controls/` 文件夹中，我们这里为了方便使用采用的是 CDN 的方式进行引入。
 
 ```javascript
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
@@ -80,7 +80,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 ### [MVP](https://brain.songxingguo.com/demo/Three/MVP.html)
 
-下面是通过上述步骤搭建的一个最新可行性DEMO，你可以通过注释代码方式来动态观察每个部分不同的作用。
+下面是通过上述步骤搭建的一个最新可行性 DEMO，你可以通过注释代码方式来动态观察每个部分不同的作用。
 
 <MVP />
 ```
