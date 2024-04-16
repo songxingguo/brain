@@ -37,6 +37,7 @@ class World {
     // move the target to the center of the front bird
     controls.target.copy(parrot.position);
 
+    loop.updatables.push(parrot, flamingo, stork);
     scene.add(parrot, flamingo, stork);
   }
 
