@@ -178,7 +178,6 @@ function genMarkDown(name, dir) {
   const comTemps = [];
   files.forEach((url) => {
     const comName = path.basename(url, ".html");
-    console.log("comName", comName);
     const comPath = url.replace(DEMO_DIR, "");
     const comTitle = getTitle(url);
     const comTemp = `
@@ -187,6 +186,7 @@ function genMarkDown(name, dir) {
 <${comName} />
 `;
     comTemps.push(comTemp);
+    console.log("添加组件", comName, comTitle);
   });
 
   const data = _genMarkDown(name, comTemps.join("\n"));
@@ -194,11 +194,8 @@ function genMarkDown(name, dir) {
   fs.writeFileSync(fileName, data);
 }
 
-function main() {
+export default function main(name, dir) {
   genDemo();
   regCom();
+  genMarkDown(name, dir);
 }
-
-main();
-
-export { genMarkDown };

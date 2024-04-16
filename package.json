@@ -10,7 +10,7 @@
     "dev": "vuepress-vite dev src",
     "update-package": "pnpm dlx vp-update",
     "demo": "src/.vuepress/scripts/genDemo.js",
-    "md": "src/.vuepress/scripts/genMarkDown.js"
+    "md": "node src/.vuepress/scripts/genMarkDown.js"
   },
   "dependencies": {
     "@types/katex": "0.16.7",
