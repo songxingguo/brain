@@ -1,16 +1,24 @@
-import { World } from "./World.js";
+import { World } from "./World/World.js";
+import { World as TrainWorld } from "./World/TrainWorld.js";
+import { World as CubeWorld } from "./World/CubeWorld.js";
+import { World as BallWorld } from "./World/BallWorld.js";
 
 async function main() {
-  // Get a reference to the container element
-  const container = document.querySelector("#scene-container");
+  const cubeContainer = document.getElementById("cube-container");
+  const cubeWorld = new CubeWorld(cubeContainer);
+  cubeWorld.start();
 
-  // create a new world
+  const ballContainer = document.getElementById("ball-container");
+  const ballWorld = new BallWorld(ballContainer);
+  ballWorld.start();
+
+  const trainContainer = document.getElementById("train-container");
+  const trainWorld = new TrainWorld(trainContainer);
+  trainWorld.start();
+
+  const container = document.getElementById("birds-container");
   const world = new World(container);
-
-  // complete async tasks
   await world.init();
-
-  // start the animation loop
   world.start();
 }
 

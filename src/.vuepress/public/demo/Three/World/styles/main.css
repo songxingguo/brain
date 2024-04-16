@@ -1,7 +1,6 @@
 body {
   /* remove margins and scroll bars */
   margin: 0;
-  overflow: hidden;
 
   /* style text */
   text-align: center;
@@ -13,17 +12,33 @@ body {
 }
 
 h1 {
-  /* position the heading */
-  position: absolute;
   width: 100%;
-
   /* make sure that the heading is drawn on top */
   z-index: 1;
+  margin: 40px 60px;
 }
 
-#scene-container {
-  /* tell our scene container to take up the full page */
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.scene-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.inline-scene {
+  display: flex;
+  color: silver;
+  position: relative;
+  border: 1px solid silver;
+  box-shadow: 1px 1px 10px 1px silver;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.inline-scene + .inline-scene {
+  margin-top: 20px;
+  margin-left: 20px;
 }
