@@ -6,42 +6,36 @@ import { createMeshGroup } from "./components/meshGroup.js";
 import { createControls } from "./systems/controls.js";
 import { createRenderer } from "./systems/renderer.js";
 import { Resizer } from "./systems/Resizer.js";
-import { Loop } from "./systems/Loop.js";
-
-let camera;
-let controls;
-let renderer;
-let scene;
-let loop;
+import { Loop } from "./systems/loop.js";
 
 class World {
   constructor(container) {
-    camera = createCamera();
-    renderer = createRenderer();
-    scene = createScene();
-    loop = new Loop(camera, scene, renderer);
-    container.append(renderer.domElement);
-    controls = createControls(camera, renderer.domElement);
+    this.camera = createCamera();
+    this.renderer = createRenderer();
+    this.scene = createScene();
+    this.loop = new Loop(this.camera, this.scene, this.renderer);
+    container.append(this.renderer.domElement);
+    this.controls = createControls(this.camera, this.renderer.domElement);
 
     const { ambientLight, mainLight } = createLights();
     const meshGroup = new createMeshGroup();
 
-    loop.updatables.push(controls, meshGroup);
-    scene.add(ambientLight, mainLight, meshGroup);
+    this.loop.updatables.push(this.controls, meshGroup);
+    this.scene.add(ambientLight, mainLight, meshGroup);
 
-    const resizer = new Resizer(container, camera, renderer);
+    const resizer = new Resizer(container, this.camera, this.renderer);
   }
 
   render() {
-    renderer.render(scene, camera);
+    this.renderer.render(this.scene, this.camera);
   }
 
   start() {
-    loop.start();
+    this.loop.start();
   }
 
   stop() {
-    loop.stop();
+    this.loop.stop();
   }
 }
 

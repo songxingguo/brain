@@ -8,49 +8,43 @@ import { createRenderer } from "./systems/renderer.js";
 import { Resizer } from "./systems/Resizer.js";
 import { Loop } from "./systems/Loop.js";
 
-let camera;
-let controls;
-let renderer;
-let scene;
-let loop;
-
 class World {
   constructor(container) {
-    camera = createCamera();
-    renderer = createRenderer();
-    scene = createScene();
-    loop = new Loop(camera, scene, renderer);
-    container.append(renderer.domElement);
-    controls = createControls(camera, renderer.domElement);
+    this.camera = createCamera();
+    this.renderer = createRenderer();
+    this.scene = createScene();
+    this.loop = new Loop(this.camera, this.scene, this.renderer);
+    container.append(this.renderer.domElement);
+    this.controls = createControls(this.camera, this.renderer.domElement);
 
     const { ambientLight, mainLight } = createLights();
 
-    loop.updatables.push(controls);
-    scene.add(ambientLight, mainLight);
+    this.loop.updatables.push(this.controls);
+    this.scene.add(ambientLight, mainLight);
 
-    const resizer = new Resizer(container, camera, renderer);
+    const resizer = new Resizer(container, this.camera, this.renderer);
   }
 
   async init() {
     const { parrot, flamingo, stork } = await loadBirds();
 
     // move the target to the center of the front bird
-    controls.target.copy(parrot.position);
+    this.controls.target.copy(parrot.position);
 
-    loop.updatables.push(parrot, flamingo, stork);
-    scene.add(parrot, flamingo, stork);
+    this.loop.updatables.push(parrot, flamingo, stork);
+    this.scene.add(parrot, flamingo, stork);
   }
 
   render() {
-    renderer.render(scene, camera);
+    this.renderer.render(this.scene, this.camera);
   }
 
   start() {
-    loop.start();
+    this.loop.start();
   }
 
   stop() {
-    loop.stop();
+    this.loop.stop();
   }
 }
 
