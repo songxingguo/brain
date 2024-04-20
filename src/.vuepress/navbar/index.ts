@@ -23,9 +23,8 @@ export const navBar = navbar([
     link: "/ai/basic/test.md",
   },
   {
-    text: "时光日志",
-    icon: "server",
-    link: "/journal/",
+    text: "🌱 数字花园",
+    link: "https://garden.songxingguo.com/",
   },
   {
     text: "在线聊天",
