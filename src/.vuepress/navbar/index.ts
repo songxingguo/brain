@@ -26,11 +26,11 @@ export const navBar = navbar([
     text: "🌱 数字花园",
     link: "https://garden.songxingguo.com/",
   },
-  {
-    text: "在线聊天",
-    icon: "desktop",
-    link: "/chat/",
-  },
+  // {
+  //   text: "在线聊天",
+  //   icon: "desktop",
+  //   link: "/chat/",
+  // },
   // {
   //   text: "更新历史",
   //   icon: "time",
