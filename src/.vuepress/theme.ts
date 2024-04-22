@@ -40,9 +40,9 @@ export default hopeTheme(
       comment: {
         provider: "Giscus",
         repo:'songxingguo/brain',
-        repoId:'R_kgDOJNZRqA',
+        repoId:'MDEwOlJlcG9zaXRvcnkxNDgxMTkxMjA=',
         category:'General',
-        categoryId:'DIC_kwDOJNZRqM4CWd6B',
+        categoryId:'DIC_kwDOCNQeUM4Ce0J8',
         mapping:'title',
         strict:true,
         reactionsEnabled:true,
