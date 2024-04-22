@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas绘制直线</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.moveTo(50, 50);
+      ctx.lineTo(150, 150);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
