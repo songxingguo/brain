@@ -174,7 +174,7 @@ const getTitle = (url) => {
 };
 
 function genMarkDown(name, dir) {
-  const files = listFile("src/.vuepress/public/demo/WebRTC");
+  const files = listFile(dir);
   const comTemps = [];
   files.forEach((url) => {
     const comName = path.basename(url, ".html");
