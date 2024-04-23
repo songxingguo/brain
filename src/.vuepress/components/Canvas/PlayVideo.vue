@@ -10,7 +10,7 @@ import useHtml from "@hooks/useHtml.js";
 const el = ref();
 
 onMounted(async () => {
-  const { html, css,  } = await useHtml("/demo/Canvas/PlayVideo.html");
+  const { html, css, js } = await useHtml("/demo/Canvas/PlayVideo.html");
 
   new MiniSandbox({
     el: el.value,
@@ -18,10 +18,12 @@ onMounted(async () => {
       "index.html": {
         defaultValue: html,
         
-        
+        jsLibs: ["index.js"],
       },
       
-      
+      "index.js": {
+        defaultValue: js,
+      },
     },
     defaultConfig: {
       height: "500px",
