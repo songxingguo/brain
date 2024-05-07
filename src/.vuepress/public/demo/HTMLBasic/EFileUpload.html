@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElementUI文件上传</title>
+    <!-- Import style -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/element-plus/dist/index.css"
+    />
+    <!-- Import Vue 3 -->
+    <script src="//cdn.jsdelivr.net/npm/vue@3"></script>
+    <!-- Import component library -->
+    <script src="//cdn.jsdelivr.net/npm/element-plus"></script>
+  </head>
+  <body>
+    <div id="app">
+      <el-upload
+        :file-list="fileList"
+        action="http://rap2api.taobao.org/app/mock/data/2079322"
+        multiple
+        :limit="3"
+      >
+        <el-button type="primary">Click to upload</el-button>
+      </el-upload>
+    </div>
+
+    <script type="module">
+      const App = {
+        setup() {},
+      };
+      const app = Vue.createApp(App);
+      app.use(ElementPlus);
+      app.mount("#app");
+    </script>
+  </body>
+</html>
