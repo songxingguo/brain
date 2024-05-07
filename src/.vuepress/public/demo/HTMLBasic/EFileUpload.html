@@ -10,7 +10,7 @@
       href="//cdn.jsdelivr.net/npm/element-plus/dist/index.css"
     />
     <!-- Import Vue 3 -->
-    <script src="//cdn.jsdelivr.net/npm/vue@3"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Import component library -->
     <script src="//cdn.jsdelivr.net/npm/element-plus"></script>
   </head>
@@ -18,19 +18,79 @@
     <div id="app">
       <el-upload
         :file-list="fileList"
-        action="http://rap2api.taobao.org/app/mock/data/2079322"
+        :auto-upload="false"
+        :on-change="uploadChange"
         multiple
         :limit="3"
       >
-        <el-button type="primary">Click to upload</el-button>
+        <el-button type="primary">{{message}}</el-button>
       </el-upload>
+      <el-button type="primary" @click="submitUpload">确 定</el-button>
     </div>
 
-    <script type="module">
+    <script>
+      const { createApp, ref } = Vue;
       const App = {
-        setup() {},
+        setup() {
+          const message = ref("点击上传");
+          const fileList = ref([]);
+          /**
+           * @description: 封装fetch
+           * @param {Object} FetchConfig fetch config
+           * @return {Promise} fetch result
+           */
+          const requestApi = ({ url, method = "GET", ...fetchProps }) => {
+            return (
+              fetch(url, {
+                method,
+                ...fetchProps,
+              })
+                //返回请求成功的结果
+                .then((res) => res && res.status === 200 && res.json())
+                .catch((err) => alert("未知错误"))
+                .then((res) => res)
+            );
+          };
+
+          /**
+           * @description: 文件上传 - 请求接口(这里使用的是Mock接口,随机返回success)
+           * @param {FormData} formData
+           * @return {*}
+           */
+          const handleUploadFile = (formData = {}) =>
+            requestApi({
+              url: `http://rap2api.taobao.org/app/mock/data/2079322`,
+              method: "POST",
+              body: formData,
+            });
+
+          const submitUpload = () => {
+            let formData = new FormData();
+            // Array.from() 将文件列表数据转换为可遍历数组
+            Array.from(fileList).forEach((item) =>
+              formData.append("uploadFile", item)
+            );
+            console.log(formData);
+            // 调用接口上传文件
+            handleUploadFile(formData)
+              .then((res) => {
+                if (res && res.success) {
+                  alert("上传成功");
+                  //处理结果
+                } else {
+                  alert(res?.message || "上传失败");
+                }
+                console.log(res);
+              })
+              .catch((err) => alert("出错"));
+          };
+          const uploadChange = (file, files) => {
+            console.log("file, files", file, files);
+          };
+          return { message, submitUpload, uploadChange };
+        },
       };
-      const app = Vue.createApp(App);
+      const app = createApp(App);
       app.use(ElementPlus);
       app.mount("#app");
     </script>
