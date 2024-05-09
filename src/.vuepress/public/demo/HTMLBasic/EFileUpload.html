@@ -13,38 +13,30 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Import component library -->
     <script src="//cdn.jsdelivr.net/npm/element-plus"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.min.js"></script>
   </head>
   <body>
     <div id="app">
       <el-upload
-        :file-list="fileList"
+        v-model:file-list="fileList"
         :auto-upload="false"
         :on-change="uploadChange"
         :http-request="httpRequest"
+        :on-preview="handlePreview"
         multiple
         :limit="3"
       >
         <el-button type="primary">{{message}}</el-button>
       </el-upload>
       <el-button type="primary" @click="submitUpload">确 定</el-button>
-      <el-image
-        style="width: 100px; height: 100px"
-        src="https://picsum.photos/536/354"
-        :zoom-rate="1.2"
-        :max-scale="7"
-        :min-scale="0.2"
-        :preview-src-list="['https://picsum.photos/536/354']"
-        :initial-index="4"
-        fit="cover"
-      />
-      <div v-for="item in filePreviewList">
+      <div v-for="item in fileList">
         <el-image
           style="width: 100px; height: 100px"
           :src="item.url"
           :zoom-rate="1.2"
           :max-scale="7"
           :min-scale="0.2"
-          :preview-src-list="filePreviewList"
+          :preview-src-list="fileList"
           :initial-index="4"
           fit="cover"
         />
@@ -57,7 +49,6 @@
         setup() {
           const message = ref("点击上传");
           const fileList = ref([]);
-          const filePreviewList = reactive([]);
           /**
            * @description: 封装fetch
            * @param {Object} FetchConfig fetch config
@@ -113,28 +104,46 @@
               .catch((err) => alert("出错"));
           };
           const uploadChange = (file, files) => {
+            console.log("file", file, file.uid);
+            const uid = file.uid;
             let formData = new FormData();
             formData.append("uploadFile", file.raw);
-            console.log(formData);
+            console.log("formData", formData);
             // 调用接口上传文件
             handleUploadFile(formData)
               .then((res) => {
+                const curIndex = _.findIndex(fileList.value, function (o) {
+                  return o.uid == uid;
+                });
                 if (res && res.success) {
+                  const curFile = fileList.value[curIndex];
+                  fileList.value.splice(curIndex, 1, { ...curFile, ...res });
                   alert("上传成功");
-                  //处理结果
-                  filePreviewList.push(res);
-                  console.log("filePreviewList", filePreviewList);
                 } else {
+                  fileList.value.splice(curIndex, 1);
                   alert(res?.message || "上传失败");
                 }
-                console.log(res);
+                console.log("res", res);
+                console.log("fileList", fileList);
               })
-              .catch((err) => alert("出错", err));
+              .catch((err) => {
+                console.log("err", err);
+                alert("出错");
+              });
           };
           const httpRequest = (options) => {
             console.log("options", options);
           };
-          return { message, submitUpload, uploadChange };
+          const handlePreview = (file) => {
+            console.log(file);
+          };
+          return {
+            message,
+            submitUpload,
+            uploadChange,
+            handlePreview,
+            fileList,
+          };
         },
       };
       const app = createApp(App);
