@@ -20,6 +20,7 @@
         :file-list="fileList"
         :auto-upload="false"
         :on-change="uploadChange"
+        :http-request="httpRequest"
         multiple
         :limit="3"
       >
@@ -85,7 +86,24 @@
               .catch((err) => alert("出错"));
           };
           const uploadChange = (file, files) => {
-            console.log("file, files", file, files);
+            let formData = new FormData();
+            formData.append("uploadFile", file.raw);
+            console.log(formData);
+            // 调用接口上传文件
+            handleUploadFile(formData)
+              .then((res) => {
+                if (res && res.success) {
+                  alert("上传成功");
+                  //处理结果
+                } else {
+                  alert(res?.message || "上传失败");
+                }
+                console.log(res);
+              })
+              .catch((err) => alert("出错"));
+          };
+          const httpRequest = (options) => {
+            console.log("options", options);
           };
           return { message, submitUpload, uploadChange };
         },
