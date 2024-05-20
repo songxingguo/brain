@@ -4,6 +4,7 @@ import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
 // @ts-ignore
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import {DemoPlugin} from "./plugin/vuepress-plugin-demo/index.js";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -56,7 +57,8 @@ export default defineUserConfig({
     searchProPlugin({
       // 索引全部内容
       indexContent: true,
-    }),
+    }), 
+    DemoPlugin({}) 
   ],
   // Enable it with pwa
   shouldPrefetch: false,
