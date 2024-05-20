@@ -6,7 +6,7 @@ export const DemoPlugin = (options) => {
         console.log("--onInitialized");
       },
       extendsBundlerOptions(bundlerOptions, app) {
-        console.log("bundlerOptions", bundlerOptions);
+        console.log("bundlerOptions", bundlerOptions.viteOptions);
       },
     };
   };

@@ -166,6 +166,13 @@ export const fe = arraySidebar([
     prefix: "react/",
     children: [
       {
+        text: "Demo",
+        icon: "quick-start",
+        prefix: "demo/",
+        children: "structure",
+        collapsible: true,
+      },
+      {
         text: "快速上手",
         icon: "quick-start",
         prefix: "essential/",

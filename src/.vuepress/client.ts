@@ -45,6 +45,7 @@ import Peerconnection from "./components/WebRTC/Peerconnection.vue";
 import Recorder from "./components/WebRTC/Recorder.vue";
 import Signal from "./components/WebRTC/Signal.vue";
 import Takephoto from "./components/WebRTC/Takephoto.vue";
+import ReactDemo from "./components/react/ReactDemo.vue";
 
 export default defineClientConfig({
   enhance: ({ app, router, siteData }) => {
@@ -93,5 +94,6 @@ app.component("Peerconnection", Peerconnection);
 app.component("Recorder", Recorder);
 app.component("Signal", Signal);
 app.component("Takephoto", Takephoto);
+app.component("ReactDemo", ReactDemo);
   },
 });
