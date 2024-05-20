@@ -5,6 +5,7 @@ import { getDirname, path } from "vuepress/utils";
 // @ts-ignore
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import {DemoPlugin} from "./plugin/vuepress-plugin-demo/index.js";
+import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
 
 const __dirname = getDirname(import.meta.url);
 
@@ -58,6 +59,13 @@ export default defineUserConfig({
       // 索引全部内容
       indexContent: true,
     }), 
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components/'),
+      componentsPatterns:['**/*.vue'],
+      // components: {
+      //   VueDemo: path.resolve(__dirname, './components/react/VueDemo.vue'),
+      // },
+    }),
     DemoPlugin({}) 
   ],
   // Enable it with pwa
