@@ -16,32 +16,7 @@
     <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.min.js"></script>
   </head>
   <body>
-    <div id="app">
-      <el-upload
-        v-model:file-list="fileList"
-        :auto-upload="false"
-        :on-change="uploadChange"
-        :http-request="httpRequest"
-        :on-preview="handlePreview"
-        multiple
-        :limit="3"
-      >
-        <el-button type="primary">{{message}}</el-button>
-      </el-upload>
-      <el-button type="primary" @click="submitUpload">确 定</el-button>
-      <div v-for="item in fileList">
-        <el-image
-          style="width: 100px; height: 100px"
-          :src="item.url"
-          :zoom-rate="1.2"
-          :max-scale="7"
-          :min-scale="0.2"
-          :preview-src-list="fileList"
-          :initial-index="4"
-          fit="cover"
-        />
-      </div>
-    </div>
+    <div id="app"></div>
 
     <script>
       const { createApp, ref, reactive } = Vue;
@@ -145,6 +120,30 @@
             fileList,
           };
         },
+        template: ` <el-upload
+        v-model:file-list="fileList"
+        :auto-upload="false"
+        :on-change="uploadChange"
+        :http-request="httpRequest"
+        :on-preview="handlePreview"
+        multiple
+        :limit="3"
+      >
+        <el-button type="primary">{{message}}</el-button>
+      </el-upload>
+      <el-button type="primary" @click="submitUpload">确 定</el-button>
+      <div v-for="item in fileList">
+        <el-image
+          style="width: 100px; height: 100px"
+          :src="item.url"
+          :zoom-rate="1.2"
+          :max-scale="7"
+          :min-scale="0.2"
+          :preview-src-list="fileList"
+          :initial-index="4"
+          fit="cover"
+        />
+      </div>`,
       };
       const app = createApp(App);
       app.use(ElementPlus);

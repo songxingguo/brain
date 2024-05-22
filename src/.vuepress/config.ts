@@ -60,7 +60,7 @@ export default defineUserConfig({
       indexContent: true,
     }), 
     registerComponentsPlugin({
-      componentsDir: path.resolve(__dirname, './components/'),
+      componentsDir: path.resolve(__dirname, './components/react'),
       componentsPatterns:['**/*.vue'],
       // components: {
       //   VueDemo: path.resolve(__dirname, './components/react/VueDemo.vue'),
