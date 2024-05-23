@@ -6,7 +6,7 @@
       <div class="sandbox-tab">
         <div class="sandbox-tab-item sandbox-tab-active"
           data-index="1">
-          <span>app.js</span>
+          <span>{{ title }}</span>
         </div>
       </div>
     </div>
@@ -60,11 +60,23 @@ export default defineComponent({
     const htmlFragment = [code.value];
     const myBlob = new Blob(htmlFragment, { type: "text/html" });
     url.value = URL.createObjectURL(myBlob);
-    const onFileChange = (code) => {
-      const htmlFragment = [code];
+    const onFileChange = (newCode) => {
+      const htmlFragment = [newCode];
       const myBlob = new Blob(htmlFragment, { type: "text/html" });
       url.value = URL.createObjectURL(myBlob);
     };
+
+    const getTitle = () => {
+      const regTitle = /<title[\s\S]*>[\s\S]*<\/title>/;
+      const titleStr = regTitle.exec(code.value);
+      if (!titleStr) return;
+      const title = titleStr[0]
+        .replace("</title>", "")
+        .replace(/<title[\s\S]*?>/, "");
+      return title;
+    };
+
+    const title = getTitle();
 
     return {
       code,
@@ -72,6 +84,7 @@ export default defineComponent({
       handleReady,
       onFileChange,
       url,
+      title,
     };
   },
 });
