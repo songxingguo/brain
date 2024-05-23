@@ -1,17 +1,37 @@
 
 <template>
-  <codemirror v-model="code"
-    placeholder="Code goes here..."
-    :style="{ height: '400px' }"
-    :autofocus="true"
-    :indent-with-tab="true"
-    :tab-size="2"
-    :extensions="extensions"
-    @ready="handleReady"
-    @change="onFileChange($event)" />
-  <iframe style="width: 100%; height: 400px;"
-    :src="url"
-    frameborder="0"></iframe>
+  <div class="mini-sandbox"
+    style="height: 80vh;">
+    <div class="sandbox-head">
+      <div class="sandbox-tab">
+        <div class="sandbox-tab-item sandbox-tab-active"
+          data-index="1">
+          <span>app.js</span>
+        </div>
+      </div>
+    </div>
+    <div class="sandbox-body"
+      style="flex-direction: row;">
+      <div class="sandbox-code">
+        <codemirror v-model="code"
+          placeholder="Code goes here..."
+          :style="{ height: '400px' }"
+          :autofocus="true"
+          :indent-with-tab="true"
+          :tab-size="2"
+          :extensions="extensions"
+          @ready="handleReady"
+          @change="onFileChange($event)" />
+      </div>
+      <div class="sandbox-gutter"
+        style="width: 5px; height: 100%;"></div>
+      <div class="sandbox-render">
+        <iframe style="width: auto; height: 100%;"
+          :src="url"
+          frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
