@@ -8,13 +8,11 @@
     :tab-size="2"
     :extensions="extensions"
     @ready="handleReady"
-    @change="log('change', $event)"
-    @focus="log('focus', $event)"
-    @blur="log('blur', $event)" />
-  <iframe style="width: 100%; height: 800px;"
-    ref="iframeRef"
-    src="/demo/HTMLBasic/EFileUpload.html"
-    frameborder="0"></iframe>
+    @change="onFileChange($event)" />
+  <iframe style="width: 100%; height: 400px;"
+    :src="url"
+    frameborder="0"
+    sandbox></iframe>
 </template>
 
 <script>
@@ -39,20 +37,22 @@ export default defineComponent({
       view.value = payload.view;
     };
 
-    const iframeRef = ref();
-    onMounted(() => {
-      console.log(
-        "iframeRef.value.contentDocument.documentElement.innerHTML,",
-        iframeRef.value.contentDocument.documentElement
-      );
-    });
+    let url = ref("");
+    const htmlFragment = [code.value];
+    const myBlob = new Blob(htmlFragment, { type: "text/html" });
+    url.value = URL.createObjectURL(myBlob);
+    const onFileChange = (code) => {
+      const htmlFragment = [code];
+      const myBlob = new Blob(htmlFragment, { type: "text/html" });
+      url.value = URL.createObjectURL(myBlob);
+    };
 
     return {
       code,
       extensions,
       handleReady,
-      iframeRef,
-      log: console.log,
+      onFileChange,
+      url,
     };
   },
 });
