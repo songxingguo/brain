@@ -11,8 +11,7 @@
     @change="onFileChange($event)" />
   <iframe style="width: 100%; height: 400px;"
     :src="url"
-    frameborder="0"
-    sandbox></iframe>
+    frameborder="0"></iframe>
 </template>
 
 <script>
