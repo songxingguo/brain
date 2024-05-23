@@ -10,4 +10,4 @@ tag:
   - 标签
 ---
 
-<React></React>
+<MiniSandbox />

@@ -49,7 +49,6 @@ export default defineComponent({
   setup() {
     const code = ref(data);
     const extensions = [html(), oneDark];
-
     // Codemirror EditorView instance ref
     const view = shallowRef();
     const handleReady = (payload) => {
