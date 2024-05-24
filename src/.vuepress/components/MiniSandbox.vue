@@ -34,20 +34,36 @@
   </div>
 </template>
 
-<script>
-import { defineComponent, ref, shallowRef, onMounted } from "vue";
+<script lang="ts">
+import { defineComponent, ref, shallowRef, onBeforeMount } from "vue";
 import { Codemirror } from "vue-codemirror";
 import { html } from "@codemirror/lang-html";
 import { oneDark } from "@codemirror/theme-one-dark";
 import axios from "axios";
-const { data } = await axios.get("/demo/HTMLBasic/EFileUpload.html");
+
+const getTitle = (data) => {
+      const regTitle = /<title[\s\S]*>[\s\S]*<\/title>/;
+      const titleStr = regTitle.exec(data);
+      if (!titleStr) return;
+      const title = titleStr[0]
+        .replace("</title>", "")
+        .replace(/<title[\s\S]*?>/, "");
+      return title;
+    };
 
 export default defineComponent({
   components: {
     Codemirror,
   },
   setup() {
-    const code = ref(data);
+    const code = ref();
+    const title = ref()
+    onBeforeMount(async () => {
+      const { data } = await axios.get("/demo/HTMLBasic/EFileUpload.html");
+      code.value = data;
+      title.value = getTitle(data);
+    });
+
     const extensions = [html(), oneDark];
     // Codemirror EditorView instance ref
     const view = shallowRef();
@@ -64,18 +80,6 @@ export default defineComponent({
       const myBlob = new Blob(htmlFragment, { type: "text/html" });
       url.value = URL.createObjectURL(myBlob);
     };
-
-    const getTitle = () => {
-      const regTitle = /<title[\s\S]*>[\s\S]*<\/title>/;
-      const titleStr = regTitle.exec(code.value);
-      if (!titleStr) return;
-      const title = titleStr[0]
-        .replace("</title>", "")
-        .replace(/<title[\s\S]*?>/, "");
-      return title;
-    };
-
-    const title = getTitle();
 
     return {
       code,
