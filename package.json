@@ -55,6 +55,7 @@
     "vuepress-theme-hope": "2.0.0-rc.22"
   },
   "devDependencies": {
-    "@vuepress/plugin-register-components": "^2.0.0-rc.30"
+    "@vuepress/plugin-register-components": "^2.0.0-rc.30",
+    "less": "^4.2.0"
   }
 }
