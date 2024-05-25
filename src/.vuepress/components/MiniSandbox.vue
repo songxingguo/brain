@@ -1,29 +1,35 @@
 <template>
   <div class="box">
-    <Codemirror
-      class="code"
-      v-model="code"
-      :style="{ height: '100%' }"
-      :extensions="extensions"
-      :autofocus="true"
-      :disabled="false"
-      @ready="handleClick('ready', $event)"
-      @change="handleClick('change', $event)"
-      @focus="handleClick('focus', $event)"
-      @blur="handleClick('blur', $event)"
-    />
+    <div  class="code" ref="editorRef"></div>
   </div>
 </template>
 <script lang="ts" setup>
-import { ref } from "vue";
-import { Codemirror } from "vue-codemirror";
+import { onMounted, ref } from "vue";
+import {basicSetup, EditorView} from "codemirror"
 import { javascript } from "@codemirror/lang-javascript";
 import { oneDark } from "@codemirror/theme-one-dark";
-const code = ref(`console.log('Hello, world!');console.log('Hello, world!');`);
-const extensions = [javascript(), oneDark];
-const handleClick = (type: string, val: Event) => {
-  console.log(type, val);
-};
+import {EditorState } from "@codemirror/state"
+
+const editorRef = ref()
+const code = ref(`console.log('Hello, world!');`);
+
+onMounted(()=> {
+  const state = EditorState.create({
+      doc: code.value,
+      extensions: [
+        basicSetup,
+        javascript(), // 在extensions中配置语言
+        oneDark,
+        EditorView.updateListener.of((v) => {
+          console.log(v.state.doc.toString()) //监测得到的最新代码 
+        }),
+      ],
+    });
+    const editor = new EditorView({
+      state,
+      parent: editorRef.value,
+    });
+})
 </script>
 <style>
 .box {
