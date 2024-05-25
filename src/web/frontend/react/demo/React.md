@@ -10,4 +10,4 @@ tag:
   - 标签
 ---
 
-<MiniSandbox />
+<HtmlEditor src="/demo/HTMLBasic/EFileUpload.html" />
