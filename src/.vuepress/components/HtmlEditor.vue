@@ -62,8 +62,11 @@ const initEditor = (data) => {
       javascript(), // 在extensions中配置语言
       oneDark,
       EditorView.updateListener.of((v) => {
-        const data = v.state.doc;
-        handleCodeChanged(data);
+        // 文档更新后再触发
+        if(v.docChanged) {
+          const data = v.state.doc;
+          handleCodeChanged(data);
+        }
       }),
     ],
   });
