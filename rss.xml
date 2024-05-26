@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://brain.songxingguo.com/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <atom:link href="https://brain.songxingguo.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>宋玉的世界</title>
+    <link>https://brain.songxingguo.com/</link>
+    <description>热爱可抵漫长岁月！</description>
+    <language>zh-CN</language>
+    <pubDate>Sun, 26 May 2024 07:14:28 GMT</pubDate>
+    <lastBuildDate>Sun, 26 May 2024 07:14:28 GMT</lastBuildDate>
+    <generator>@vuepress/plugin-feed</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>Cesium</category>
+    <category>数据可视化</category>
+    <category>分类</category>
+    <category>Three</category>
+    <category>前端开发</category>
+    <item>
+      <title></title>
+      <link>https://brain.songxingguo.com/chat/</link>
+      <guid>https://brain.songxingguo.com/chat/</guid>
+      <source url="https://brain.songxingguo.com/rss.xml"></source>
+      <description> </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="chat-content">
+<iframe src="//vocechat.songxingguo.com/" width="100%" height="100%" frameborder="0" allow="camera;microphone"></iframe>
+</div>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>前言</title>
+      <link>https://brain.songxingguo.com/ai/basic/test.html</link>
+      <guid>https://brain.songxingguo.com/ai/basic/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">前言</source>
+      <description>AI </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>AI</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>我与数据可视化</title>
+      <link>https://brain.songxingguo.com/dv/foreword/about.html</link>
+      <guid>https://brain.songxingguo.com/dv/foreword/about.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">我与数据可视化</source>
+      <description> </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<figure><img src="https://files.sunguoqi.com/brain-images/202307271613330.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307271452140.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+]]></content:encoded>
+      <enclosure url="https://files.sunguoqi.com/brain-images/202307271613330.png" type="image/png"/>
+    </item>
+    <item>
+      <title>前言</title>
+      <link>https://brain.songxingguo.com/en/advanced-guide/test.html</link>
+      <guid>https://brain.songxingguo.com/en/advanced-guide/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">前言</source>
+      <description>EN </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>EN</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>前言</title>
+      <link>https://brain.songxingguo.com/en/basic/test.html</link>
+      <guid>https://brain.songxingguo.com/en/basic/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">前言</source>
+      <description>EN </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>EN</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>前言</title>
+      <link>https://brain.songxingguo.com/en/programmer-english/test.html</link>
+      <guid>https://brain.songxingguo.com/en/programmer-english/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">前言</source>
+      <description>EN </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>EN</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>前言</title>
+      <link>https://brain.songxingguo.com/en/use-english/test.html</link>
+      <guid>https://brain.songxingguo.com/en/use-english/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">前言</source>
+      <description>EN </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>EN</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>G2学习指南</title>
+      <link>https://brain.songxingguo.com/dv/antv/g2plot/test.html</link>
+      <guid>https://brain.songxingguo.com/dv/antv/g2plot/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">G2学习指南</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>3D Tiles 模型高度调整</title>
+      <link>https://brain.songxingguo.com/dv/antv/guide/test.html</link>
+      <guid>https://brain.songxingguo.com/dv/antv/guide/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">3D Tiles 模型高度调整</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>L7学习指南</title>
+      <link>https://brain.songxingguo.com/dv/antv/l7plot/test.html</link>
+      <guid>https://brain.songxingguo.com/dv/antv/l7plot/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">L7学习指南</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>WebRTC DEMO</title>
+      <link>https://brain.songxingguo.com/dv/audio-visual/WebRTC/WebRTC%20DEMO.html</link>
+      <guid>https://brain.songxingguo.com/dv/audio-visual/WebRTC/WebRTC%20DEMO.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">WebRTC DEMO</source>
+      <description>在线聊天 </description>
+      <category>分类</category>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h3><a class="header-anchor" href="#在线聊天"><span></span></a><a href="https://brain.songxingguo.com/demo//WebRTC/Chat/Chat.html" target="_blank" rel="noopener noreferrer">在线聊天</a></h3>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>选择合适方法对数据进行处理</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/31.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/31.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">选择合适方法对数据进行处理</source>
+      <description>如何用 SVG 图形元素绘制可视化图表？ </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>如何用 SVG 图形元素绘制可视化图表？</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>可视化数据处理的一般方法</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/32.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/32.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">可视化数据处理的一般方法</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何处理多元变量</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/33.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/33.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何处理多元变量</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何让可视化设计更加清晰</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/34.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/34.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何让可视化设计更加清晰</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何理解可视化设计原则</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/35.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/35.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何理解可视化设计原则</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>使用图表库绘制图表</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/36.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/36.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">使用图表库绘制图表</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>使用数据驱动框架绘制图表</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/37.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/37.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">使用数据驱动框架绘制图表</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何实现地理信息的可视化</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/38.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/38.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何实现地理信息的可视化</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何实现3D地球可视化</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/39.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/39.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何实现3D地球可视化</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>整理自己的可视化工具集</title>
+      <link>https://brain.songxingguo.com/dv/basic/data/40.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/data/40.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">整理自己的可视化工具集</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>可视化工程师</title>
+      <link>https://brain.songxingguo.com/dv/basic/foreword/data-visualization-engineer.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/foreword/data-visualization-engineer.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">可视化工程师</source>
+      <description> 声明 本文内容源自极客时间专栏：《跟月影学习可视化》 搬运不是初心，目的是为了更好的学习，随着时间的推移，本系列会不断融入我自己的产出。 不写网页的前端工程师，还能干什么 作为前端工程师，很多人的主要工作就是和网页打交道。 而作为前端领域中一个几乎不用写网页的特殊分支，可视化利用计算机图形学和图像处理技术，充分感知和挖掘数据间蕴藏的丰富信息，将数据以...</description>
+      <category>数据可视化</category>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">声明</p>
+<p>本文内容源自极客时间专栏：<a href="https://time.geekbang.org/column/intro/100053801" target="_blank" rel="noopener noreferrer">《跟月影学习可视化》</a></p>
+<p>搬运不是初心，目的是为了更好的学习，随着时间的推移，本系列会不断融入我自己的产出。</p>
+</div>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307281050092.png" alt="" width="800" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>不写网页的前端工程师，还能干什么</h2>
+<p>作为前端工程师，很多人的主要工作就是和网页打交道。</p>
+<p>而作为前端领域中一个几乎不用写网页的特殊分支，可视化利用计算机图形学和图像处理技术，充分感知和挖掘数据间蕴藏的丰富信息，将数据以图表的形式展现给用户，可以实现很多传统 Web 网页无法实现的效果。</p>
+<h2>前端工程师为什么要学可视化</h2>
+<p>现在很多 C 端或者 B 端的互联网产品都离不开可视化。</p>
+<p>C 端最著名的例子就是淘宝“双十一”购物节的可视化大屏。B 端产品的例子那就更多了，许多中后台的管理系统，都会用统计图表来显示系统运行的各种状态。另外，很多企业级应用中的态势感知和指挥调度大屏也是可视化非常常见的应用，以及国家大力推动的智慧城市、智慧社区、智慧生活等等。</p>
+<p>如果你有关注过，就会发现，可视化在其中都有着非常广泛的应用。也正因为如此，行业内对可视化工程师的需求也越来越大，许多一线的互联网公司都有可视化相关的招聘需求，但是相关的专业人才却寥寥无几。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307271506895.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>如何成为一名可视化工程师</h2>
+<p>一名优秀的可视化工程师，最应当具备的能力就是要根据产品经理和设计师的想法，实现真正贴合用户需求的、灵活多变的、具视觉震撼力，并且充满创意的优秀可视化作品。</p>
+<p>这句话说起来简单，但是要做到，绝不是会使用某个库、会调用某个 API 就能实现的。</p>
+<p>比如说，现在我们要把一个图表的线条样式，从实线段改成虚线段，那我们就可能不能使用某个现有的图表库来完成。这是因为，有可能这个图表库中并没有提供参数支持线条的虚线。这时候，我们要么放弃这个需求，要么就得换图表库或者自己去修改图表库的源代码。如果我们不放弃，想要自己去修改图表库的源代码的话，其实会遇到更多的问题。因为，这些图表应用不仅业务代码相当复杂，图表库本身的源代码也很复杂，所以，不管是修改代码还是后期维护，我们都会面临很多复杂的问题。</p>
+<p>因此，想要成为一名可视化工程师，我们不能停留在可视化现有的库、框架和工具的使用层面上，必须深入技术栈的底层，充分理解数据，掌握视觉呈现相关的技术和基本原理。打好基础之后，再系统地学习可视化领域的方法论，才能提高解决问题的能力。</p>
+<h2>如何快速掌握可视化</h2>
+<p>想要学好可视化，我们就必须要了解可视化的体系都有什么。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307271518741.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>从图中你可以看到，可视化涉及的内容非常多。</p>
+<p>首先，可视化的视觉主要涉及四个部分，分别是理论基础、图形系统、图形库和工具。</p>
+<p>看起来内容很多，但我们没有必要全都深入学习。而是应该把重点放在理论基础上，因为随着技术的发展，工具会改变，而基础不会。视觉部分的理论基础就是数学和图形学，也就是说，我们必须要学会如何运用数学和图形学知识，来绘制各种各样的几何图形，这样才能实现更加酷炫的视觉效果。</p>
+<p>数据这一块呢，虽然相对比较简单，但是内容也不少。如果我们要深入学习细节的话，压力太大，也很难坚持下去。好在，可视化工程师对数据的理解，会随着业务的深入而逐步加深。所以，在数据部分，我们只要理解解决问题的整体构思和方法论，知道如何从一个可视化工程师的角度去理解和运用数据，就已经足够为我们未来的深入研究，打开一扇大门了。</p>
+<p>最后，谈可视化离不开性能，性能往往决定了可视化项目最终所能呈现的整体感官效果。怎么理解呢？举个例子，当你想要通过一段代码，来实现非常具有视觉冲击力的效果时，却发现即使 GPU 和 CPU 都以最大功率运转了，还是没能把你构思的画面，在屏幕上流畅地显示出来。这是为什么呢？</p>
+<p>这很大可能是因为性能没有达到最优。也许是你的技术选型和代码实现在渲染方面遇到了瓶颈；也许是你过于关注渲染本身，而忽视了计算；也有可能是核心算法有改进空间。有时候，我们花大力气去调优渲染机制，其实不如换一种更加合理的算法取得的收益更大。上面这些呢，都有可能是导致性能不佳的元凶。因此，在性能方面，我们应该学习的，是如何快速找到合理的性能优化点。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Web前端与可视化</title>
+      <link>https://brain.songxingguo.com/dv/basic/foreword/web_vs_visualization.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/foreword/web_vs_visualization.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">Web前端与可视化</source>
+      <description> 声明 本文内容源自极客时间专栏：《跟月影学习可视化》 搬运不是初心，目的是为了更好的学习，随着时间的推移，本系列会不断融入我自己的产出。 可视化是什么 抗击新冠疫情的三年间，我们几乎每天都会关注疫情信息。 不知道你有没有注意过这些疫情信息的展现方式。除了一些基础的疫情数据外，我们还可以看到各种丰富的图表。 这种图表信息与普通的网页看上去差别非常大，我...</description>
+      <category>数据可视化</category>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">声明</p>
+<p>本文内容源自极客时间专栏：<a href="https://time.geekbang.org/column/intro/100053801" target="_blank" rel="noopener noreferrer">《跟月影学习可视化》</a></p>
+<p>搬运不是初心，目的是为了更好的学习，随着时间的推移，本系列会不断融入我自己的产出。</p>
+</div>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307281145278.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>可视化是什么</h2>
+<p>抗击新冠疫情的三年间，我们几乎每天都会关注疫情信息。</p>
+<p>不知道你有没有注意过这些疫情信息的展现方式。除了一些基础的疫情数据外，我们还可以看到各种丰富的图表。</p>
+<p>这种图表信息与普通的网页看上去差别非常大，我们没办法用传统的 Web 开发技术实现这样的“网页”。没错，这是一个与传统 Web 开发完全不一样的领域，叫做<strong>数据可视化</strong>（Data Visualization）。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307281157862.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>如果要给可视化下一个定义，我觉得应该是这样的：</p>
+<p><strong>可视化是将数据组织成易于为人所理解和认知的结构，然后用图形的方式形象地呈现出来的理论、方法和技术。</strong></p>
+<p>实现可视化有两个关键要素，一个是<strong>数据</strong>，另一个是<strong>图形</strong>。如果要考虑在计算机上呈现，那还要加上<strong>交互</strong>。</p>
+<h2>Web 前端与可视化有什么区别？</h2>
+<p>前端工程师主要负责处理内容呈现和用户交互。可视化的数据呈现，尤其是在 Web 端的呈现，也属于前端工程师的范畴。但是，与传统的前端开发相比，可视化开发的工具、思路和方法，又和 Web 有着比较大的区别。</p>
+<h3>技术栈不同</h3>
+<p>Web 开发主要以 HTML 来描述结构，以 CSS 来描述表现，以 JavaScript 来描述行为。而可视化则较少涉及 HTML 和 CSS，它更多地要同浏览器的 Canvas、SVG、WebGL 等其他图形 API 打交道。这是因为，Web 开发以呈现块状内容为主，所以 HTML 是更合适的技术。而可视化开发因为需要呈现各种各样的形状、结构，所以，形状更丰富的 SVG 以及更底层的 Canvas2D 和 WebGL 就是更合适的技术了。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307281150404.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>业务重点不同</h3>
+<p>Web 开发着重于处理普通的文本和多媒体信息，渲染普通的、易于阅读的文本和多媒体内容，而可视化开发则着重于处理结构化数据，渲染各种相对复杂的图表和图形元素。两者针对的信息特征和对图形渲染的要求有所不同，所以，在细节处理上也有比较大的差异。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307281213070.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>Web 开发—&gt;数据可视化</h2>
+<p>尽管 Web 前端与可视化在工具、思路和方法上有一些区别，但前端开发的同学想要学习可视化，门槛并不高，主要原因有三点。</p>
+<ul>
+<li>
+<p>可视化与 Web 前端一样，最终都是以图像呈现在浏览器上，因此有许多通用的方法论。比如，两者都要涉及 DOM、都要处理浏览器事件、都采用同样的颜色表达方式和同样的资源请求方法等等。</p>
+</li>
+<li>
+<p>二者都使用 JavaScript，而且都是浏览器端的 JavaScript。所以，就 JavaScript 的应用而言，这一块差别并不大。不过，可视化应用面对的数据和渲染的图形元素都比传统的 Web 应用更复杂一些，所以也就更加依赖 JavaScript 一些。</p>
+</li>
+<li>
+<p>Web 前端领域有许多成熟的工具，包括响应式框架（比如，三大框架 Vue、React、Angular）、设计系统（比如 Ant Design、ElementUI）、函数库（比如，Underscore、Lodash）等等。与 Web 前端一样，可视化领域也有丰富的 JavaScript 工具和活跃的生态，通常这些“开箱即用”的工具，就能够帮助我们完成可视化开发。</p>
+</li>
+</ul>
+<p>因此，只要善于使用这些成熟的可视化工具，我们就能高效率地完成手头的工作。</p>
+<h2>可视化领域的工具</h2>
+<p>可视化领域经过多年的发展，有非常多丰富的工具。这些工具大体上可分为四类：</p>
+<ul>
+<li>呈现各种类型图表的图表库；</li>
+<li>处理地图、地理位置的可视化地理库；</li>
+<li>处理视觉呈现的渲染库；</li>
+<li>处理数据的数据驱动框架。</li>
+</ul>
+<h3>图表库</h3>
+<p>可视化应用通常需要绘制大量的图表，比如，柱状图、折线图、饼图，还有一些简单的平面地图等等。图表库能够帮助我们快速把它们绘制出来。</p>
+<p>社区中有许多优秀的开源图表库，比如<a href="https://echarts.apache.org/zh/index.html" target="_blank" rel="noopener noreferrer">ECharts</a>，类似的还有 <a href="https://gionkunz.github.io/chartist-js/" target="_blank" rel="noopener noreferrer">Chartlist</a>、<a href="https://www.chartjs.org/" target="_blank" rel="noopener noreferrer">Chart</a> 等等，它们都属于图表库。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307281406593.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>地理库</h3>
+<p>如果要绘制更加复杂的地图，比如，一座城市的交通线路和建筑物三维模型，或者一个园区的立体建筑模型等等，我们可能要依赖专业的 GIS 地图库。社区中比较成熟的 GIS 库也不少，比较常见的像 <a href="https://www.mapbox.com/" target="_blank" rel="noopener noreferrer">Mapbox</a>、<a href="https://leafletjs.com/" target="_blank" rel="noopener noreferrer">Leaflet</a>、<a href="https://deck.gl/" target="_blank" rel="noopener noreferrer">Deck.gl</a>、<a href="https://cesium.com/" target="_blank" rel="noopener noreferrer">Cesium</a> 等等。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307281409593.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>渲染库</h3>
+<p>如果要绘制其他更灵活的图形、图像或者物理模型，我们常用的一些图表库就不一定能完成了。这个时候，我们可以用 <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">Three</a>、<a href="https://spritejs.com/#/" target="_blank" rel="noopener noreferrer">Sprite</a> 这样比较通用的渲染库（实际上图表库或 GIS 地图库本身底层渲染也基于这些渲染库）。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307281411038.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>数据驱动框架</h3>
+<p>除了这些库之外，还有一类比较特殊的库，比如 <a href="https://d3js.org/" target="_blank" rel="noopener noreferrer">D3.js</a>，它属于数据驱动框架。那什么是数据驱动框架呢？</p>
+<p>这是一种特殊的库，它们更专注于处理数据的组织形式，而将数据呈现交给更底层的图形系统（DOM、SVG、Canvas）或通用图形库（SpriteJS、ThreeJS）去完成。</p>
+<p>D3.js 与图表库一样，都能完成可视化项目中的各种图表展现，但是它们之间也有区别。</p>
+<p>ECharts 等大部分图表库会提供封装好的图表类型，我们只需要简单配置一下参数就可以使用。但正因为如此，图表能够表现的形式也会被预设的图表类型和封装好的参数所固定了。如果我们想做一些非常个性化的视觉呈现形式，用图表库来做，相对就比较困难。</p>
+<p>而 D3.js 因为只关注数据的组织形式，将具体的渲染交给底层去做，所以更加灵活，扩展起来也很方便。但相对地，就不像其他的图表库一样，拥有完整的封装了，使用的门槛也就相对高一
+些。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307281412450.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+]]></content:encoded>
+      <enclosure url="https://files.sunguoqi.com/brain-images/202307281145278.png" type="image/png"/>
+    </item>
+    <item>
+      <title>浏览器如何实现可视化</title>
+      <link>https://brain.songxingguo.com/dv/basic/graphics_basics/browser.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/graphics_basics/browser.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">浏览器如何实现可视化</source>
+      <description> 声明 本文内容源自极客时间专栏：《跟月影学习可视化》 搬运不是初心，目的是为了更好的学习，随着时间的推移，本系列会不断融入我自己的产出。 方式一：HTML + CSS 与传统的 Web 应用相比，可视化项目使用 HTML 与 CSS 的频率相对较少。于是，有些同学就会认为，可视化只能使用 SVG、Canvas 这些方式，不能使用 HTML 与 CSS...</description>
+      <category>数据可视化</category>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">声明</p>
+<p>本文内容源自极客时间专栏：<a href="https://time.geekbang.org/column/intro/100053801" target="_blank" rel="noopener noreferrer">《跟月影学习可视化》</a></p>
+<p>搬运不是初心，目的是为了更好的学习，随着时间的推移，本系列会不断融入我自己的产出。</p>
+</div>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307311615030.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>方式一：HTML + CSS</h2>
+<p>与传统的 Web 应用相比，可视化项目使用 HTML 与 CSS 的频率相对较少。于是，有些同学就会认为，可视化只能使用 SVG、Canvas 这些方式，不能使用 HTML 与 CSS。</p>
+<p>实际上，现代浏览器的 HTML、CSS 表现能力很强大，完全可以实现常规的图表展现，比如，我们常见的柱状图、饼图和折线图。
+虽然在可视化业务开发中很少使用 CSS。但是，你可不要觉得它不重要。理由有两个：</p>
+<ul>
+<li>一些简单的可视化图表，用 CSS 来实现很有好处，既能简化开发，又不需要引入额外的库，可以节省资源，提高网页打开的速度。</li>
+<li>理解 CSS 的绘图思想对于可视化也是很有帮助的，比如，CSS 的很多理论就和视觉相关，可视化中都可以拿来借鉴。</li>
+</ul>
+<h3>HTML 与 CSS 是如何实现可视化的</h3>
+<p>用 CSS 实现柱状图其实很简单，原理就是使用网格布局（Grid Layout）加上线性渐变（Linear-gradien）。</p>
+
+<p>而要实现饼图，我们可以使用圆锥渐变，方法也很简单，你直接看代码就可以理解。</p>
+
+<p>除此之外，我们用 HTML 和 CSS 也可以实现折线图。</p>
+<p>我们可以用高度很小的 Div 元素来模拟线段，然后用 transform 改变角度和位置，这样就
+能拼成折线图了。另外，如果使用 clip-path 这样的高级属性，我们还能实现更复杂的图
+表，比如，用不同的颜色表示两个不同折线的面积。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307311619722.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>实际上很多常见的可视化图表我们都可以用 HTML 和 CSS 来实现，不需要用其他的绘图方式。但是，为什么在可视化领域很少有人直接用 HTML 和 CSS 来绘制图表呢？这主要是因为，使用 HTML 和 CSS 绘图有 2 个缺点。</p>
+<h3>用 HTML+CSS 实现可视化的缺点</h3>
+<p>首先，HTML 和 CSS 主要还是为网页布局而创造的，使用它们虽然能绘制可视化图表，但是绘制的方式并不简洁。这是因为，从 CSS 代码里，我们很难看出数据与图形的对应关系，有很多换算也需要开发人员自己来做。这样一来，一旦图表或数据发生改动，就需要我们重新计算，维护起来会很麻烦。</p>
+<p>其次，HTML 和 CSS 作为浏览器渲染引擎的一部分，为了完成页面渲染的工作，除了绘制图形外，还要做很多额外的工作。比如说，浏览器的渲染引擎在工作时，要先解析 HTML、SVG、CSS，构建 DOM 树、RenderObject 树和 RenderLayer 树，然后用 HTML（或 SVG）绘图。当图形发生变化时，我们很可能要重新执行全部的工作，这样的性能开销是非常大的。而且传统的 Web 开发，因为涉及 UI 构建和内容组织，所以这些额外的解析和构建工作都是必须做的。而可视化与传统网页不同，它不太需要复杂的布局，更多的工作是在绘图和数据计算。所以，对于可视化来说，这些额外的工作反而相当于白白消耗了性能。</p>
+<p>因此，相比于 HTML 和 CSS，Canvas2D 和 WebGL 更适合去做可视化这一领域的绘图工作。它们的绘图 API 能够直接操作绘图上下文，一般不涉及引擎的其他部分，在重绘图像时，也不会发生重新解析文档和构建结构的过程，开销要小很多。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307311603194.png" alt="图形系统与浏览器渲染引擎工作对比" tabindex="0" loading="lazy"><figcaption>图形系统与浏览器渲染引擎工作对比</figcaption></figure>
+<h2>方式二：SVG</h2>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/SVG" target="_blank" rel="noopener noreferrer">SVG 文档</a></p>
+<p>现代浏览器支持 SVG（Scalable Vector Graphics，可缩放矢量图），SVG 是一种基于 XML 语法的图像格式，可以用图片（img 元素）的 src 属性加载。而且，浏览器更强大的是，它还可以内嵌 SVG 标签，并且像操作普通的 HTML 元素一样，利用 DOM API 操作 SVG 元素。甚至，CSS 也可以作用于内嵌的 SVG 元素。</p>
+<p>比如，上面的柱状图，如果用 SVG 实现的话，我们可以用如下所示的代码来实现：</p>
+
+<p>从上面的 SVG 代码中，我们可以一目了然地看出，数据 total 和 current 分别对应 SVG 中两个 g 元素下的 rect 元素的高度。也就是说，元素的属性和数值可以直接对应起来。而 CSS 代码并不能直观体现出数据的数值，需要进行 CSS 规则转换。具体如下图所示：</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307311602381.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>在上面这段 SVG 代码中，g 表示分组，rect 表示绘制一个矩形元素。除了 rect 外，SVG 还提供了丰富的图形元素，可以绘制矩形、圆弧、椭圆、多边形和贝塞尔曲线等等。</p>
+<p>SVG 绘制图表与 HTML 和 CSS 绘制图表的方式差别不大，只不过是将 HTML 标签替换成 SVG 标签，运用了一些 SVG 支持的特殊属性。HTML 的不足之处在于 HTML 元素的形状一般是矩形，虽然用 CSS 辅助，也能够绘制出各种其它形状的图形，甚至不规则图形，但是总体而言还是非常麻烦的。而 SVG 则弥补了这方面的不足，让不规则图形的绘制变得更简单了。因此，用 SVG 绘图比用 HTML 和 CSS 要便利得多。</p>
+<p>但是，SVG 图表也有缺点。在渲染引擎中，SVG 元素和 HTML 元素一样，在输出图形前都需要经过引擎的解析、布局计算和渲染树生成。而且，一个 SVG 元素只表示一种基本图形，如果展示的数据很复杂，生成图形的 SVG 元素就会很多。这样一来，大量的 SVG 元素不仅会占用很多内存空间，还会增加引擎、布局计算和渲染树生成的开销，降低性能，减慢渲染速度。这也就注定了 SVG 只适合应用于元素较少的简单可视化场景。</p>
+<h2>方式三：Canvas2D</h2>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API" target="_blank" rel="noopener noreferrer">Canvas 文档</a></p>
+<p>除了 SVG，使用 Canvas2D 上下文来绘制可视化图表也很方便，但是在绘制方式上，Canvas2D 和 HTML/CSS、SVG 又有些不同。</p>
+<p>无论是使用 HTML/CSS 还是 SVG，它们都属于声明式绘图系统，也就是我们根据数据创建各种不同的图形元素（或者 CSS 规则），然后利用浏览器渲染引擎解析它们并渲染出来。但是 Canvas2D 不同，它是浏览器提供的一种可以直接用代码在一块平面的“画布”上绘制图形的 API，使用它来绘图更像是传统的“编写代码”，简单来说就是调用绘图指令，然后引擎直接在页面上绘制图形。这是一种指令式的绘图系统。那 Canvas 到底是怎么绘制可视化图表的呢？</p>
+<p>首先，Canvas 元素在浏览器上创造一个空白的画布，通过提供渲染上下文，赋予我们绘制内容的能力。然后，我们只需要调用渲染上下文，设置各种属性，然后调用绘图指令完成输出，就能在画布上呈现各种各样的图形了。</p>
+<p>为了实现更加复杂的效果，Canvas 还提供了非常丰富的设置和绘图 API，我们可以通过操作上下文，来改变填充和描边颜色，对画布进行几何变换，调用各种绘图指令，然后将绘制的图形输出到画布上。</p>
+<p>总结来说，Canvas 能够直接操作绘图上下文，不需要经过 HTML、CSS 解析、构建渲染树、布局等一系列操作。因此单纯绘图的话，Canvas 比 HTML/CSS 和 SVG 要快得多。</p>
+<p>但是，因为 HTML 和 SVG 一个元素对应一个基本图形，所以我们可以很方便地操作它们，比如在柱状图的某个柱子上注册点击事件。而同样的功能在 Canvas 上就比较难实现了，因为对于 Canvas 来说，绘制整个柱状图的过程就是一系列指令的执行过程，其中并没有区分“A 柱子”、“B 柱子”，这让我们很难单独对 Canvas 绘图的局部进行控制。不过，这并不代表我们就不能控制 Canvas 的局部了。实际上，通过数学计算我们是可以通过定位的方式来获取局部图形的。</p>
+<p>SVG 作为一种图形格式，也可以作为 image 元素绘制到 Canvas 中。举个例子，我们可以先使用 SVG 生成某些图形，然后用 Canvas 来渲染。这样，我们就既可以享受 SVG 的便利性，又可以享受 Canvas 的高性能了。</p>
+<h2>方式四：WebGL</h2>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API" target="_blank" rel="noopener noreferrer">WebGL 文档</a></p>
+<p>WebGL 绘制比前三种方式要复杂一些，因为 WebGL 是基于 OpenGL ES 规范的浏览器实现的，API 相对更底层，使用起来不如前三种那么简单直接。</p>
+<p>一般情况下，Canvas2D 绘制图形的性能已经足够高了，但是在三种情况下我们有必要直接操作更强大的 GPU 来实现绘图。</p>
+<ul>
+<li>
+<p>第一种情况，如果我们要绘制的图形数量非常多，比如有多达数万个几何图形需要绘制，而且它们的位置和方向都在不停地变化，那我们即使用 Canvas2D 绘制了，性能还是会达到瓶颈。这个时候，我们就需要使用 GPU 能力，直接用 WebGL 来绘制。</p>
+</li>
+<li>
+<p>第二种情况，如果我们要对较大图像的细节做像素处理，比如，实现物体的光影、流体效果和一些复杂的像素滤镜。由于这些效果往往要精准地改变一个图像全局或局部区域的所有像素点，要计算的像素点数量非常的多（一般是数十万甚至上百万数量级的）。这时，即使采用 Canvas2D 操作，也会达到性能瓶颈，所以我们也要用 WebGL 来绘制。</p>
+</li>
+<li>
+<p>第三种情况是绘制 3D 物体。因为 WebGL 内置了对 3D 物体的投影、深度检测等特性，所以用它来渲染 3D 物体就不需要我们自己对坐标做底层的处理了。那在这种情况下，WebGL 无论是在使用上还是性能上都有很大优势。</p>
+</li>
+</ul>
+<figure><img src="https://files.sunguoqi.com/brain-images/202307311547253.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+]]></content:encoded>
+      <enclosure url="https://files.sunguoqi.com/brain-images/202307311615030.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>指令式绘图系统：Canvas</title>
+      <link>https://brain.songxingguo.com/dv/basic/graphics_basics/canvas.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/graphics_basics/canvas.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">指令式绘图系统：Canvas</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>声明式图形系统：SVG</title>
+      <link>https://brain.songxingguo.com/dv/basic/graphics_basics/svg.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/graphics_basics/svg.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">声明式图形系统：SVG</source>
+      <description>如何用 SVG 图形元素绘制可视化图表？ </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>如何用 SVG 图形元素绘制可视化图表？</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>声明式图形系统：SVG</title>
+      <link>https://brain.songxingguo.com/dv/basic/graphics_basics/webgl.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/graphics_basics/webgl.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">声明式图形系统：SVG</source>
+      <description>如何用 SVG 图形元素绘制可视化图表？ </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>如何用 SVG 图形元素绘制可视化图表？</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>向量和坐标系</title>
+      <link>https://brain.songxingguo.com/dv/basic/math_basics/05.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/math_basics/05.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">向量和坐标系</source>
+      <description>GPU 与渲染管线：如何用 WebGL 绘制最简单的几何图形？ </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>GPU 与渲染管线：如何用 WebGL 绘制最简单的几何图形？</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>向量乘法知识</title>
+      <link>https://brain.songxingguo.com/dv/basic/math_basics/06.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/math_basics/06.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">向量乘法知识</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>向量和参数方程</title>
+      <link>https://brain.songxingguo.com/dv/basic/math_basics/07.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/math_basics/07.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">向量和参数方程</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>三角剖分和向量操作</title>
+      <link>https://brain.songxingguo.com/dv/basic/math_basics/08.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/math_basics/08.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">三角剖分和向量操作</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>用仿射变换操作几何图形</title>
+      <link>https://brain.songxingguo.com/dv/basic/math_basics/09.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/math_basics/09.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">用仿射变换操作几何图形</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>Canvas | SVG | WebGL</title>
+      <link>https://brain.songxingguo.com/dv/basic/performance/27.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/performance/27.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">Canvas | SVG | WebGL</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>怎么给Canvas绘制加速</title>
+      <link>https://brain.songxingguo.com/dv/basic/performance/28.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/performance/28.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">怎么给Canvas绘制加速</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>怎么给WebGL绘制加速</title>
+      <link>https://brain.songxingguo.com/dv/basic/performance/29.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/performance/29.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">怎么给WebGL绘制加速</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>针对海量数据，如何优化性能</title>
+      <link>https://brain.songxingguo.com/dv/basic/performance/30.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/performance/30.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">针对海量数据，如何优化性能</source>
+      <description>GPU 与渲染管线：如何用 WebGL 绘制最简单的几何图形？ </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>GPU 与渲染管线：如何用 WebGL 绘制最简单的几何图形？</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>生成简单动画让图形动起来</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_advanced/18.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_advanced/18.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">生成简单动画让图形动起来</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何用着色器实现像素动画</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_advanced/19.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_advanced/19.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何用着色器实现像素动画</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何用WebGL绘制3D物体</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_advanced/20.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_advanced/20.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何用WebGL绘制3D物体</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>用透视原理对物体进行投影</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_advanced/21.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_advanced/21.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">用透视原理对物体进行投影</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>用仿射变换移动和旋转3D物体</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_advanced/22.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_advanced/22.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">用仿射变换移动和旋转3D物体</source>
+      <description>如何用 SVG 图形元素绘制可视化图表？ </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>如何用 SVG 图形元素绘制可视化图表？</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>模拟光照让3D场景更逼真</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_advanced/23.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_advanced/23.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">模拟光照让3D场景更逼真</source>
+      <description>GPU 与渲染管线：如何用 WebGL 绘制最简单的几何图形？ </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>GPU 与渲染管线：如何用 WebGL 绘制最简单的几何图形？</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>用法线贴图模拟真实物体表面</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_advanced/24.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_advanced/24.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">用法线贴图模拟真实物体表面</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何绘制带宽度的曲线</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_advanced/25.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_advanced/25.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何绘制带宽度的曲线</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>实现简单的3D可视化图表</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_advanced/26.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_advanced/26.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">实现简单的3D可视化图表</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>图形系统如何表示颜色</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_basics/10.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_basics/10.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">图形系统如何表示颜色</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何生成重复、分形图案</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_basics/11.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_basics/11.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何生成重复、分形图案</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>使用滤镜函数实现美颜效果</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_basics/12.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_basics/12.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">使用滤镜函数实现美颜效果</source>
+      <description>GPU 与渲染管线：如何用 WebGL 绘制最简单的几何图形？ </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>GPU 与渲染管线：如何用 WebGL 绘制最简单的几何图形？</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>如何给简单的图案添加纹理</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_basics/13.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_basics/13.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">如何给简单的图案添加纹理</source>
+      <description>如何用 SVG 图形元素绘制可视化图表？ </description>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>如何用 SVG 图形元素绘制可视化图表？</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>使用片元着色器进行几何造型</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_basics/14.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_basics/14.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">使用片元着色器进行几何造型</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>使用极坐标系绘制有趣图案</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_basics/15.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_basics/15.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">使用极坐标系绘制有趣图案</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>使用噪声生成复杂的纹理</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_basics/16.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_basics/16.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">使用噪声生成复杂的纹理</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>使用后期处理通道增强图像</title>
+      <link>https://brain.songxingguo.com/dv/basic/visual_basics/17.html</link>
+      <guid>https://brain.songxingguo.com/dv/basic/visual_basics/17.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">使用后期处理通道增强图像</source>
+      <pubDate>Sun, 26 May 2024 07:12:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>3D Tiles 模型高度调整</title>
+      <link>https://brain.songxingguo.com/dv/cesium/3D/3d_tiles_00.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/3D/3d_tiles_00.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">3D Tiles 模型高度调整</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>3D Tiles</title>
+      <link>https://brain.songxingguo.com/dv/cesium/data/3dtiles.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/data/3dtiles.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">3D Tiles</source>
+      <description> 3D Tiles 简介 3D Tiles 是 Cesium 于 2016 年 3 月定义的一种三维模型瓦片数据格式，目前已经是 OGC 标准之一，3D Tiles 将海量三维数据以分块分层的形式组织起来，大大减轻了浏览器和 GPU 的负担。 3D Tiles 专为流式传输和渲染 3D 地理数据而设计的，如倾斜摄影测量、BIM、点云、建筑数据等。特点有...</description>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<figure><img src="https://files.sunguoqi.com/brain-images/202308101438111.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>3D Tiles 简介</h2>
+<p>3D Tiles 是 Cesium 于 2016 年 3 月定义的一种三维模型瓦片数据格式，目前已经是 OGC 标准之一，3D Tiles 将海量三维数据以分块分层的形式组织起来，大大减轻了浏览器和 GPU 的负担。</p>
+<p>3D Tiles 专为流式传输和渲染 3D 地理数据而设计的，如倾斜摄影测量、BIM、点云、建筑数据等。特点有：</p>
+<ul>
+<li>
+<p><strong>开放且灵活。</strong> 3D Tiles 作为开放数据规范，其切片方案灵活可变，三维模型的切片大小和覆盖范围可以人为设置。此外，3D Tiles 还可以适配三维空间中多种空间分区方案，如四叉树、八叉树、KD 树等。</p>
+</li>
+<li>
+<p><strong>异质性支持。</strong> 通过一组已定义的文件格式，将多种三维地理空间要素（如倾斜摄影测量、BIM、点云、建筑数据、实例化要素等）转换为三维形式的单个数据集，同时又允许多种不同格式标准的模型显示在同一场景中。</p>
+</li>
+<li>
+<p><strong>专为三维可视化设计。</strong> 3D Tiles 建立在 gltf 格式之上，并引入了三维图形学技术，以树状的层级细节模型（HLOD）进行组织，降低海量数据可视化过程中的浏览器负担，减少 WebGL 绘制请求的数量。</p>
+</li>
+<li>
+<p><strong>可交互。</strong> 3D Tiles 支持交互旋转和样式的设置。如单击高亮，修改单个模型的材质，根据属性信息设置不同的显示效果等。</p>
+</li>
+</ul>
+<h2>代码示例</h2>
+<div class="language-vue" data-ext="vue" data-title="vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cesiumContainer<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 100vh<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">setup</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> onMounted <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> viewer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>Viewer</span><span class="token punctuation">(</span>cesiumContainer<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">infoBox</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> tileset <span class="token operator">=</span> <span class="token keyword">await</span> Cesium<span class="token punctuation">.</span>Cesium3DTileset<span class="token punctuation">.</span><span class="token function">fromUrl</span><span class="token punctuation">(</span><span class="token string">"./data/tileset.json"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  viewer<span class="token punctuation">.</span>scene<span class="token punctuation">.</span>primitives<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>tileset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  viewer<span class="token punctuation">.</span><span class="token function">zoomTo</span><span class="token punctuation">(</span>tileset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">onMounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cesiumContainer<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 100vh<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2>参考资料</h2>
+<ul>
+<li>
+<p>3dTiles 规范仓库：https://github.com/CesiumGS/3d-tiles</p>
+</li>
+<li>
+<p>本文数据下载地址：https://github.com/CesiumGS/3d-tiles-samples</p>
+</li>
+<li>
+<p>3dTiles 格式介绍：https://blog.csdn.net/whl0071/article/details/126000225</p>
+</li>
+</ul>
+]]></content:encoded>
+      <enclosure url="https://files.sunguoqi.com/brain-images/202308101438111.png" type="image/png"/>
+    </item>
+    <item>
+      <title>GeoJson</title>
+      <link>https://brain.songxingguo.com/dv/cesium/data/geojson.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/data/geojson.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">GeoJson</source>
+      <description> GeoJSON GeoJSON 是一种对各种地理数据结构进行编码的格式，是基于 JavaScript 对象表示法（JavaScript Object Notation，JSON）的地理空间信息数据交换格式。 GeoJSON 对象可以表示几何特征或特征集合，并且支持点、线、面、多点、多线、多面和几何集合等几何类型。 Cesium 针对 JSON 数据源...</description>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<figure><img src="https://files.sunguoqi.com/brain-images/202308101521437.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>GeoJSON</h2>
+<p>GeoJSON 是一种对各种地理数据结构进行编码的格式，是基于 JavaScript 对象表示法（JavaScript Object Notation，JSON）的地理空间信息数据交换格式。</p>
+<p>GeoJSON 对象可以表示几何特征或特征集合，并且支持点、线、面、多点、多线、多面和几何集合等几何类型。</p>
+<p>Cesium 针对 JSON 数据源提供了 GeoJsonDataSource 类，可以通过 load 方法加载 GeoJSON 对象并设置相应的填充颜色、边框颜色、边框宽度、是否贴地等属性。</p>
+<h2>代码示例</h2>
+<div class="language-vue" data-ext="vue" data-title="vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">setup</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> onMounted <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> viewer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>Viewer</span><span class="token punctuation">(</span>cesiumContainer<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">infoBox</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token keyword">await</span> Cesium<span class="token punctuation">.</span>GeoJsonDataSource<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>
+    <span class="token string">"./data/geojson/guangzhou.json"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">stroke</span><span class="token operator">:</span> Cesium<span class="token punctuation">.</span>Color<span class="token punctuation">.</span><span class="token constant">WHITE</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">fill</span><span class="token operator">:</span> Cesium<span class="token punctuation">.</span>Color<span class="token punctuation">.</span><span class="token constant">BLUE</span><span class="token punctuation">.</span><span class="token function">withAlpha</span><span class="token punctuation">(</span><span class="token number">0.3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">//注意：颜色必须大写</span>
+      <span class="token literal-property property">strokeWidth</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  viewer<span class="token punctuation">.</span>dataSources<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  viewer<span class="token punctuation">.</span><span class="token function">zoomTo</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">onMounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cesiumContainer<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 100vh<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2>参考资料</h2>
+<ul>
+<li>Cesium 中加载 Geojson：https://blog.csdn.net/qq_40323256/article/details/108476202</li>
+</ul>
+]]></content:encoded>
+      <enclosure url="https://files.sunguoqi.com/brain-images/202308101521437.png" type="image/png"/>
+    </item>
+    <item>
+      <title>glTF</title>
+      <link>https://brain.songxingguo.com/dv/cesium/data/gltf.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/data/gltf.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">glTF</source>
+      <description> glTF glTF（GL Transmission Format），即图形语言交换格式，是一种 3D 内容的格式标准，其本质是一个 JSON 文件。该文件描述了整个 3D 场景的内容，包含了对场景结构进行描述的场景图。场景中的 3D 对象通过场景节点引用网格进行定义[1]。材质定义了 3D 对象的外观，动画定义了 3D 对象的变换操作（如选择、平移操...</description>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<figure><img src="https://files.sunguoqi.com/brain-images/202308101612100.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>glTF</h2>
+<p>glTF（GL Transmission Format），即图形语言交换格式，是一种 3D 内容的格式标准，其本质是一个 JSON 文件。该文件描述了整个 3D 场景的内容，包含了对场景结构进行描述的场景图。场景中的 3D 对象通过场景节点引用网格进行定义[1]。材质定义了 3D 对象的外观，动画定义了 3D 对象的变换操作（如选择、平移操作）。</p>
+<p>Cesium 通过 Model.fromGltf 接口指定 glTF 数据 URL 来进行 glTF 数据加载，并且可以通过 modelMatrix、scale 等配置项调整 glTF 数据的加载位置、缩放比例等。</p>
+<h2>代码示例</h2>
+<div class="language-vue" data-ext="vue" data-title="vue"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">setup</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> onMounted <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> viewer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>Viewer</span><span class="token punctuation">(</span><span class="token string">"cesiumContainer"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">projectionPicker</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  viewer<span class="token punctuation">.</span>projectionPicker<span class="token punctuation">.</span>viewModel<span class="token punctuation">.</span><span class="token function">switchToOrthographic</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> position <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Cartesian3<span class="token punctuation">.</span><span class="token function">fromDegrees</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">123.0744619</span><span class="token punctuation">,</span> <span class="token number">44.0503706</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> hpr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>HeadingPitchRoll</span><span class="token punctuation">(</span>Cesium<span class="token punctuation">.</span>Math<span class="token punctuation">.</span><span class="token function">toRadians</span><span class="token punctuation">(</span><span class="token number">135</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> orientation <span class="token operator">=</span> Cesium<span class="token punctuation">.</span>Transforms<span class="token punctuation">.</span><span class="token function">headingPitchRollQuaternion</span><span class="token punctuation">(</span>
+    position<span class="token punctuation">,</span>
+    hpr
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> entity <span class="token operator">=</span> viewer<span class="token punctuation">.</span>entities<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> position<span class="token punctuation">,</span>
+    <span class="token literal-property property">orientation</span><span class="token operator">:</span> orientation<span class="token punctuation">,</span>
+    <span class="token literal-property property">model</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">uri</span><span class="token operator">:</span> <span class="token string">"./data/gltf/CesiumMilkTruck.glb"</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">minimumPixelSize</span><span class="token operator">:</span> <span class="token number">128</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">maximumScale</span><span class="token operator">:</span> <span class="token number">20000</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  viewer<span class="token punctuation">.</span>trackedEntity <span class="token operator">=</span> entity<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">onMounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cesiumContainer<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 100vh<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2>参考资料</h2>
+<ul>
+<li>https://sandcastle.cesium.com/?src=Projection.html&amp;label=All</li>
+</ul>
+]]></content:encoded>
+      <enclosure url="https://files.sunguoqi.com/brain-images/202308101612100.png" type="image/png"/>
+    </item>
+    <item>
+      <title>影像图层</title>
+      <link>https://brain.songxingguo.com/dv/cesium/data/imagery.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/data/imagery.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">影像图层</source>
+      <description>参考资料 参考文章：https://www.cnblogs.com/echohye/p/17427454.html </description>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>参考资料</h2>
+<ul>
+<li>参考文章：https://www.cnblogs.com/echohye/p/17427454.html</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>鼠标事件</title>
+      <link>https://brain.songxingguo.com/dv/cesium/event/mouse.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/event/mouse.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">鼠标事件</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>坐标系统</title>
+      <link>https://brain.songxingguo.com/dv/cesium/graph/coordinate.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/graph/coordinate.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">坐标系统</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>简介</title>
+      <link>https://brain.songxingguo.com/dv/cesium/guide/introduction.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/guide/introduction.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">简介</source>
+      <description> 一、Cesium 简介 Cesium 是一个基于 JavaScript 的开源三维 GIS 框架，可以用于创建具有绝佳性能、精度、视觉质量和易用性的世界级三维地球仪和地图。 Cesium 支持多种数据可视化方式，可以用于绘制各种几何图形、导入图片及三维模型。其图形是通过 WebGL 加载的，不需要任何插件支持即可使用，只要用户使用的浏览器支持 Web...</description>
+      <category>数据可视化</category>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<figure><img src="https://files.sunguoqi.com/brain-images/202308031041939.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>一、Cesium 简介</h2>
+<p>Cesium 是一个基于 JavaScript 的开源三维 GIS 框架，可以用于创建具有绝佳性能、精度、视觉质量和易用性的世界级三维地球仪和地图。</p>
+<p>Cesium 支持多种数据可视化方式，可以用于绘制各种几何图形、导入图片及三维模型。其图形是通过 WebGL 加载的，不需要任何插件支持即可使用，只要用户使用的浏览器支持 WebGL，就可以直接使用。</p>
+<p>同时，Cesium 支持多种视图模式的地图显示，支持多种数据源、常用数据格式的加载。</p>
+<p>另外，它支持基于时间轴的动态流数据的显示，具有跨平台、跨浏览器的特性，使用起来非常方便、自由，可以用于快速地搭建各种三维可视化平台。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202308030929486.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>二、Cesium API</h2>
+<p>Cesium API 对于学习 Cesium 的人来说是必不可少的，我们可以在 <a href="https://cesium.com/learn/cesiumjs/ref-doc/" target="_blank" rel="noopener noreferrer">Cesium 官网</a>中查看 API 文档。</p>
+<p>但是 Cesium 官网中的 API 文档类库中的类实在太多，每一个类中又包括大量的函数、属性。这些类全部堆放在一起，显得杂乱无章，往往使得初学者不知道从何下手。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202308030958729.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+]]></content:encoded>
+      <enclosure url="https://files.sunguoqi.com/brain-images/202308031041939.png" type="image/png"/>
+    </item>
+    <item>
+      <title>视频材质</title>
+      <link>https://brain.songxingguo.com/dv/cesium/material/video.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/material/video.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">视频材质</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Hello Cesium</title>
+      <link>https://brain.songxingguo.com/dv/cesium/start/hello_cesium.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/start/hello_cesium.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">Hello Cesium</source>
+      <description> 一、使用 Vite 搭建项目框架 打开终端，输入下面这行命令创建一个 Vite 项目。 根据提示，填写项目名称，框架选择 Vue，语言选择 JavaScript。 进入项目路径，输入npm install 安装依赖，输入npm run dev启动调试。 二、在 Vue 中使用 Cesium 的三种方法 1、引入 Cesium 源码 点击链接下载 Ce...</description>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<figure><img src="https://files.sunguoqi.com/brain-images/202308031603172.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>一、使用 Vite 搭建项目框架</h2>
+<p>打开终端，输入下面这行命令创建一个 Vite 项目。</p>
+<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="token function">npm</span> create vite@latest
+</code></pre></div><p>根据提示，填写项目名称，框架选择 Vue，语言选择 JavaScript。</p>
+<p>进入项目路径，输入<code>npm install</code> 安装依赖，输入<code>npm run dev</code>启动调试。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202308031518872.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>二、在 Vue 中使用 Cesium 的三种方法</h2>
+<h3>1、引入 Cesium 源码</h3>
+<p><a href="https://cesium.com/downloads/" target="_blank" rel="noopener noreferrer">点击链接</a>下载 Cesium 的最新源码, 复制<code>Build\Cesium</code>里的所有文件到 Public 目录下，修改以下文件代码即可。</p>
+
+<figure><img src="https://files.sunguoqi.com/brain-images/202308031549743.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>2、使用 vite-plugin-cesium 插件</h3>
+<p>插件地址：https://github.com/nshen/vite-plugin-cesium</p>
+<p>打开终端，输入以下命令安装插件：</p>
+<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="token function">npm</span> i cesium vite-plugin-cesium vite <span class="token parameter variable">-D</span>
+</code></pre></div><p>修改文件内容如下即可，启动调试即可。</p>
+
+<figure><img src="https://files.sunguoqi.com/brain-images/202308031832119.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3>3、使用 vue-cesium 第三方组件库</h3>
+<p>组件库地址：https://github.com/zouyaoji/vue-cesium</p>
+<p>打开终端，输入以下命令安装组件库：</p>
+<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="token function">npm</span> i cesium vite-plugin-cesium vite <span class="token parameter variable">-D</span>
+</code></pre></div><p>修改文件内容如下即可，启动调试即可。</p>
+
+<figure><img src="https://files.sunguoqi.com/brain-images/202308031842390.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h2>三、界面介绍</h2>
+<p>Viewer 是一个带有多种功能的可交互的三维数字地球容器。</p>
+<p>三维地球场景支持采用鼠标（桌面端）和手指触摸（移动端）的方式进行交互，并默认支持以下几种相机漫游方式。</p>
+<p>• 按住鼠标左键拖曳：拖动相机在三维地球平面平移。</p>
+<p>• 按住鼠标右键拖曳：缩放相机。</p>
+<p>• 使用鼠标滚轮（即鼠标中键）滑动：缩放相机。</p>
+<p>• 按住鼠标滚轮拖曳：根据当前地球的屏幕中点，旋转相机。</p>
+<figure><img src="https://files.sunguoqi.com/brain-images/202308071432080.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<ul>
+<li>
+<p>Geocoder 是位置查找工具</p>
+<p>使用该控件可以输入要查找的地址，查找成功后，相机会跳转并对准找到的结果</p>
+</li>
+<li>
+<p>HomeButton 是首页位置工具</p>
+<p>单击该控件后，会将相机跳转到默认全球视角，也可以通过代码修改跳转位置</p>
+</li>
+<li>
+<p>SceneModePicker 是视角模式切换工具</p>
+<p>使用该控件可以设置视角模式为 3D、2D 及哥伦布视图（CV）</p>
+</li>
+<li>
+<p>BaseLayerPicker 是默认图层选择工具</p>
+<p>用于选择要显示的地图服务和地形服务</p>
+</li>
+<li>
+<p>NavigationHelpButton 是导航帮助工具</p>
+<p>用于显示默认的地图控制和帮助选项</p>
+</li>
+<li>
+<p>Animation 是动画工具</p>
+<p>用于控制视图动画的播放速度</p>
+</li>
+<li>
+<p>TimeLine 是时间轴工具</p>
+<p>用于指示当前时间，并且允许用户跳转到指定时间</p>
+</li>
+<li>
+<p>FullscreenButton 是全屏按钮工具</p>
+<p>单击该控件，可以进入全屏模式，再次单击该控件，即可退出全屏模式</p>
+</li>
+</ul>
+<p>以上控件，在初始化 Viewer 时，将配置项设置为 false 即可隐藏</p>
+<div class="language-javascript" data-ext="js" data-title="js"><pre class="language-javascript"><code><span class="token keyword">new</span> <span class="token class-name">Cesium<span class="token punctuation">.</span>Viewer</span><span class="token punctuation">(</span><span class="token string">"cesiumContainer"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">geocoder</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示位置查找工具</span>
+  <span class="token literal-property property">homeButton</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示首页位置工具</span>
+  <span class="token literal-property property">sceneModePicker</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示视角模式切换工具</span>
+  <span class="token literal-property property">baseLayerPicker</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示默认图层选择工具</span>
+  <span class="token literal-property property">navigationHelpButton</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示导航帮助工具</span>
+  <span class="token literal-property property">animation</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示动画工具</span>
+  <span class="token literal-property property">timeline</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示时间轴工具</span>
+  <span class="token literal-property property">fullscreenButton</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示全屏按钮工具</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>]]></content:encoded>
+      <enclosure url="https://files.sunguoqi.com/brain-images/202308031603172.png" type="image/png"/>
+    </item>
+    <item>
+      <title>场景截图</title>
+      <link>https://brain.songxingguo.com/dv/cesium/tools/snipaste.html</link>
+      <guid>https://brain.songxingguo.com/dv/cesium/tools/snipaste.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">场景截图</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>快速上手DEMO</title>
+      <link>https://brain.songxingguo.com/dv/three/getting_started/ThreeDemo.html</link>
+      <guid>https://brain.songxingguo.com/dv/three/getting_started/ThreeDemo.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">快速上手DEMO</source>
+      <description>初始化场景 首先是分别创建场景、相机和渲染器，三者缺一不可，并将渲染器渲染的结果挂载到 DOM 元素上。最后将在render函数绑定到requestAnimationFrame上, 并执行渲染函数，每次重绘都会重新执行render函数。 场景（scene）：场景一个物体的容器【通俗理解装东西的嘛】，开发者可以将需要的角色放入场景中,例如苹果，葡萄。同时...</description>
+      <category>数据可视化</category>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h3>初始化场景</h3>
+<p>首先是分别创建场景、相机和渲染器，三者缺一不可，并将渲染器渲染的结果挂载到 DOM 元素上。最后将在<code>render</code>函数绑定到<code>requestAnimationFrame</code>上, 并执行渲染函数，每次重绘都会重新执行<code>render</code>函数。</p>
+<ul>
+<li>场景（scene）：场景一个物体的容器【通俗理解装东西的嘛】，开发者可以将需要的角色放入场景中,例如苹果，葡萄。同时， 角色自身也管理着其在场景中的位置。</li>
+<li>相机（camera）：相机的作用就是面对场景,在场景中取一个合适的景，把它拍下来。【可以想象成人的眼睛】</li>
+<li>渲染器（renderer）：渲染器的作用就是将相机拍摄下来的图片,放到浏览器中去显示。</li>
+</ul>
+<div class="language-javascript" data-ext="js" data-title="js"><pre class="language-javascript"><code><span class="token comment">// 创建场景</span>
+<span class="token keyword">const</span> scene <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>Scene</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 创建相机</span>
+<span class="token keyword">const</span> camera <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>PerspectiveCamera</span><span class="token punctuation">(</span>
+  <span class="token number">75</span><span class="token punctuation">,</span>
+  window<span class="token punctuation">.</span>innerWidth <span class="token operator">/</span> window<span class="token punctuation">.</span>innerHeight<span class="token punctuation">,</span>
+  <span class="token number">0.1</span><span class="token punctuation">,</span>
+  <span class="token number">1000</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 创建渲染器</span>
+<span class="token keyword">const</span> renderer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>WebGLRenderer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+renderer<span class="token punctuation">.</span><span class="token function">setSize</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>innerWidth<span class="token punctuation">,</span> window<span class="token punctuation">.</span>innerHeight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"root"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>renderer<span class="token punctuation">.</span>domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 渲染</span>
+<span class="token keyword">function</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">requestAnimationFrame</span><span class="token punctuation">(</span>render<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  renderer<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>scene<span class="token punctuation">,</span> camera<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3><a class="header-anchor" href="#创建几何体"><span>创建</span></a><a href="https://threejs.org/docs/?q=ge#api/zh/geometries/BoxGeometry" target="_blank" rel="noopener noreferrer">几何体</a></h3>
+<p>上面的场景都搭建好了，现在创建一个正方体，并将它加入到场景中。</p>
+<div class="language-javascript" data-ext="js" data-title="js"><pre class="language-javascript"><code><span class="token comment">// 创建几何体</span>
+<span class="token keyword">const</span> geometry <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>BoxGeometry</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> material <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>MeshBasicMaterial</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token number">0x00ffff</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> cube <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>Mesh</span><span class="token punctuation">(</span>geometry<span class="token punctuation">,</span> material<span class="token punctuation">)</span><span class="token punctuation">;</span>
+scene<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>cube<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3>添加辅助功能</h3>
+<p>也可以为场景中添加辅助坐标和辅助相机，能让我们更清楚的观察到当前元素在坐标系中所处的位置和大小。</p>
+<div class="language-javascript" data-ext="js" data-title="js"><pre class="language-javascript"><code><span class="token comment">// 创建辅助坐标轴</span>
+<span class="token keyword">const</span> axes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>AxesHelper</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+scene<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>axes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 创建辅助相机</span>
+<span class="token keyword">const</span> helper <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>CameraHelper</span><span class="token punctuation">(</span>camera<span class="token punctuation">)</span><span class="token punctuation">;</span>
+scene<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>helper<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3>模型控制</h3>
+<p>场景中拥有了正方体，但我能并不能和它进行交互，因此需要 <code>OrbitControls</code> 来对场景中的内容能控制。需要注意的是 <code>OrbitControls</code> 是一个控制插件，并没有在 Three.js 的核心模块中，而是在<code>examples/jsm/controls/</code> 文件夹中，我们这里为了方便使用采用的是 CDN 的方式进行引入。</p>
+<div class="language-javascript" data-ext="js" data-title="js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> OrbitControls <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js"</span><span class="token punctuation">;</span>
+<span class="token comment">// 模型控制</span>
+<span class="token keyword">const</span> controls <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">OrbitControls</span><span class="token punctuation">(</span>camera<span class="token punctuation">,</span> renderer<span class="token punctuation">.</span>domElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3><a class="header-anchor" href="#mvp"><span></span></a><a href="https://brain.songxingguo.com/demo/Three/MVP.html" target="_blank" rel="noopener noreferrer">MVP</a></h3>
+<p>下面是通过上述步骤搭建的一个最新可行性 DEMO，你可以通过注释代码方式来动态观察每个部分不同的作用。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>进阶DEMO</title>
+      <link>https://brain.songxingguo.com/dv/three/getting_started/ThreeWorld.html</link>
+      <guid>https://brain.songxingguo.com/dv/three/getting_started/ThreeWorld.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">进阶DEMO</source>
+      <description>Three.js 世界 </description>
+      <category>数据可视化</category>
+      <category>Three</category>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h3><a class="header-anchor" href="#three-js-世界"><span></span></a><a href="https://brain.songxingguo.com/demo/Three/World/index.html" target="_blank" rel="noopener noreferrer">Three.js 世界</a></h3>
+<iframe src="/demo/Three/world/index.html" width="100%" height="500" frameborder="0">
+  <p><a href="https://brain.songxingguo.com/demo/Three/world/index.html">点击打开嵌入页面</a></p>
+</iframe>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>3D Tiles 模型高度调整</title>
+      <link>https://brain.songxingguo.com/dv/visactor/guide/test.html</link>
+      <guid>https://brain.songxingguo.com/dv/visactor/guide/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">3D Tiles 模型高度调整</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>3D Tiles 模型高度调整</title>
+      <link>https://brain.songxingguo.com/dv/visactor/vchart/test.html</link>
+      <guid>https://brain.songxingguo.com/dv/visactor/vchart/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">3D Tiles 模型高度调整</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>尽情期待</title>
+      <link>https://brain.songxingguo.com/dv/visactor/vgis/test.html</link>
+      <guid>https://brain.songxingguo.com/dv/visactor/vgis/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">尽情期待</source>
+      <description>官方还没发布 </description>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>官方还没发布</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>3D Tiles 模型高度调整</title>
+      <link>https://brain.songxingguo.com/dv/visactor/vgrammar/test.html</link>
+      <guid>https://brain.songxingguo.com/dv/visactor/vgrammar/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">3D Tiles 模型高度调整</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>尽情期待</title>
+      <link>https://brain.songxingguo.com/dv/visactor/vgraph/test.html</link>
+      <guid>https://brain.songxingguo.com/dv/visactor/vgraph/test.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">尽情期待</source>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>3D Tiles 模型高度调整</title>
+      <link>https://brain.songxingguo.com/dv/visactor/vrender/wip.html</link>
+      <guid>https://brain.songxingguo.com/dv/visactor/vrender/wip.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">3D Tiles 模型高度调整</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>3D Tiles 模型高度调整</title>
+      <link>https://brain.songxingguo.com/dv/visactor/vtable/wip.html</link>
+      <guid>https://brain.songxingguo.com/dv/visactor/vtable/wip.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">3D Tiles 模型高度调整</source>
+      <category>Cesium</category>
+      <category>数据可视化</category>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>ToDo</title>
+      <link>https://brain.songxingguo.com/web/backend/todo/</link>
+      <guid>https://brain.songxingguo.com/web/backend/todo/</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">ToDo</source>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>CSS动画DEMO</title>
+      <link>https://brain.songxingguo.com/web/frontend/css/Animation.html</link>
+      <guid>https://brain.songxingguo.com/web/frontend/css/Animation.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">CSS动画DEMO</source>
+      <description>3D 盒子练习 </description>
+      <category>前端开发</category>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h3><a class="header-anchor" href="#_3d-盒子练习"><span></span></a><a href="https://brain.songxingguo.com/demo/CSSAnimation/ThreeDBox.html" target="_blank" rel="noopener noreferrer">3D 盒子练习</a></h3>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>CSS基础DEMO</title>
+      <link>https://brain.songxingguo.com/web/frontend/css/CSSBasic.html</link>
+      <guid>https://brain.songxingguo.com/web/frontend/css/CSSBasic.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">CSS基础DEMO</source>
+      <description>响应式图片相册 </description>
+      <category>前端开发</category>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h3><a class="header-anchor" href="#响应式图片相册"><span></span></a><a href="https://brain.songxingguo.com/demo/CSSBasic/PictureAlbum.html" target="_blank" rel="noopener noreferrer">响应式图片相册</a></h3>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Flex布局DEMO</title>
+      <link>https://brain.songxingguo.com/web/frontend/css/FlexLayout.html</link>
+      <guid>https://brain.songxingguo.com/web/frontend/css/FlexLayout.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">Flex布局DEMO</source>
+      <description>骰子练习 </description>
+      <category>前端开发</category>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h3><a class="header-anchor" href="#骰子练习"><span></span></a><a href="https://brain.songxingguo.com/demo/FlexLayout/DicePractice.html" target="_blank" rel="noopener noreferrer">骰子练习</a></h3>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>什么是前端开发</title>
+      <link>https://brain.songxingguo.com/web/frontend/guide/what-is.html</link>
+      <guid>https://brain.songxingguo.com/web/frontend/guide/what-is.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">什么是前端开发</source>
+      <description>前端是什么 大前端 黄玄：前端已死，前端永生 </description>
+      <category>前端开发</category>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>前端是什么</h2>
+<h2>大前端</h2>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1uz421d7Ch/?vd_source=5e9e4eda306e9f4a06044b5dcea74a7d" target="_blank" rel="noopener noreferrer">黄玄：前端已死，前端永生</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Canvas基础DEMO</title>
+      <link>https://brain.songxingguo.com/web/frontend/html/CanvasBasic.html</link>
+      <guid>https://brain.songxingguo.com/web/frontend/html/CanvasBasic.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">Canvas基础DEMO</source>
+      <description>Canvas 合成操作创建复杂的绘图效果 </description>
+      <category>分类</category>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h3><a class="header-anchor" href="#canvas-合成操作创建复杂的绘图效果"><span></span></a><a href="https://brain.songxingguo.com/demo//CanvasBasic/CanvasComposition.html" target="_blank" rel="noopener noreferrer">Canvas 合成操作创建复杂的绘图效果</a></h3>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>HTML基础DEMO</title>
+      <link>https://brain.songxingguo.com/web/frontend/html/HTMLBasic.html</link>
+      <guid>https://brain.songxingguo.com/web/frontend/html/HTMLBasic.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">HTML基础DEMO</source>
+      <description>轮播图 </description>
+      <category>前端开发</category>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h3><a class="header-anchor" href="#轮播图"><span></span></a><a href="https://brain.songxingguo.com/demo/HTMLBasic/CarouselChart.html" target="_blank" rel="noopener noreferrer">轮播图</a></h3>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>FileUpload</title>
+      <link>https://brain.songxingguo.com/web/frontend/vue/demo/FileUpload.html</link>
+      <guid>https://brain.songxingguo.com/web/frontend/vue/demo/FileUpload.html</guid>
+      <source url="https://brain.songxingguo.com/rss.xml">FileUpload</source>
+      <description>ElementUI文件上传 </description>
+      <category>分类</category>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h3><a class="header-anchor" href="#elementui文件上传"><span></span></a><a href="https://brain.songxingguo.com/demo/FileUpload/EFileUpload.html" target="_blank" rel="noopener noreferrer">ElementUI文件上传</a></h3>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
