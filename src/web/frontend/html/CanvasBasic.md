@@ -49,3 +49,17 @@ tag:
 ### [上传视频，进行预览，截取图片，并且获取时长](https://brain.songxingguo.com/demo//CanvasBasic/Screenshot.html)
 
 <Screenshot />
+
+
+<script setup>
+import CanvasComposition from "@components/CanvasBasic/CanvasComposition.vue";
+import CanvasGradient from "@components/CanvasBasic/CanvasGradient.vue";
+import DrawCircle from "@components/CanvasBasic/DrawCircle.vue";
+import DrawGraphics from "@components/CanvasBasic/DrawGraphics.vue";
+import DrawImage from "@components/CanvasBasic/DrawImage.vue";
+import DrawLine  from "@components/CanvasBasic/DrawLine.vue";
+import DrawRectangle from "@components/CanvasBasic/DrawRectangle.vue";
+import DrawText from "@components/CanvasBasic/DrawText.vue";
+import PlayVideo from "@components/CanvasBasic/PlayVideo.vue";
+import Screenshot from "@components/CanvasBasic/Screenshot.vue";
+</script>

@@ -55,3 +55,15 @@ tag:
   
 <Takephoto />
 
+
+<script setup>
+import Chat from "@components/WebRTC/Chat/Chat.vue";
+import DesktopRecorder from "@components/WebRTC/DesktopRecorder.vue";
+import GetDevices from "@components/WebRTC/GetDevices.vue";
+import GetVideoAndAudio from "@components/WebRTC/GetVideoAndAudio.vue";
+import Getstats from "@components/WebRTC/Getstats.vue";
+import Peerconnection from "@components/WebRTC/Peerconnection.vue";
+import Recorder from "@components/WebRTC/Recorder.vue";
+import Signal from "@components/WebRTC/Signal.vue";
+import Takephoto from "@components/WebRTC/Takephoto.vue";
+</script>

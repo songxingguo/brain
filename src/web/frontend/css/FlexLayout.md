@@ -19,3 +19,9 @@ category:
 ### [响应式页面](https://brain.songxingguo.com/demo/FlexLayout/ResponsivePage.html)
 
 <ResponsivePage />
+
+<script setup>
+import DicePractice from "@components/FlexLayout/DicePractice.vue";
+import ResponsivePage from "@components/FlexLayout/ResponsivePage.vue";
+import HolyGrailLayout from "@components/FlexLayout/HolyGrailLayout.vue";
+</script>

@@ -83,4 +83,8 @@ const controls = new OrbitControls(camera, renderer.domElement);
 下面是通过上述步骤搭建的一个最新可行性 DEMO，你可以通过注释代码方式来动态观察每个部分不同的作用。
 
 <MVP />
-```
+
+<script setup>
+import MVP from "@components/Three/MVP.vue";
+</script>
+

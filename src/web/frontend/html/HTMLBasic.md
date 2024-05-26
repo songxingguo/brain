@@ -51,3 +51,18 @@ category:
 ### [幻灯片](https://brain.songxingguo.com/demo/HTMLBasic/PPT.html)
 
 <PPT />
+
+
+<script setup>
+import CarouselChart from "@components/HTMLBasic/CarouselChart.vue";
+import ChangeTextSize from "@components/HTMLBasic/ChangeTextSize.vue";
+import ChatWindow from "@components/HTMLBasic/ChatWindow.vue";
+import HTMLExample from "@components/HTMLBasic/HTMLExample.vue";
+import From from "@components/HTMLBasic/From.vue";
+import GuessingGame from "@components/HTMLBasic/GuessingGame.vue";
+import HTMLBasic from "@components/HTMLBasic/HTMLBasic.vue";
+import ImageGradient from "@components/HTMLBasic/ImageGradient.vue";
+import JDNav from "@components/HTMLBasic/JDNav.vue";
+import PanSwitchImage from "@components/HTMLBasic/PanSwitchImage.vue";
+import PPT from "@components/HTMLBasic/PPT.vue";
+</script>

@@ -15,3 +15,9 @@ category:
 ### [图片画廊](https://brain.songxingguo.com/demo/CSSBasic/PictureGallery.html)
 
 <PictureGallery />
+
+
+<script setup>
+import PictureGallery from "@components/CSSBasic/PictureGallery.vue";
+import PictureAlbum from "@components/CSSBasic/PictureAlbum.vue";
+</script>
