@@ -42,5 +42,6 @@ jobs:
           password: ${{ secrets.SERVER_PWD }} # 服务器密码；需要去仓库的 settings/secrets/actions 去创建
           port: ${{ secrets.SERVER_PORT }} # 服务器端口，默认22；需要去仓库的 settings/secrets/actions 去创建
           script: | # 重启更新镜像
+            docker login --username=${{ secrets.ALIYUN_USER }} -p ${{ secrets.ALIYUN_PWD }} registry.cn-shanghai.aliyuncs.com
             docker pull registry.cn-shanghai.aliyuncs.com/songxingguo/brain:latest
             cd /root/deploy && ./deploy.sh
