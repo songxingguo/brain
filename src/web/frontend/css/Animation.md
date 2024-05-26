@@ -35,3 +35,13 @@ category:
 ### [fir.im 网站](https://brain.songxingguo.com/demo/CSSAnimation/FirIm.html)
 
 <FirIm />
+
+<script setup>
+import FirIm from "@components/CSSAnimation/FirIm.vue";
+import Clock from "@components/CSSAnimation/Clock.vue";
+import ThreeDBox from "@components/CSSAnimation/ThreeDBox.vue";
+import BlowBox from "@components/CSSAnimation/BlowBox.vue";
+import ExpandBox from "@components/CSSAnimation/ExpandBox.vue";
+import TiltNavigation from "@components/CSSAnimation/TiltNavigation.vue";
+import Windmill from "@components/CSSAnimation/Windmill.vue";
+</script>

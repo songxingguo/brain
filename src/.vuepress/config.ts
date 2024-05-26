@@ -4,8 +4,8 @@ import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
 // @ts-ignore
 import { searchProPlugin } from "vuepress-plugin-search-pro";
-import {DemoPlugin} from "./plugin/vuepress-plugin-demo/index.js";
-import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
+import { DemoPlugin } from "./plugin/vuepress-plugin-demo/index.js";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -15,22 +15,40 @@ export default defineUserConfig({
   //头部引入，这里引入的是 51la 统计
   head: [
     ["script", { type: "text/javascript", src: "/assets/js/51la.js" }],
-    ["script", { type: "text/javascript", src: "https://unpkg.com/mini-sandbox@0.3.18" }],
-    ["script", { type: "text/javascript", src: "https://unpkg.com/mini-sandbox@0.3.18/dist/vue-loader.js" }],
-    ["script", { type: "text/javascript", src: "https://unpkg.com/mini-sandbox@0.3.18/dist/react-loader.js" }],
-    ["script", { 
-        "data-host-id":"1",
-        "data-auto-reg":"true" ,
-        "data-login-token":"" ,
-        "data-theme-color":"#1fe1f9" ,
-        "data-close-width":"48" ,
-        "data-close-height":"48" ,
-        "data-open-width":"380" ,
-        "data-open-height":"680" ,
-        "data-welcome":"你好，很高兴认识你，欢迎👏留您的想法或建议" ,
-        src:"https://vocechat.songxingguo.com/widget.js" ,
+    [
+      "script",
+      { type: "text/javascript", src: "https://unpkg.com/mini-sandbox@0.3.18" },
+    ],
+    [
+      "script",
+      {
+        type: "text/javascript",
+        src: "https://unpkg.com/mini-sandbox@0.3.18/dist/vue-loader.js",
+      },
+    ],
+    [
+      "script",
+      {
+        type: "text/javascript",
+        src: "https://unpkg.com/mini-sandbox@0.3.18/dist/react-loader.js",
+      },
+    ],
+    [
+      "script",
+      {
+        "data-host-id": "1",
+        "data-auto-reg": "true",
+        "data-login-token": "",
+        "data-theme-color": "#1fe1f9",
+        "data-close-width": "48",
+        "data-close-height": "48",
+        "data-open-width": "380",
+        "data-open-height": "680",
+        "data-welcome": "你好，很高兴认识你，欢迎👏留您的想法或建议",
+        src: "https://vocechat.songxingguo.com/widget.js",
         async: true,
-    }],
+      },
+    ],
   ],
   // 网站信息
   locales: {
@@ -48,25 +66,19 @@ export default defineUserConfig({
       __dirname,
       "./components/Toc.vue"
     ),
-    "@hooks": path.resolve(
-      __dirname,
-      "./hooks"
-    ),
+    "@hooks": path.resolve(__dirname, "./hooks"),
+    "@components": path.resolve(__dirname, "components"),
   },
   // 插件配置
   plugins: [
     searchProPlugin({
       // 索引全部内容
       indexContent: true,
-    }), 
-    registerComponentsPlugin({
-      componentsDir: path.resolve(__dirname, './components'),
-      componentsPatterns:['**/*.vue'],
-      // components: {
-      //   VueDemo: path.resolve(__dirname, './components/react/VueDemo.vue'),
-      // },
     }),
-    DemoPlugin({}) 
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, "./components"),
+    }),
+    DemoPlugin({}),
   ],
   // Enable it with pwa
   shouldPrefetch: false,
