@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,19 +17,30 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      const App = () => {
-        const [demo, setDemo] = React.useState(["哈哈"]);
+      const { useState, useEffect } = React;
+      const App = (props) => {
+        const [count, setCount] = useState(100);
+        useEffect(() => {
+          setInterval(() => {
+            setCount(count - 1);
+          }, 1000);
+        }, [count]);
         return (
           <div>
-            <h1>React DEMO</h1>
-            {demo}
+            <h1>{props.title}</h1>
+            <div>{count}</div>
+            <div>
+              <button>开始</button>
+              <button>结束</button>
+              <button>暂停</button>
+            </div>
           </div>
         );
       };
     </script>
     <script type="text/babel">
       const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(<App />);
+      root.render(<App title="Countdown" />);
     </script>
   </body>
 </html>
