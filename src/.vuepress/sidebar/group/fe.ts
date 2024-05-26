@@ -43,6 +43,13 @@ export const fe = arraySidebar([
     prefix: "vue/",
     // children: "structure",
     children: [
+           {
+        text: "Demo",
+        icon: "hi-1",
+        prefix: "demo/",
+        children: "structure",
+        collapsible: true,
+      },
       {
         text: "Hello",
         icon: "hi-1",
@@ -167,7 +174,7 @@ export const fe = arraySidebar([
     children: [
       {
         text: "Demo",
-        icon: "quick-start",
+        icon: "hi-1",
         prefix: "demo/",
         children: "structure",
         collapsible: true,
