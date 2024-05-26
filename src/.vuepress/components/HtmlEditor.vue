@@ -8,8 +8,7 @@
       </div>
     </div>
     <div class="editor-body" style="flex-direction: row">
-      <div class="editor-code">
-        <div ref="editorRef"></div>
+      <div ref="editorRef" class="editor-code" >
       </div>
       <div class="editor-gutter" style="width: 5px; height: 100%"></div>
       <div class="editor-render">
@@ -25,7 +24,7 @@
 <script lang="ts" setup>
 import { onBeforeMount, ref } from "vue";
 import { basicSetup, EditorView } from "codemirror";
-import { javascript } from "@codemirror/lang-javascript";
+import { html } from "@codemirror/lang-html";
 import { oneDark } from "@codemirror/theme-one-dark";
 import { EditorState } from "@codemirror/state";
 import axios from "axios";
@@ -52,6 +51,7 @@ const handleCodeChanged = (data) => {
   const htmlFragment = [data];
   const myBlob = new Blob(htmlFragment, { type: "text/html" });
   url.value = URL.createObjectURL(myBlob);
+  title.value = getTitle(data);
 };
 
 const initEditor = (data) => {
@@ -59,7 +59,7 @@ const initEditor = (data) => {
     doc: data,
     extensions: [
       basicSetup,
-      javascript(), // 在extensions中配置语言
+      html(), // 在extensions中配置语言
       oneDark,
       EditorView.updateListener.of((v) => {
         // 文档更新后再触发
@@ -78,7 +78,6 @@ const initEditor = (data) => {
 
 onBeforeMount(async () => {
   const { data } = await axios.get(props.src);
-  title.value = getTitle(data);
   initEditor(data);
   handleCodeChanged(data);
 });
