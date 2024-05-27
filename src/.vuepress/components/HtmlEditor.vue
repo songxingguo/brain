@@ -8,12 +8,11 @@
       </div>
     </div>
     <div class="editor-body" style="flex-direction: row">
-      <div ref="editorRef" class="editor-code" >
-      </div>
+      <div ref="editorRef" class="editor-code"></div>
       <div class="editor-gutter" style="width: 5px; height: 100%"></div>
       <div class="editor-render">
         <iframe
-          style="width: auto; height: 100%"
+          style="width: 100%; height: 100%"
           :src="url"
           frameborder="0"
         ></iframe>
@@ -63,7 +62,7 @@ const initEditor = (data) => {
       oneDark,
       EditorView.updateListener.of((v) => {
         // 文档更新后再触发
-        if(v.docChanged) {
+        if (v.docChanged) {
           const data = v.state.doc;
           handleCodeChanged(data);
         }
