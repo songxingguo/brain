@@ -9,10 +9,10 @@ import { life } from "./group/life";
 import { sidebar } from "vuepress-theme-hope";
 
 export const sideBar = sidebar({
-  "/web/frontend/": fe,
-  "/web/backend/": be,
-  "/dv/": dv,
-  "/ai/": ai,
-  "/en/": en,
-  "/life/": life,
+  "/content/web/frontend/": fe,
+  "/content/web/backend/": be,
+  "/content/dv/": dv,
+  "/content/ai/": ai,
+  "/content/en/": en,
+  "/content/life/": life,
 });

@@ -5,22 +5,22 @@ export const navBar = navbar([
   {
     text: "首页",
     icon: "home",
-    link: "/",
+    link: "/content/",
   },
   {
     text: "前端开发",
     icon: "frontend",
-    link: "/web/frontend/guide/what-is",
+    link: "/content/web/frontend/guide/what-is",
   },
   {
     text: "数据可视化",
     icon: "dv",
-    link: "/dv/basic/foreword/data-visualization-engineer",
+    link: "/content/dv/basic/foreword/data-visualization-engineer",
   },
   {
     text: "人工智能",
     icon: "ai",
-    link: "/ai/basic/test.md",
+    link: "/content/ai/basic/test.md",
   },
   {
     text: "🌱 数字花园",
