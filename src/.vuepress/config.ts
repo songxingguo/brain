@@ -11,7 +11,7 @@ const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   // 基础路径
-  base: "/",
+  base: "/content/",
   //头部引入，这里引入的是 51la 统计
   head: [
     ["script", { type: "text/javascript", src: "/assets/js/51la.js" }],
