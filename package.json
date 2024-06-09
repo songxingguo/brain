@@ -10,7 +10,8 @@
     "dev": "vuepress-vite dev src",
     "update-package": "pnpm dlx vp-update",
     "demo": "src/.vuepress/scripts/genDemo.js",
-    "md": "node src/.vuepress/scripts/genMarkDown.js"
+    "md": "node src/.vuepress/scripts/genMarkDown.js",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@codemirror/lang-html": "^6.4.9",
@@ -55,7 +56,10 @@
     "vuepress-theme-hope": "2.0.0-rc.22"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@vuepress/plugin-register-components": "^2.0.0-rc.30",
+    "husky": "^9.0.11",
     "less": "^4.2.0"
   }
 }
