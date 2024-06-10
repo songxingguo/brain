@@ -31,6 +31,12 @@ const mergeFileChunk = async (filePath, fileHash) => {
   fse.rmdirSync(chunkDir); // 合并后删除保存切片的目录
 };
 
+// 返回已经上传切片名列表
+const createUploadedList = async (fileHash) =>
+  fse.existsSync(`${UPLOAD_DIR}/${fileHash}`)
+    ? await fse.readdir(`${UPLOAD_DIR}/${fileHash}`)
+    : [];
+
 server.on("request", async (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "*");
@@ -100,6 +106,7 @@ server.on("request", async (req, res) => {
       res.end(
         JSON.stringify({
           shouldUpload: true,
+          uploadedList: await createUploadedList(fileHash),
         })
       );
     }

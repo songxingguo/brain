@@ -10,23 +10,36 @@
     <div>
       <input type="file" name="file" id="file" multiple />
       <button id="upload" onClick="uploadChunks()">上传</button>
+      <button onClick="handlePause()">暂停</button>
+      <button onClick="handleResume()">恢复</button>
     </div>
     <script>
+      let abortControllerList = []; // 取消信号列表
       /**
        * @description: 封装fetch
        * @param {Object} FetchConfig fetch config
        * @return {Promise} fetch result
        */
       const requestApi = ({ url, method = "GET", ...fetchProps }) => {
+        const controller = new AbortController();
+        abortControllerList.push(controller);
         return (
           fetch(url, {
             method,
             ...fetchProps,
+            signal: controller.signal,
           })
             //返回请求成功的结果
             .then((res) => res && res.status === 200 && res.json())
             // .catch((err) => alert("未知错误", err))
-            .then((res) => res)
+            .then((res) => {
+              // 将请求成功的 xhr 从列表中删除
+              const aCIndex = abortControllerList.findIndex(
+                (c) => c.signal === controller.signal
+              );
+              abortControllerList.splice(aCIndex, 1);
+              return res;
+            })
         );
       };
 
@@ -56,19 +69,27 @@
         const fileName = file.name; // 文件名
         const fileHash = md5(file); // 文件hash
         const fileChunkList = createFileChunk(file);
-        const { shouldUpload } = await verifyUpload(fileName, fileHash);
+        const { shouldUpload, uploadedList } = await verifyUpload(
+          fileName,
+          fileHash
+        );
         if (!shouldUpload) {
           alert("秒传：上传成功");
           return;
         }
         const requestList = fileChunkList
-          .map(({ file, fileSize }, index) => {
+          .map(({ file }, index) => ({
+            file,
+            fileHash,
+            hash: `${fileHash}-${index}`,
+          }))
+          .filter(({ hash }) => !uploadedList.includes(hash))
+          .map(({ file, fileHash, hash }, index) => {
             const formData = new FormData();
             formData.append("file", file);
             formData.append("fileHash", fileHash);
             formData.append("name", fileName);
-            formData.append("size", fileSize);
-            formData.append("hash", `${fileHash}-${index}`);
+            formData.append("hash", hash);
             return { formData };
           })
           .map(async ({ formData }) => {
@@ -79,7 +100,11 @@
             });
           });
         await Promise.all(requestList);
-        await mergeRequest(fileName, fileHash);
+        // 之前上传的切片数量 + 本次上传的切片数量 = 所有切片数量时
+        //合并分片
+        if (uploadedList.length + requestList.length === fileChunkList.length) {
+          await mergeRequest(fileName, fileHash);
+        }
       };
 
       // 合并分片
@@ -112,6 +137,16 @@
         });
         return data;
       };
+
+      //断点续传
+      const handlePause = () => {
+        abortControllerList.forEach((controller) => controller?.abort());
+        abortControllerList = [];
+      };
+      const handleResume = async () => {
+        await uploadChunks();
+      };
+      //TODO 上传进度
     </script>
   </body>
 </html>
