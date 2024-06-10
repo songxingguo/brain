@@ -30,40 +30,50 @@
         );
       };
 
-      const sliceSize = 5 * 1024 * 1024; // 每个文件切片大小定为5MB
-
-      //上传分片
-      const uploadChunks = async () => {
-        const blob = document.getElementById("file").files[0];
-        const fileSize = blob.size; // 文件大小
-        const fileName = blob.name; // 文件名
-        const fileHash = md5(blob); // 文件hash
-
+      // 文件分片
+      const createFileChunk = (file) => {
+        const fileSize = file.size; // 文件大小
+        const chunkList = [];
         //计算文件切片总数
+        const sliceSize = 5 * 1024 * 1024; // 每个文件切片大小定为5MB
         const totalSlice = Math.ceil(fileSize / sliceSize);
-        // 循环上传
         for (let i = 1; i <= totalSlice; i++) {
           let chunk;
           if (i == totalSlice) {
             // 最后一片
-            chunk = blob.slice((i - 1) * sliceSize, fileSize - 1); //切割文件
+            chunk = file.slice((i - 1) * sliceSize, fileSize - 1); //切割文件
           } else {
-            chunk = blob.slice((i - 1) * sliceSize, i * sliceSize);
+            chunk = file.slice((i - 1) * sliceSize, i * sliceSize);
           }
-          const formData = new FormData();
-          formData.append("file", chunk);
-          formData.append("fileHash", fileHash);
-          formData.append("name", fileName);
-          formData.append("size", fileSize);
-          formData.append("chunks", totalSlice);
-          formData.append("chunk", i);
-          formData.append("hash", `${fileHash}-${i}`);
-          await requestApi({
-            url: `http://localhost:3000`,
-            method: "POST",
-            body: formData,
-          });
+          chunkList.push({ file: chunk, fileSize });
         }
+        return chunkList;
+      };
+
+      //上传分片
+      const uploadChunks = async () => {
+        const file = document.getElementById("file").files[0];
+        const fileName = file.name; // 文件名
+        const fileHash = md5(file); // 文件hash
+        const fileChunkList = createFileChunk(file);
+        const requestList = fileChunkList
+          .map(({ file, fileSize }, index) => {
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("fileHash", fileHash);
+            formData.append("name", fileName);
+            formData.append("size", fileSize);
+            formData.append("hash", `${fileHash}-${index}`);
+            return { formData };
+          })
+          .map(async ({ formData }) => {
+            await requestApi({
+              url: `http://localhost:3000`,
+              method: "POST",
+              body: formData,
+            });
+          });
+        await Promise.all(requestList);
         await mergeRequest(fileName, fileHash);
       };
 
