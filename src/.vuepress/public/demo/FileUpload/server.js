@@ -2,10 +2,10 @@ import * as http from "http"; //ES 6
 import path from "path";
 import fse from "fs-extra";
 import multiparty from "multiparty";
-const extractExt = (filename) =>
-  filename.slice(filename.lastIndexOf("."), filename.length); // 提取后缀名
 
 const server = http.createServer();
+const extractExt = (filename) =>
+  filename.slice(filename.lastIndexOf("."), filename.length); // 提取后缀名
 const UPLOAD_DIR = path.resolve(import.meta.dirname, ".", "target"); // 大文件存储目录
 
 const resolvePost = (req) =>
@@ -24,7 +24,6 @@ const mergeFileChunk = async (filePath, fileHash) => {
   const chunkDir = `${UPLOAD_DIR}/${fileHash}`;
   const chunkPaths = await fse.readdir(chunkDir);
   await fse.writeFile(filePath, "");
-  console.log("filePath", filePath);
   chunkPaths.forEach((chunkPath) => {
     fse.appendFileSync(filePath, fse.readFileSync(`${chunkDir}/${chunkPath}`));
     fse.unlinkSync(`${chunkDir}/${chunkPath}`);
@@ -75,7 +74,8 @@ server.on("request", async (req, res) => {
   if (req.url === "/merge") {
     const data = await resolvePost(req);
     const { filename, fileHash } = data;
-    const filePath = `${UPLOAD_DIR}/${filename}`;
+    const ext = extractExt(filename);
+    const filePath = `${UPLOAD_DIR}/${fileHash}${ext}`;
     await mergeFileChunk(filePath, fileHash);
     res.end(
       JSON.stringify({
@@ -83,6 +83,26 @@ server.on("request", async (req, res) => {
         message: "file merged success",
       })
     );
+  }
+
+  if (req.url === "/verify") {
+    const data = await resolvePost(req);
+    const { fileHash, filename } = data;
+    const ext = extractExt(filename);
+    const filePath = `${UPLOAD_DIR}/${fileHash}${ext}`;
+    if (fse.existsSync(filePath)) {
+      res.end(
+        JSON.stringify({
+          shouldUpload: false,
+        })
+      );
+    } else {
+      res.end(
+        JSON.stringify({
+          shouldUpload: true,
+        })
+      );
+    }
   }
 });
 

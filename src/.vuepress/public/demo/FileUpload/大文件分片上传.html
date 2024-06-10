@@ -56,6 +56,11 @@
         const fileName = file.name; // 文件名
         const fileHash = md5(file); // 文件hash
         const fileChunkList = createFileChunk(file);
+        const { shouldUpload } = await verifyUpload(fileName, fileHash);
+        if (!shouldUpload) {
+          alert("秒传：上传成功");
+          return;
+        }
         const requestList = fileChunkList
           .map(({ file, fileSize }, index) => {
             const formData = new FormData();
@@ -90,6 +95,22 @@
             fileHash,
           }),
         });
+      };
+
+      //文件秒传
+      const verifyUpload = async (filename, fileHash) => {
+        const data = await requestApi({
+          url: "http://localhost:3000/verify",
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify({
+            filename,
+            fileHash,
+          }),
+        });
+        return data;
       };
     </script>
   </body>
