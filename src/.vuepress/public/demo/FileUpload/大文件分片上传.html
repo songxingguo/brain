@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>大文件分片上传 DEMO</title>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+  </head>
+  <body>
+    <div>
+      <input type="file" name="file" id="file" multiple />
+      <button id="upload" onClick="upload()">上传</button>
+    </div>
+    <script>
+      /**
+       * @description: 封装fetch
+       * @param {Object} FetchConfig fetch config
+       * @return {Promise} fetch result
+       */
+      const requestApi = ({ url, method = "GET", ...fetchProps }) => {
+        return (
+          fetch(url, {
+            method,
+            ...fetchProps,
+          })
+            //返回请求成功的结果
+            .then((res) => res && res.status === 200 && res.json())
+            .catch((err) => alert("未知错误"))
+            .then((res) => res)
+        );
+      };
+
+      const sliceSize = 5 * 1024 * 1024; // 每个文件切片大小定为5MB
+
+      //发送请求
+      function upload() {
+        const blob = document.getElementById("file").files[0];
+        const fileSize = blob.size; // 文件大小
+        const fileName = blob.name; // 文件名
+
+        //计算文件切片总数
+        const totalSlice = Math.ceil(fileSize / sliceSize);
+        // 循环上传
+        for (let i = 1; i <= totalSlice; i++) {
+          let chunk;
+          if (i == totalSlice) {
+            // 最后一片
+            chunk = blob.slice((i - 1) * sliceSize, fileSize - 1); //切割文件
+          } else {
+            chunk = blob.slice((i - 1) * sliceSize, i * sliceSize);
+          }
+          const formData = new FormData();
+          formData.append("file", chunk);
+          formData.append("md5", md5(blob));
+          formData.append("name", fileName);
+          formData.append("size", fileSize);
+          formData.append("chunks", totalSlice);
+          formData.append("chunk", i);
+          // $.ajax({
+          //   url: "http://localhost:8080/chunk/upload",
+          //   type: "POST",
+          //   cache: false,
+          //   data: formData,
+          //   processData: false,
+          //   contentType: false,
+          //   async: false,
+          // });
+          requestApi({
+            url: `http://localhost:3000`,
+            method: "POST",
+            body: formData,
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
