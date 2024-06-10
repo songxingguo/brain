@@ -9,7 +9,7 @@
   <body>
     <div>
       <input type="file" name="file" id="file" multiple />
-      <button id="upload" onClick="upload()">上传</button>
+      <button id="upload" onClick="uploadChunks()">上传</button>
     </div>
     <script>
       /**
@@ -25,18 +25,19 @@
           })
             //返回请求成功的结果
             .then((res) => res && res.status === 200 && res.json())
-            .catch((err) => alert("未知错误"))
+            // .catch((err) => alert("未知错误", err))
             .then((res) => res)
         );
       };
 
       const sliceSize = 5 * 1024 * 1024; // 每个文件切片大小定为5MB
 
-      //发送请求
-      function upload() {
+      //上传分片
+      const uploadChunks = async () => {
         const blob = document.getElementById("file").files[0];
         const fileSize = blob.size; // 文件大小
         const fileName = blob.name; // 文件名
+        const fileHash = md5(blob); // 文件hash
 
         //计算文件切片总数
         const totalSlice = Math.ceil(fileSize / sliceSize);
@@ -51,27 +52,35 @@
           }
           const formData = new FormData();
           formData.append("file", chunk);
-          formData.append("md5", md5(blob));
+          formData.append("fileHash", fileHash);
           formData.append("name", fileName);
           formData.append("size", fileSize);
           formData.append("chunks", totalSlice);
           formData.append("chunk", i);
-          // $.ajax({
-          //   url: "http://localhost:8080/chunk/upload",
-          //   type: "POST",
-          //   cache: false,
-          //   data: formData,
-          //   processData: false,
-          //   contentType: false,
-          //   async: false,
-          // });
-          requestApi({
+          formData.append("hash", `${fileHash}-${i}`);
+          await requestApi({
             url: `http://localhost:3000`,
             method: "POST",
             body: formData,
           });
         }
-      }
+        await mergeRequest(fileName, fileHash);
+      };
+
+      // 合并分片
+      const mergeRequest = async (fileName, fileHash) => {
+        await requestApi({
+          url: "http://localhost:3000/merge",
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify({
+            filename: fileName,
+            fileHash,
+          }),
+        });
+      };
     </script>
   </body>
 </html>
