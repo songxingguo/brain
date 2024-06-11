@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>大文件分片上传 DEMO</title>
-    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/spark-md5@3.0.2/spark-md5.min.js"></script>
   </head>
   <body>
     <div>
@@ -63,12 +63,40 @@
         return chunkList;
       };
 
+      // 根据分片生成hash
+      const calculateHash = (fileChunkList) => {
+        return new Promise((resolve) => {
+          const spark = new SparkMD5.ArrayBuffer();
+          let percentage = 0;
+          let count = 0;
+          // 计算出hash
+          const loadNext = (index) => {
+            const reader = new FileReader(); // 文件阅读对象
+            reader.readAsArrayBuffer(fileChunkList[index].file);
+            reader.onload = (e) => {
+              // 事件
+              count++;
+              spark.append(e.target.result);
+              if (count === fileChunkList.length) {
+                resolve(spark.end());
+              } else {
+                // 还没读完
+                percentage += 100 / fileChunkList.length;
+                console.log("计算hash值百分比：", percentage);
+                loadNext(count);
+              }
+            };
+          };
+          loadNext(0);
+        });
+      };
+
       //上传分片
       const uploadChunks = async () => {
         const file = document.getElementById("file").files[0];
         const fileName = file.name; // 文件名
-        const fileHash = md5(file); // 文件hash
         const fileChunkList = createFileChunk(file);
+        const fileHash = await calculateHash(fileChunkList); // 文件hash
         const { shouldUpload, uploadedList } = await verifyUpload(
           fileName,
           fileHash
@@ -93,7 +121,7 @@
             return { formData };
           })
           .map(async ({ formData }) => {
-            await requestApi({
+            return requestApi({
               url: `http://localhost:3000`,
               method: "POST",
               body: formData,
