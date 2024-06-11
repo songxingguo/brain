@@ -20,27 +20,43 @@
        * @param {Object} FetchConfig fetch config
        * @return {Promise} fetch result
        */
-      const requestApi = ({ url, method = "GET", ...fetchProps }) => {
+      const requestApi = ({
+        url,
+        method = "GET",
+        onProgress,
+        ...fetchProps
+      }) => {
         const controller = new AbortController();
         abortControllerList.push(controller);
-        return (
-          fetch(url, {
+        return new Promise(async (resolve, reject) => {
+          const res = await fetch(url, {
             method,
             ...fetchProps,
             signal: controller.signal,
-          })
-            //返回请求成功的结果
-            .then((res) => res && res.status === 200 && res.json())
-            // .catch((err) => alert("未知错误", err))
-            .then((res) => {
-              // 将请求成功的 xhr 从列表中删除
-              const aCIndex = abortControllerList.findIndex(
-                (c) => c.signal === controller.signal
-              );
-              abortControllerList.splice(aCIndex, 1);
-              return res;
-            })
-        );
+          });
+          const total = res.headers.get("content-length");
+          const reader = res.body.getReader(); //创建可读流
+          const decoder = new TextDecoder();
+          let loaded = 0;
+          let data = "";
+          while (true) {
+            const { done, value } = await reader.read();
+            loaded += value?.length || 0;
+            data += decoder.decode(value);
+            const progress = (loaded / total) * 100;
+            console.log("上传进度：", progress);
+            onProgress && onProgress(progress);
+            if (done) {
+              break;
+            }
+          }
+          // 将请求成功的 xhr 从列表中删除
+          const aCIndex = abortControllerList.findIndex(
+            (c) => c.signal === controller.signal
+          );
+          abortControllerList.splice(aCIndex, 1);
+          resolve(JSON.parse(data));
+        });
       };
 
       // 文件分片

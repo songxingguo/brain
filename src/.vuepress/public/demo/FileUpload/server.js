@@ -19,59 +19,19 @@ const resolvePost = (req) =>
     });
   });
 
-const pipeStream = (path, writeStream) =>
-  new Promise((resolve) => {
-    const readStream = fse.createReadStream(path);
-    readStream.on("end", () => {
-      fse.unlinkSync(path); // 移除
-      resolve();
-    });
-    readStream.pipe(writeStream);
-  });
-
-const mergeFileChunk = async (filePath, fileHash, size = 5 * 1024 * 1024) => {
-  // console.log(filePath, filename, size)
-  // 大文件上传时，设计后端思想时每个要上传的文件，先以文件名，
-  // 为target目录名，把分文件blob，放入这个目录
-  // 文件blob上传前要加上index
-  // node 文件合并肯定可以的，stream
-  const chunkDir = path.resolve(UPLOAD_DIR, fileHash);
-  // console.log(chunkDir);
-  const chunkPaths = await fse.readdir(chunkDir);
-  // console.log(chunkPaths); // 路径下的数组文件名
-  chunkPaths.sort((a, b) => a.split("-")[1] - b.split("-")[1]);
-  // console.log(chunkPaths, '++');
-  // 每块内容写入最后的文件，promise
-  await Promise.all(
-    chunkPaths.map((chunkPath, index) =>
-      pipeStream(
-        // 回流的方法
-        path.resolve(chunkDir, chunkPath),
-        fse.createWriteStream(filePath, {
-          start: index * size,
-          end: (index + 1) * size,
-        })
-      )
-    )
-  );
-  console.log("文件合并成功");
-  fse.rmdirSync(chunkDir); // 删除
-};
-
 // 合并切片
-// const mergeFileChunk = async (filePath, fileHash) => {
-//   const chunkDir = `${UPLOAD_DIR}/${fileHash}`;
-//   const chunkPaths = await fse.readdir(chunkDir);
-//   // 根据切片下标进行排序，否则直接读取目录的获得的顺序可能会错乱
-//   chunkPaths.sort((a, b) => a.split("-")[1] - b.split("-")[1]);
-//   await fse.writeFile(filePath, "");
-//   chunkPaths.forEach((chunkPath) => {
-//     console.log("chunkPath", chunkPath);
-//     fse.appendFileSync(filePath, fse.readFileSync(`${chunkDir}/${chunkPath}`));
-//     fse.unlinkSync(`${chunkDir}/${chunkPath}`);
-//   });
-//   fse.rmdirSync(chunkDir); // 合并后删除保存切片的目录
-// };
+const mergeFileChunk = async (filePath, fileHash) => {
+  const chunkDir = `${UPLOAD_DIR}/${fileHash}`;
+  const chunkPaths = await fse.readdir(chunkDir);
+  // 根据切片下标进行排序，否则直接读取目录的获得的顺序可能会错乱
+  chunkPaths.sort((a, b) => a.split("-")[1] - b.split("-")[1]);
+  await fse.writeFile(filePath, "");
+  chunkPaths.forEach((chunkPath) => {
+    fse.appendFileSync(filePath, fse.readFileSync(`${chunkDir}/${chunkPath}`));
+    fse.unlinkSync(`${chunkDir}/${chunkPath}`);
+  });
+  fse.rmdirSync(chunkDir); // 合并后删除保存切片的目录
+};
 
 // 返回已经上传切片名列表
 const createUploadedList = async (fileHash) =>
