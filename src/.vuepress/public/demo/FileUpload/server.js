@@ -6,7 +6,7 @@ import multiparty from "multiparty";
 const server = http.createServer();
 const extractExt = (filename) =>
   filename.slice(filename.lastIndexOf("."), filename.length); // 提取后缀名
-const UPLOAD_DIR = path.resolve(import.meta.dirname, ".", "target"); // 大文件存储目录
+const UPLOAD_DIR = path.resolve("/Users/sxg/Downloads/", "target"); // 大文件存储目录
 
 const resolvePost = (req) =>
   new Promise((resolve) => {
