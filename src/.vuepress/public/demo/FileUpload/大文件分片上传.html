@@ -9,7 +9,7 @@
   <body>
     <div>
       <input type="file" name="file" id="file" multiple />
-      <button id="upload" onClick="uploadChunks()">上传</button>
+      <button id="upload" onClick="handleUpload()">上传</button>
       <button onClick="handlePause()">暂停</button>
       <button onClick="handleResume()">恢复</button>
     </div>
@@ -43,9 +43,7 @@
             const { done, value } = await reader.read();
             loaded += value?.length || 0;
             data += decoder.decode(value);
-            const progress = (loaded / total) * 100;
-            console.log("上传进度：", progress);
-            onProgress && onProgress(progress);
+            onProgress && onProgress({ loaded, total });
             if (done) {
               break;
             }
@@ -74,7 +72,7 @@
           } else {
             chunk = file.slice((i - 1) * sliceSize, i * sliceSize);
           }
-          chunkList.push({ file: chunk, fileSize });
+          chunkList.push({ file: chunk, fileSize, size: sliceSize });
         }
         console.log("一共分片：", totalSlice);
         return chunkList;
@@ -108,8 +106,7 @@
         });
       };
 
-      //上传分片
-      const uploadChunks = async () => {
+      const handleUpload = async () => {
         const file = document.getElementById("file").files[0];
         const fileName = file.name; // 文件名
         const fileChunkList = createFileChunk(file);
@@ -122,14 +119,34 @@
           alert("秒传：上传成功");
           return;
         }
-        const requestList = fileChunkList
-          .map(({ file }, index) => ({
-            file,
-            fileHash,
-            hash: `${fileHash}-${index}`,
-          }))
+        const fileList = fileChunkList.map(({ file, size }, index) => ({
+          file,
+          size,
+          fileName,
+          fileHash,
+          hash: `${fileHash}-${index}`,
+          percentage: 0,
+        }));
+        await uploadChunks({
+          fileList,
+          uploadedList,
+          fileName,
+          fileHash,
+          fileSize: file.size,
+        });
+      };
+
+      //上传分片
+      const uploadChunks = async ({
+        fileList,
+        uploadedList,
+        fileName,
+        fileHash,
+        fileSize,
+      }) => {
+        const requestList = fileList
           .filter(({ hash }) => !uploadedList.includes(hash))
-          .map(({ file, fileHash, hash }, index) => {
+          .map(({ file, fileHash, fileName, hash }, index) => {
             const formData = new FormData();
             formData.append("file", file);
             formData.append("fileHash", fileHash);
@@ -137,17 +154,29 @@
             formData.append("hash", hash);
             return { formData };
           })
-          .map(async ({ formData }) => {
+          .map(async ({ formData }, index) => {
             return requestApi({
               url: `http://localhost:3000`,
               method: "POST",
               body: formData,
+              onProgress: ({ loaded, total }) => {
+                const percentage = parseInt(String((loaded / total) * 100));
+                // console.log("分片上传百分比：", percentage);
+                fileList[index].percentage = percentage;
+                const totalLoaded = fileList
+                  .map((item) => item.size * item.percentage)
+                  .reduce((acc, cur) => acc + cur);
+                const totalPercentage = parseInt(
+                  (totalLoaded / fileSize).toFixed(2)
+                );
+                console.log("上传百分比：", `${totalPercentage}%`);
+              },
             });
           });
         await Promise.all(requestList);
         // 之前上传的切片数量 + 本次上传的切片数量 = 所有切片数量时
         //合并分片
-        if (uploadedList.length + requestList.length === fileChunkList.length) {
+        if (uploadedList.length + requestList.length === fileList.length) {
           await mergeRequest(fileName, fileHash);
         }
       };
