@@ -26,6 +26,7 @@
         fileSize = 0,
         fileChunkListData = [],
         abortControllerList = [];
+      const HOST = "http://localhost:3000";
       // 切换按钮状态
       const toggleBtn = (isPause = true) => {
         const pauseBtn = document.getElementById("pause");
@@ -181,7 +182,7 @@
           })
           .map(async ({ formData, hash }) => {
             return requestApi({
-              url: `http://localhost:3000`,
+              url: `${HOST}`,
               method: "POST",
               body: formData,
               onProgress: ({ loaded, total }) => {
@@ -217,7 +218,7 @@
       // 合并分片
       const mergeRequest = async (fileName, fileHash) => {
         await requestApi({
-          url: "http://localhost:3000/merge",
+          url: `${HOST}/merge`,
           method: "POST",
           headers: {
             "Content-Type": "application/json;charset=utf-8",
@@ -232,7 +233,7 @@
       //文件秒传
       const verifyUpload = async (filename, fileHash) => {
         const data = await requestApi({
-          url: "http://localhost:3000/verify",
+          url: `${HOST}/verify`,
           method: "POST",
           headers: {
             "Content-Type": "application/json;charset=utf-8",
