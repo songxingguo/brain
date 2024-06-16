@@ -1,3 +1,6 @@
 [submodule "src/content"]
 	path = src/content
 	url = https://github.com/songxingguo/forge.git
+[submodule "src/.vuepress/public/demo"]
+	path = src/.vuepress/public/demo
+	url = git@github.com:songxingguo/demo.git
